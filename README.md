@@ -1,83 +1,44 @@
 # Project
 
 Eline Jacobse  
-Studentnr.: 1617226  
+Student number: 11136235
 
 ## Proposal
 
-Depression costs 1,3 the Netherlands 1,3 billion euros a year. 20% of all adults will at one point in their life be depressed, and it is the most common cause for missing work in The Netherlands.
+On out of five people will at some point in their life become depressed. In The Netherlands, depression and suicide rates have increased over the past ten years. This is not just a societal problem, it's a huge problem for the economy as well. It's estimated that depression costs The Netherlands 1,3 billion euros a year.
 
-In the past ten years, the amount of (attempted) suicides in the Netherlands have increased. Reason for the government to launch a campaign to reduce the stigma of depression.
-
-Since 2012 there have been cuts to mental health care in the Netherlands. How has this affected people getting help for depression, and what does depression truly cost the Netherlands?
-
-In my project I will answer these questions with the help of data visualizations. I will show in which regions of the Netherlands people are most often depressed, where people commit the most suicides, and show how much money in those regions is spent on mental health care.
+For my project, I will look at the cost of depression in The Netherlands, and show how this is affected by cuts to mental health care. I will also map the problem of depression by region, to see in which areas of the country the problem is the most prevalent.
 
 
 #### Visualization
 
-Voor mijn project wil ik verschillende kanten van dit probleem in kaart brengen. Ter introductie van het onderwerp wil ik in een kaart van Nederland laten zien hoeveel mensen per gemeente last hebben van psychische problemen door de jaren heen. Met een slider kun je dan het jaartal veranderen.
+At the top of my website, I want to show a map of the Netherlands, which shows how many people in each region are depressed. From a dropdown-menu, you can choose to show the amount of suicides per region as well.
 
-In dezelfde kaart kun je met een dropdown-menu ook specifiek selecteren hoeveel zelfmoorden er per gemeente zijn gepleegd, en hoeveel mensen er per gemeente depressief zijn.  
+If you click on a region of the map, it will zoom in and a bar chart on the right of the map will display how much money (proportional to the total expenses of that region) was spent on mental health care in a particular year. It will also display a bar that shows the national average spending on mental health care, so you can compare each region to that.
 
-Als je klikt op een bepaalde gemeente, kun je in een aparte grafiek zien hoeveel geld er (relatief aan de totale uitgaven) aan geestelijke gezondheidszorg wordt besteed. Dit kun je vergelijken met het gemiddelde bestedingsbedrag in Nederland.
+Below this graph, the story continues. It another graph I will compare the costs of depression to other costs of health care in The Netherlands. This will show how relatively large the problem is on a national level.
 
-Onder deze eerste grafiek gaat het verhaal verder over de kosten. Wat kosten deze mensen Nederland per jaar?
-
-Ter conclusie wil ik kijken naar mogelijke oplossingen voor dit probleem. Ik wil
+Finally, I will end the story with a conclusion with possible solutions to this problem. I will do this by comparing depression rates in the Netherlands with countries with lower depression rates, and (when you click on a country) showing what countries with lower rates are doing differently in terms of mental health care.
 
 
+#### Sketches  
 
-
-
-
-
-
-#### Sketch
+![First sketch](doc/Sketch_1.jpeg)
+![Second sketch](doc/Sketch_2.jpeg)
 
 #### Data Sources
-CBS, Rijksoverheid, [Politie](https://www.politie.nl/wob/korpsstaf/2016-verwarde-personen-2015.html), GGZ, LexisNexis, Nederlanse Zorgautoriteit.
-
-#### Seperate parts
-
-#### Similar visualizatinos
-
-De Monitor, een programma en site van KRO-NCRV, heeeft een research-dossier over het onderwerp van verwarde mensen gemaakt. Hierin hebben ze ook [een datavisualizatie](http://demonitor.ncrv.nl/verwarde-mensen/politie-krijgt-fors-meer-meldingen-over-verwarde-personen) gemaakt van het aantal melding van verwarde mensen per gemeente.
-
-![De Monitor](/Users/elinejacobse/GitHub/Programmeerproject/doc/infographic_de_monitor.png)
-
-Dit is vergelijkbaar met mijn idee, maar is minder uitgebreid. Door niet alleen de cijfers van meldingen, maar ook cijfers over geestelijke gezondheid per gemeente te laten zijn, kun je verschillende aspecten met elkaar vergelijken.
-
+Several sources I can use to find the data I need are: CBS, Rijksoverheid, GGZ, LexisNexis, Nederlanse Zorgautoriteit, CIZ, Eurostat.
 
 #### Technical problems or limitations  
 
+I have a lot of different aspects I want to show in my final project. Some of the interactive elements I want to use, are things I have never made before. This might cause a problem if I cannot get it to work well.
 
+Another point to watch out for, is that I don't try to present too much information on the page. The story itself needs to be clear and every visualization needs to add something useful to the story. It needs to be clear and easy to understand for visitors of the website.
 
+#### Similar visualizations
 
+[Volksgezondheidenzorg.info](https://www.volksgezondheidenzorg.info/onderwerp/sterfte-naar-doodsoorzaak/regionaal-internationaal/niet-natuurlijk#node-sterfte-door-zelfdoding-ggd-regio) has made several visualizations about (mental) health in The Netherlands. One of these visualizations is a map showing the amount of suicides per region in The Netherlands. 
 
+![Volksgezondheidenzorg.info](doc/sterfte-door-zelfdoding.png)
 
-
-### Sources  
-
-- https://www.rijksoverheid.nl/onderwerpen/geestelijke-gezondheidszorg
-- https://www.zorgvisie.nl/financien/nieuws/2016/11/ggz-nederland-de-ambulantisering-stagneert/
-- https://www.zorgvisie.nl/Kwaliteit/Nieuws/2016/9/Ggz-verdeeld-over-vervoer-verwarde-personen-/
-- https://www.ciz.nl/voor-professionals/Documents/CIZ_Jaardocument_2015.pdf
-- http://www.ggznederland.nl/uploads/assets/GGZ1508-01%20Sectorrapport-2013-1.pdf
-- https://www.igz.nl/onderwerpen/publieke-en-geestelijke-gezondheidszorg/geestelijke_gezondheidszorg/cijfers_over_suicides_ggz/
-- Ervaring goede gezondheid Nederland:  https://www.volksgezondheidenzorg.info/onderwerp/ervaren-gezondheid/regionaal-internationaal/regionaal#node-goed-ervaren-gezondheid-ggd-regio
-- https://www.volksgezondheidenzorg.info/onderwerp/verstandelijke-beperking/regionaal-internationaal/regionaal
-- Cijfers depressie en angststoornissen in Nederland:  https://www.volksgezondheidenzorg.info/onderwerp/angststoornissen/regionaal-internationaal/regionaal#!node-angststoornissen-en-depressie-ggd-regio
-- Cijfers zelfdoding per regio in Nederland: https://www.volksgezondheidenzorg.info/onderwerp/sterfte-naar-doodsoorzaak/regionaal-internationaal/niet-natuurlijk#node-sterfte-door-zelfdoding-ggd-regio
-- cijfers zorgverzekeringen: http://www.vektis.nl/
-- Kosten van depressie: https://www.volksgezondheidenzorg.info/onderwerp/stemmingsstoornissen/kosten/kosten#node-kosten-van-zorg-voor-depressie
-- Schakelteam verward gedrag: http://www.ggznederland.nl/actueel/schakelprogramma-personen-met-verward-gedrag-gepresenteerd
-- GGZ zorgtrajecten per diagnose CBS:
-http://statline.cbs.nl/Statweb/publication/?DM=SLNL&PA=81549ned&D1=a&D2=1-2&D3=0&D4=0&D5=0-1,27,33,52,63,75,86,94,102-103,107,114,126,l&D6=(l-1),l&VW=T
-
-- cijfers veiligheidszorg: http://statline.cbs.nl/Statweb/publication/?DM=SLNL&PA=80162ned&D1=0-31,33-44,46-50&D2=a&VW=T
-- https://www.psynip.nl/actueel/nieuws/2016/cijfers-verwarde-personen-op-straat-nog-hoger/
-- cijfers politie verwarde personen: https://www.politie.nl/wob/korpsstaf/2016-verwarde-personen-2015.html
-- De monitor: verwarde personen in Nederland: http://demonitor.ncrv.nl/verwarde-mensen/politie-krijgt-fors-meer-meldingen-over-verwarde-personen
-- http://www.ggznederland.nl/uploads/assets/Schakelprogramma%20Niemand%20tussen%20wal%20en%20schip.pdf
-- http://www.ggznederland.nl/uploads/publication/Factsheet%20depressie.pdf
+This is similar to the map I want to create for my website, but it doesn't allow you to select different variables (like depression rates) to be displayed in the same visualization. My visualization will make it easier to compare different variables.
