@@ -5,17 +5,18 @@ Student number: 11136235
 
 ## Introduction
 
-Every [40 seconds](http://www.who.int/mental_health/suicide-prevention/en/) someone dies of suicide. Depression is the main cause
+Every [40 seconds](http://www.who.int/mental_health/suicide-prevention/en/) someone dies of suicide. Depression, the main cause of suicide, is a problem that will affect every out of five people during their lifetime. 
 
+Worldwide rates of depression have increased over the past ten years. This is not only a problem for society, but for the economy as well. In the Netherlands depression costs an estimated 1,3 billion euros a year. 
 
-On out of five people will at some point in their life become depressed. In The Netherlands, depression and suicide rates have increased over the past ten years. This is not just a societal problem, it's a huge problem for the economy as well. It's estimated that depression costs The Netherlands 1,3 billion euros a year.
-
-For my project, I will look at the cost of depression in The Netherlands, and show how this is affected by cuts to mental health care. I will also map the problem of depression by region, to see in which areas of the country the problem is the most prevalent.
+For my project, I will look at the prevalence of depression in the Netherlands, and will investigate the cost of depression. I will also show how this is affected by cuts to mental health care throughout the past years. 
 
 
 ### Visualizations
 
-At the top of my website, I want to show a map of the Netherlands, which shows how many people in each region are depressed. From a dropdown-menu, you can choose to show the amount of suicides per region as well.
+At the top of my website, I want to show a map of the world in which you can see depression rates (in percentages). This will show in which countries people suffer of depression the most. It will also show how The Netherlands compares to the rest of the world. 
+
+Underneath this world map, as you scroll further, I will focus on the Netherlands with a map of the country that shows depression rates per region. From a dropdown-menu, you can choose to show the amount of suicides per region as well.
 
 If you click on a region of the map, it will zoom in and a bar chart on the right of the map will display how much money (proportional to the total expenses of that region) was spent on mental health care in a particular year. It will also display a bar that shows the national average spending on mental health care, so you can compare each region to that.
 
