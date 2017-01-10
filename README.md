@@ -45,6 +45,6 @@ The [Washington Post](https://www.washingtonpost.com/news/worldviews/wp/2013/11/
 
 [Volksgezondheidenzorg.info](https://www.volksgezondheidenzorg.info/onderwerp/sterfte-naar-doodsoorzaak/regionaal-internationaal/niet-natuurlijk#node-sterfte-door-zelfdoding-ggd-regio) has made two visualizations that are similar to what I want to do. Below you see a map of the Netherlands showing the amount of suicides in each region. Next to it is a map of the risk of developing depression or an anxiety disorders in different counties.
 
-![Volksgezondheidenzorg.info](doc/sterfte-door-zelfdoding.png) ![Risico angsstoornissen en depressie](doc/risico_angststoornissen_depressie.png)
+<img src="doc/sterfte-door-zelfdoding.png" width="420"><img src="doc/risico_angststoornissen_depressie.png" width="450">
 
 These visualizations are similar to the map I want to create for my website, but they are both stand alone maps. You cannot select different variables to be displayed in the same visualization. My map will make it easier to compare the different variables by allowing the user to select which data they want to display, and have this shown in the same map.
