@@ -23,7 +23,12 @@ During the morning stand-up I got the feedback that it should be clear which gra
 
 Instead of a bar chart next to my map, I now will have a sorted table, and my donut chart will be replaced by a line graph to show the costs of mental health care in the Netherlands throughout the last 10 years.  
 
-I made new sketches and started coding, I now have a basic layout for my website (which is not functional yet.)
+I made new sketches:
+![Sketch](doc/sketch netherlands.jpeg)
+
+![Sketch](doc/sketch-bar-chart.jpeg)
+
+I started coding, I now have a basic layout for my website (which is not functional yet.)
 
 ![First layout](doc/first-layout-1.png)
 ![First layout](doc/first-layout-2.png)
