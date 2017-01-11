@@ -1,20 +1,20 @@
 # Project
 
 Eline Jacobse  
-Student number: 11136235
+11136235
 
 ## Introduction
 
-Every [40 seconds](http://www.who.int/mental_health/suicide-prevention/en/) someone dies of suicide. Depression, the main cause of suicide, is a problem that will affect every out of five people during their lifetime. 
+Every [40 seconds](http://www.who.int/mental_health/suicide-prevention/en/) someone dies of suicide. Depression, the main cause of suicide, is a problem that will affect every out of five people during their lifetime.
 
-Worldwide rates of depression have increased over the past ten years. This is not only a problem for society, but for the economy as well. In the Netherlands depression costs an estimated 1,3 billion euros a year. 
+Worldwide rates of depression have increased over the past ten years. This is not only a problem for society, but for the economy as well. In the Netherlands depression costs an estimated 1,3 billion euros a year.
 
-For my project, I will look at the prevalence of depression in the Netherlands, and will investigate the cost of depression. I will also show how this is affected by cuts to mental health care throughout the past years. 
+For my project, I will look at the prevalence of depression in the Netherlands, and will investigate the cost of depression. I will also show how this is affected by cuts to mental health care throughout the past years.
 
 
 ### Visualizations
 
-At the top of my website, I want to show a map of the world in which you can see depression rates (in percentages). This will show in which countries people suffer of depression the most. It will also show how The Netherlands compares to the rest of the world. 
+At the top of my website, I want to show a map of the world in which you can see depression rates (in percentages). This will show in which countries people suffer of depression the most. It will also show how The Netherlands compares to the rest of the world.
 
 Underneath this world map, as you scroll further, I will focus on the Netherlands with a map of the country that shows depression rates per region. From a dropdown-menu, you can choose to show the amount of suicides per region as well.
 

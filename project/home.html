@@ -2,20 +2,45 @@
 <html>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="project.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
+    <script src="/datamaps.world.min.js"></script>
+    <script src="countries.js"></script>
     <meta charset="UTF-8">
-    <title>Depression Around the World</title>
+    <title>The Cost of Depression</title>
 </head>
 
 <body>
-    Test
+    <header>
+        <div class="jumbotron text-center">
+            <h1>The Cost of Depression</h1>
+        </div>
+    </header>
+    <div id="main">
+        <p class="lead">Every 40 seconds someone dies of suicide. Depression, the main cause of suicide, is a problem that will affect one out of every five people during their lifetime.
+        </p>
+    </div>
+    <h2 class="display-4">Depression Around the World</h2>
+    <div id="mapcontainer" style="width: 850px; height: 650px;"></div>
+    <script src="scripts.js"></script>
+
 </body>
-<!-- <footer>
-    © Eline Jacobse<br>
-    Std.nr.: 11136235<br>
-</footer> -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <hr>
+            <div class="col-lg-12">
+                <div class="col-md-8">
+                    <a href="https://github.com/ElineJ/programmeerproject">GitHub</a> | <a href="https://projectf.mprog.nl/">Minor Programmeren</a>
+                </div>
+                <div class="col-md-4">
+                    <p class="muted pull-right">© 2017 Eline Jacobse.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 
 </html>
