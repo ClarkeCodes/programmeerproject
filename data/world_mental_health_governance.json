@@ -1,0 +1,5390 @@
+{
+  "dimension": [
+                 {
+                   "label": "GHO",
+                   "display": "Indicator"
+                 },
+                 {
+                   "label": "PUBLISHSTATE",
+                   "display": "PUBLISH STATES"
+                 },
+                 {
+                   "label": "YEAR",
+                   "display": "Year"
+                 },
+                 {
+                   "label": "REGION",
+                   "display": "WHO region"
+                 },
+                 {
+                   "label": "WORLDBANKINCOMEGROUP",
+                   "display": "World Bank income group"
+                 },
+                 {
+                   "label": "COUNTRY",
+                   "display": "Country"
+                 }
+               ],
+    "fact": [
+              {
+                "dims": {
+                          "COUNTRY": "Afghanistan",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Afghanistan",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Afghanistan",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Albania",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Albania",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Albania",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Algeria",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "7.37"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Algeria",
+                          "GHO": "Government expenditures on mental hospitals as a percentage of total government expenditures on mental health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "0.81"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Algeria",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Algeria",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Algeria",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Andorra",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Andorra",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Andorra",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Angola",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Angola",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Angola",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Antigua and Barbuda",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Antigua and Barbuda",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Antigua and Barbuda",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Argentina",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Argentina",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Argentina",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Armenia",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "3.38"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Armenia",
+                          "GHO": "Government expenditures on mental hospitals as a percentage of total government expenditures on mental health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "0.88"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Armenia",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Armenia",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Armenia",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Australia",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "7.64"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Australia",
+                          "GHO": "Government expenditures on mental hospitals as a percentage of total government expenditures on mental health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "0.09"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Australia",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Australia",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Australia",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Austria",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Austria",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Austria",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Azerbaijan",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "2.5"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Azerbaijan",
+                          "GHO": "Government expenditures on mental hospitals as a percentage of total government expenditures on mental health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "0.85"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Azerbaijan",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Azerbaijan",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Azerbaijan",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Bahrain",
+                          "GHO": "Government expenditures on mental hospitals as a percentage of total government expenditures on mental health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "0.04"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Bahrain",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Bahrain",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Bahrain",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Bangladesh",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "0.44"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Bangladesh",
+                          "GHO": "Government expenditures on mental hospitals as a percentage of total government expenditures on mental health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "0.36"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Bangladesh",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Bangladesh",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Bangladesh",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Barbados",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Barbados",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Barbados",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Belarus",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Belarus",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Belarus",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Belgium",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Belgium",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Belgium",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Belize",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Belize",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Belize",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Benin",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Benin",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Benin",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Bhutan",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Bhutan",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Bhutan",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Bolivia (Plurinational State of)",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Bolivia (Plurinational State of)",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Bolivia (Plurinational State of)",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Bosnia and Herzegovina",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Bosnia and Herzegovina",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Bosnia and Herzegovina",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Botswana",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Botswana",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Botswana",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Brazil",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "2.38"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Brazil",
+                          "GHO": "Government expenditures on mental hospitals as a percentage of total government expenditures on mental health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "0.32"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Brazil",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Brazil",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Brazil",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Brunei Darussalam",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Brunei Darussalam",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Brunei Darussalam",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Bulgaria",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "1.4"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Bulgaria",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Bulgaria",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Bulgaria",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Burkina Faso",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Burkina Faso",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Burkina Faso",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Burundi",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "0.34"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Burundi",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Burundi",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Burundi",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Côte d'Ivoire",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Côte d'Ivoire",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Côte d'Ivoire",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Cabo Verde",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Cabo Verde",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Cabo Verde",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Cambodia",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Cambodia",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Cambodia",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Cameroon",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "0.26"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Cameroon",
+                          "GHO": "Government expenditures on mental hospitals as a percentage of total government expenditures on mental health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "0.43"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Cameroon",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Cameroon",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Cameroon",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Canada",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "7.2"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Canada",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Canada",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Canada",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Central African Republic",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Central African Republic",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Central African Republic",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Chad",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Chad",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Chad",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Chile",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "2.78"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Chile",
+                          "GHO": "Government expenditures on mental hospitals as a percentage of total government expenditures on mental health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "0.12"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Chile",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Chile",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Chile",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "China",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "China",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "China",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Comoros",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Comoros",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Comoros",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Congo",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Congo",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Congo",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Cook Islands",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Cook Islands",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Cook Islands",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Costa Rica",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "2.91"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Costa Rica",
+                          "GHO": "Government expenditures on mental hospitals as a percentage of total government expenditures on mental health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "0.67"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Costa Rica",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Costa Rica",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Costa Rica",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Croatia",
+                          "GHO": "Government expenditures on mental hospitals as a percentage of total government expenditures on mental health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "0.56"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Croatia",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Croatia",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Croatia",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Cuba",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Cuba",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Cuba",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Cyprus",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "4.82"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Cyprus",
+                          "GHO": "Government expenditures on mental hospitals as a percentage of total government expenditures on mental health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "0.29"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Cyprus",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Cyprus",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Cyprus",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Czech Republic",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "2.91"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Czech Republic",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Czech Republic",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Czech Republic",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Democratic Republic of the Congo",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Democratic Republic of the Congo",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Democratic Republic of the Congo",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Denmark",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Denmark",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Denmark",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Dominica",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "3.22"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Dominica",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Dominica",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Dominica",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Dominican Republic",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "0.61"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Dominican Republic",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Dominican Republic",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Dominican Republic",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Ecuador",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "1.2"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Ecuador",
+                          "GHO": "Government expenditures on mental hospitals as a percentage of total government expenditures on mental health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "0.59"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Ecuador",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Ecuador",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Ecuador",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Egypt",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "2.29"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Egypt",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Egypt",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Egypt",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "El Salvador",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "El Salvador",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "El Salvador",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Eritrea",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "1.91"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Eritrea",
+                          "GHO": "Government expenditures on mental hospitals as a percentage of total government expenditures on mental health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "0.73"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Eritrea",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Eritrea",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Eritrea",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Estonia",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "5.78"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Estonia",
+                          "GHO": "Government expenditures on mental hospitals as a percentage of total government expenditures on mental health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "0.3"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Estonia",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Estonia",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Estonia",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Ethiopia",
+                          "GHO": "Government expenditures on mental hospitals as a percentage of total government expenditures on mental health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "0.85"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Ethiopia",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Ethiopia",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Ethiopia",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Fiji",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "1.9"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Fiji",
+                          "GHO": "Government expenditures on mental hospitals as a percentage of total government expenditures on mental health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "1"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Fiji",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Fiji",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Fiji",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Finland",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "3.86"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Finland",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Finland",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Finland",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "France",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "12.91"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "France",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "France",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "France",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Gabon",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "0.62"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Gabon",
+                          "GHO": "Government expenditures on mental hospitals as a percentage of total government expenditures on mental health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "1"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Gabon",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Gabon",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Gabon",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Gambia",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Gambia",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Gambia",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Georgia",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "2.83"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Georgia",
+                          "GHO": "Government expenditures on mental hospitals as a percentage of total government expenditures on mental health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "0.71"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Georgia",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Georgia",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Georgia",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Germany",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "11"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Germany",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Germany",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Germany",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Ghana",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "2"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Ghana",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Ghana",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Ghana",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Greece",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "4.43"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Greece",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Greece",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Greece",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Grenada",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Grenada",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Grenada",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Guatemala",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "1.46"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Guatemala",
+                          "GHO": "Government expenditures on mental hospitals as a percentage of total government expenditures on mental health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "0.94"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Guatemala",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Guatemala",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Guatemala",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Guinea",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Guinea",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Guinea",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Guinea-Bissau",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Guinea-Bissau",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Guinea-Bissau",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Guyana",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "1.35"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Guyana",
+                          "GHO": "Government expenditures on mental hospitals as a percentage of total government expenditures on mental health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "0.59"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Guyana",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Guyana",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Guyana",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Haiti",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "0.61"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Haiti",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Haiti",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Haiti",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Honduras",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "1.61"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Honduras",
+                          "GHO": "Government expenditures on mental hospitals as a percentage of total government expenditures on mental health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "0.88"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Honduras",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Honduras",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Honduras",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Hungary",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "5.1"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Hungary",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Hungary",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Hungary",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Iceland",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "8.69"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Iceland",
+                          "GHO": "Government expenditures on mental hospitals as a percentage of total government expenditures on mental health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "0.53"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Iceland",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Iceland",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Iceland",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "India",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "India",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "India",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Indonesia",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Indonesia",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Indonesia",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Iran (Islamic Republic of)",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "3.6"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Iran (Islamic Republic of)",
+                          "GHO": "Government expenditures on mental hospitals as a percentage of total government expenditures on mental health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "0.17"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Iran (Islamic Republic of)",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Iran (Islamic Republic of)",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Iran (Islamic Republic of)",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Iraq",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Iraq",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Iraq",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Ireland",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Ireland",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Ireland",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Israel",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Israel",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Israel",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Italy",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "5"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Italy",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Italy",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Italy",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Jamaica",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "6.04"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Jamaica",
+                          "GHO": "Government expenditures on mental hospitals as a percentage of total government expenditures on mental health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "0.8"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Jamaica",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Jamaica",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Jamaica",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Japan",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "4.94"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Japan",
+                          "GHO": "Government expenditures on mental hospitals as a percentage of total government expenditures on mental health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "0.76"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Japan",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Japan",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Japan",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Jordan",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Jordan",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Jordan",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Kazakhstan",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Kazakhstan",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Kazakhstan",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Kenya",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Kenya",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Kenya",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Kiribati",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Kiribati",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Kiribati",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Kuwait",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Kuwait",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Kuwait",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Kyrgyzstan",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "4"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Kyrgyzstan",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Kyrgyzstan",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Kyrgyzstan",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Lao People's Democratic Republic",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Lao People's Democratic Republic",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Lao People's Democratic Republic",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Latvia",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "5.9"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Latvia",
+                          "GHO": "Government expenditures on mental hospitals as a percentage of total government expenditures on mental health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "0.64"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Latvia",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Latvia",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Latvia",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Lebanon",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "4.8"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Lebanon",
+                          "GHO": "Government expenditures on mental hospitals as a percentage of total government expenditures on mental health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "0.54"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Lebanon",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Lebanon",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Lebanon",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Lesotho",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "1.8"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Lesotho",
+                          "GHO": "Government expenditures on mental hospitals as a percentage of total government expenditures on mental health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "0.82"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Lesotho",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Lesotho",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Lesotho",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Liberia",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Liberia",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Liberia",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Lithuania",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Lithuania",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Lithuania",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Luxembourg",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Luxembourg",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Luxembourg",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Madagascar",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Madagascar",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Madagascar",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Malawi",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "1"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Malawi",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Malawi",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Malawi",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Malaysia",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "0.39"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Malaysia",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Malaysia",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Malaysia",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Maldives",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Maldives",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Maldives",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Mali",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Mali",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Mali",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Malta",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "6.71"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Malta",
+                          "GHO": "Government expenditures on mental hospitals as a percentage of total government expenditures on mental health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "0.97"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Malta",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Malta",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Malta",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Marshall Islands",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "0.4"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Marshall Islands",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Marshall Islands",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Marshall Islands",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Mauritania",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Mauritania",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Mauritania",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Mauritius",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Mauritius",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Mauritius",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Mexico",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "0.65"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Mexico",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Mexico",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Mexico",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Micronesia (Federated States of)",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Micronesia (Federated States of)",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Micronesia (Federated States of)",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Monaco",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Monaco",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Monaco",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Mongolia",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "2"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Mongolia",
+                          "GHO": "Government expenditures on mental hospitals as a percentage of total government expenditures on mental health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "0.94"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Mongolia",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Mongolia",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Mongolia",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Montenegro",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Montenegro",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Montenegro",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Morocco",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Morocco",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Morocco",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Mozambique",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "0.16"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Mozambique",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Mozambique",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Mozambique",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Myanmar",
+                          "GHO": "Government expenditures on mental hospitals as a percentage of total government expenditures on mental health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "0.74"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Myanmar",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Myanmar",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Myanmar",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Namibia",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Namibia",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Namibia",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Nauru",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "0.69"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Nauru",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Nauru",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Nauru",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Nepal",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "0.7"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Nepal",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Nepal",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Nepal",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Netherlands",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "10.65"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Netherlands",
+                          "GHO": "Government expenditures on mental hospitals as a percentage of total government expenditures on mental health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "0.59"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Netherlands",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Netherlands",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Netherlands",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "New Zealand",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "10"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "New Zealand",
+                          "GHO": "Government expenditures on mental hospitals as a percentage of total government expenditures on mental health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "0.16"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "New Zealand",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "New Zealand",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "New Zealand",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Nicaragua",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "1"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Nicaragua",
+                          "GHO": "Government expenditures on mental hospitals as a percentage of total government expenditures on mental health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "0.91"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Nicaragua",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Nicaragua",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Nicaragua",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Niger",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Niger",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Niger",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Nigeria",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Nigeria",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Nigeria",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Niue",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Niue",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Niue",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Norway",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Norway",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Norway",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Oman",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Oman",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Oman",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Pakistan",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Pakistan",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Pakistan",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Palau",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "0.82"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Palau",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Palau",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Palau",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Panama",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Panama",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Panama",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Papua New Guinea",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "0.1"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Papua New Guinea",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Papua New Guinea",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Papua New Guinea",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Paraguay",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "0.31"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Paraguay",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Paraguay",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Paraguay",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Peru",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "0.27"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Peru",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Peru",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Peru",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Philippines",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Philippines",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Philippines",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Poland",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "5.08"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Poland",
+                          "GHO": "Government expenditures on mental hospitals as a percentage of total government expenditures on mental health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "0.73"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Poland",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Poland",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Poland",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Portugal",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "5.24"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Portugal",
+                          "GHO": "Government expenditures on mental hospitals as a percentage of total government expenditures on mental health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "0.45"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Portugal",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Portugal",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Portugal",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Qatar",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Qatar",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Qatar",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Republic of Korea",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Republic of Korea",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Republic of Korea",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Republic of Moldova",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "3.24"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Republic of Moldova",
+                          "GHO": "Government expenditures on mental hospitals as a percentage of total government expenditures on mental health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "0.84"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Republic of Moldova",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Republic of Moldova",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Republic of Moldova",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Romania",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Romania",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Romania",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Russian Federation",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Russian Federation",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Russian Federation",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Rwanda",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Rwanda",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Rwanda",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Saint Kitts and Nevis",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "1.09"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Saint Kitts and Nevis",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Saint Kitts and Nevis",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Saint Kitts and Nevis",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Saint Lucia",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "4.13"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Saint Lucia",
+                          "GHO": "Government expenditures on mental hospitals as a percentage of total government expenditures on mental health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "0.97"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Saint Lucia",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Saint Lucia",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Saint Lucia",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Saint Vincent and the Grenadines",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "5.6"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Saint Vincent and the Grenadines",
+                          "GHO": "Government expenditures on mental hospitals as a percentage of total government expenditures on mental health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "1"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Saint Vincent and the Grenadines",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Saint Vincent and the Grenadines",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Saint Vincent and the Grenadines",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Samoa",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Samoa",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Samoa",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "San Marino",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "2.8"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "San Marino",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "San Marino",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "San Marino",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Sao Tome and Principe",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Sao Tome and Principe",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Sao Tome and Principe",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Saudi Arabia",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "3.89"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Saudi Arabia",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Saudi Arabia",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Saudi Arabia",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Senegal",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Senegal",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Senegal",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Serbia",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Serbia",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Serbia",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Seychelles",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Seychelles",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Seychelles",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Sierra Leone",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Sierra Leone",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Sierra Leone",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Singapore",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "4.14"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Singapore",
+                          "GHO": "Government expenditures on mental hospitals as a percentage of total government expenditures on mental health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "0.72"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Singapore",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Singapore",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Singapore",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Slovakia",
+                          "GHO": "Government expenditures on mental hospitals as a percentage of total government expenditures on mental health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "0.28"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Slovakia",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Slovakia",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Slovakia",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Slovenia",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "8"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Slovenia",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Slovenia",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Slovenia",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Solomon Islands",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "1.3"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Solomon Islands",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Solomon Islands",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Solomon Islands",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Somalia",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Somalia",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Somalia",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "South Africa",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "South Africa",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "South Africa",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Spain",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "5"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Spain",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Spain",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Spain",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Sri Lanka",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Sri Lanka",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Sri Lanka",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Sudan",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Sudan",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Sudan",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Suriname",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Suriname",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Suriname",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Swaziland",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Swaziland",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Swaziland",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Sweden",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "10"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Sweden",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Sweden",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Sweden",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Switzerland",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Switzerland",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Switzerland",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Syrian Arab Republic",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "2"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Syrian Arab Republic",
+                          "GHO": "Government expenditures on mental hospitals as a percentage of total government expenditures on mental health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "0.94"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Syrian Arab Republic",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Syrian Arab Republic",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Syrian Arab Republic",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Tajikistan",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "1.22"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Tajikistan",
+                          "GHO": "Government expenditures on mental hospitals as a percentage of total government expenditures on mental health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "0.84"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Tajikistan",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Tajikistan",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Tajikistan",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Thailand",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "4"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Thailand",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Thailand",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Thailand",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "The former Yugoslav republic of Macedonia",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "The former Yugoslav republic of Macedonia",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "The former Yugoslav republic of Macedonia",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Timor-Leste",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Timor-Leste",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Timor-Leste",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Togo",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Togo",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Togo",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Tonga",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Tonga",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Tonga",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Trinidad and Tobago",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Trinidad and Tobago",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Trinidad and Tobago",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Tunisia",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "4.95"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Tunisia",
+                          "GHO": "Government expenditures on mental hospitals as a percentage of total government expenditures on mental health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "0.18"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Tunisia",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Tunisia",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Tunisia",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Turkey",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Turkey",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Turkey",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Uganda",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Uganda",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Uganda",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Ukraine",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Ukraine",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Ukraine",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "United Arab Emirates",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "United Arab Emirates",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "United Arab Emirates",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "United Republic of Tanzania",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "2.4"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "United Republic of Tanzania",
+                          "GHO": "Government expenditures on mental hospitals as a percentage of total government expenditures on mental health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "0.33"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "United Republic of Tanzania",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "United Republic of Tanzania",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "United Republic of Tanzania",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "United States of America",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "United States of America",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "United States of America",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Uzbekistan",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "2.32"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Uzbekistan",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Uzbekistan",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Uzbekistan",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Vanuatu",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Vanuatu",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Vanuatu",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Viet Nam",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Viet Nam",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Viet Nam",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Yemen",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Yemen",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Yemen",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "No"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Zambia",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Zambia",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Zambia",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Zimbabwe",
+                          "GHO": "Government expenditures on mental health as a percentage of total government expenditures on health (%)",
+                          "YEAR": "2011"
+                        },
+                "Value": "0.01"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Zimbabwe",
+                          "GHO": "Stand-alone mental health legislation",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Zimbabwe",
+                          "GHO": "Mental health plan",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Zimbabwe",
+                          "GHO": "Mental health policy",
+                          "YEAR": "2011"
+                        },
+                "Value": "Yes"
+              }
+      ]
+}
