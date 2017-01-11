@@ -5,7 +5,7 @@ Eline Jacobse
 
 ## Visualizations
 
-###### **1: World map**
+##### **1: World map**
 
 ![Sketch](doc/sketch-world-map.jpg)
 
@@ -14,7 +14,7 @@ In this visualization I will show a world map with the percentage of people who 
 An example of how I would like to implement this zooming feature can be found [here](http://www.billdwhite.com/wordpress/2013/11/26/d3-minimap-pan-and-zoom-demo/).
 
 
-###### **2 & 3: Map of the Netherlands and ranking table**  
+##### **2 & 3: Map of the Netherlands and ranking table**  
 
 ![Sketch](doc/sketch netherlands.jpeg)
 
@@ -24,11 +24,11 @@ Above the map, you will see a search bar that allows you to search for a certain
 
 The map will be linked to a table on the right of the map. This table displays a sorted 'ranking' of the different regions, making it easy to see right away how the regions are compared to each other. When a different variable is selected from the dropdown-menu, the table will be resorted based on that variable (depression vs. suicide).  Additionally, the table will show how many mental health care facilities each region has.
 
-###### **4: Line graph**
+##### **4: Line graph**
 
 This graph goes into the cost of mental health care in the Netherlands more. It will display the amount of money that has been spent on mental health care in the last 10 years, so you can see how this has changed over time.  
 
-###### **5: Bar chart**
+##### **5: Bar chart**
 
 ![Sketch](doc/sketch-bar-chart.jpeg)
 As a conclusion to the page, I want to create a bar chart which shows countries that have lower rates of depression than The Netherlands. It will be sorter from highest rates of depression to lowest, starting with The Netherlands on the left.   
