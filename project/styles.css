@@ -7,22 +7,125 @@
           box-sizing: border-box;
 }
 
-h2 {
-    text-align:center;
-    margin:auto;
-    /*padding-top: 30px;*/
+#paragraph-1 {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 50px;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    top: -50px;
 }
 
-/*header {
-    display:block;
-    background-color: black;
-    clear:left;
-    color:white;
-    padding:1em;
-}*/
+h3, h4, h5 {
+    text-align:center;
+    margin:auto;
+}
+
+
 #mapcontainer {
     align: center;
     margin: auto;
     position: relative;
+    margin-bottom: 0;
     top: -140px;
+}
+
+p {
+    /*display: block;*/
+    /*max-width: 600px;*/
+    /*margin: 0 auto;*/
+    /*text-align: center;*/
+    /*padding: 50px;*/
+    /*-webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;*/
+}
+
+#nl_container {
+    width: 100%;
+    align: right;
+}
+
+table {
+    width: 100%;
+}
+
+th, td {
+    width: 100px;
+}
+
+thead>tr {
+    position: relative;
+    display: block;
+}
+
+tbody {
+    display: block;
+    height: 450px;
+    overflow: auto;
+}
+
+
+#tableInput {
+    width: 70%;
+    align: left;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+}
+
+#nl_text {
+    padding-bottom: 25px;
+}
+
+.row-sm-margin {
+    margin-top: 0px;
+    /*margin-bottom: 0px;*/
+    position: relative;
+    top: -140px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans', 'Helvetica', 'Arial', 'sans-serif';
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+
+.heading-font {
+  font-family: 'Open Sans', 'Helvetica', 'Arial', 'sans-serif';
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+.body-font {
+  font-family: 'Open Sans', 'Helvetica', 'Arial', 'sans-serif';
+}
+.alt-font {
+  font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+#netherlands_map, #bar_chart {
+    background-color: #eee;
+}
+
+footer {
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+body {
+   overflow-x: hidden;
+}
+
+.bottom-row {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.container-fluid {
+  min-height: 100%;
+  overflow:auto;
 }

@@ -27,8 +27,7 @@ Finally, I will end the story with a conclusion with possible solutions to this 
 
 ### Sketches  
 
-![First sketch](doc/Sketch_1.jpeg)
-![Second sketch](doc/Sketch_2.jpeg)
+![Sketch](doc/sketch-world-map.jpg)![Sketch](doc/sketch netherlands.jpeg)![Sketch](doc/sketch-bar-chart.jpeg)
 
 ### Data Sources
 Several sources I can use to find the data I need are: World Health Organization, CBS, Rijksoverheid, GGZ, LexisNexis, Nederlanse Zorgautoriteit, CIZ, Eurostat.

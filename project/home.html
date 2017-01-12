@@ -18,15 +18,67 @@
             <h1>The Cost of Depression</h1>
         </div>
     </header>
-    <div id="main">
-        <p class="lead">Every 40 seconds someone dies of suicide. Depression, the main cause of suicide, is a problem that will affect one out of every five people during their lifetime.
-        </p>
+    <div class="container-fluid">
+        <div id="main">
+            <p class="lead">Every 40 seconds someone dies of suicide. Depression, the main cause of suicide, is a problem that will affect one out of every five people during their lifetime.</p>
+        </div>
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <h3 class="display-4">Depression Around the World</h3>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+        <!-- <h3 class="display-4">Depression Around the World</h3> -->
+        <div id="mapcontainer" style="width: 850px; height: 650px;"></div>
+        <div class="row row-sm-margin" id="netherlands_map">
+            <div class="col-sm-12"><h3 class="display-4">Depression in The Netherlands</h3></div>
+            <div class="row" id="nl_text">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-6">This is text about depression in The Netherlands. Every 40 seconds someone dies of suicide. Depression, the main cause of suicide, is a problem that will affect one out of every five people during their lifetime.</div>
+                <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div id="nl_container">
+                        <svg width="450px" height="550px">
+                            <use xlink:href="netherlands.svg#nl_map"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div id="tablecontainer">
+                        <input type="text" id="tableInput" onkeyup="searchTable()" placeholder="Search for country...">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-sm-margin" id="line_graph">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6"><h3 class="display-4">Test title</h3><br>
+                This is text about depression in The Netherlands. Every 40 seconds someone dies of suicide. Depression, the main cause of suicide, is a problem that will affect one out of every five people during their lifetime.</div>
+            <div class="col-sm-3"></div>
+            <div class="row">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-10" id="linecontainer"></div>
+                <div class="col-sm-1"></div>
+            </div>
+        </div>
+        <div class="row row-sm-margin bottom-row" id="bar_chart">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6"><h3 class="display-4">Test title</h3><br>
+                This is text about depression in The Netherlands. Every 40 seconds someone dies of suicide. Depression, the main cause of suicide, is a problem that will affect one out of every five people during their lifetime.</div>
+            <div class="col-sm-3"></div>
+            <div class="row">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-10" id="barcontainer"></div>
+                <div class="col-sm-1"></div>
+            </div>
+        </div>
     </div>
-    <h2 class="display-4">Depression Around the World</h2>
-    <div id="mapcontainer" style="width: 850px; height: 650px;"></div>
     <script src="scripts.js"></script>
-
 </body>
+
 <footer>
     <div class="container">
         <div class="row">
