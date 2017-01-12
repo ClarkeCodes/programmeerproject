@@ -30,5 +30,16 @@ I made new sketches:
 
 I started coding, I now have a basic layout for my website (which is not functional yet.)
 
-![First layout](doc/first-layout-1.png)
-![First layout](doc/first-layout-2.png)
+![First layout](doc/first-layout-1.png)![First layout](doc/first-layout-2.png)
+
+# day 4
+
+My focus today was on creating a basic layout/format for my website, so I can create the interactive visualizations as soon as I have all the data. I now have the layout with the text and the different maps, I just have to add the line graph and bar chart. I also formatted the data of suicide rates in the World, which I can already use for my visualizations now.
+
+![Second layout](doc/second-layout1.png)
+![Second layout](doc/second-layout2.png)
+![Second layout](doc/second-layout3.png)
+![Second layout](doc/second-layout4.png)
+![Second layout](doc/second-layout5.png)
+
+The search function with the table is already functional, but the data I used now is the world suicide rates. I spent some time researching different layout options and using it to improve the structure of the site.
