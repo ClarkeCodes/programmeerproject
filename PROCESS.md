@@ -43,3 +43,15 @@ My focus today was on creating a basic layout/format for my website, so I can cr
 ![Second layout](doc/second-layout5.png)
 
 The search function with the table is already functional, but the data I used now is the world suicide rates. I spent some time researching different layout options and using it to improve the structure of the site.
+
+# day 5
+
+I changed my idea of a line graph to a scatterplot, so I can show the relation between the costs spent on mental health care and the depression/suicide rates in different years. After presenting my project to the group, I got feedback on exploring the relation to suicide rates and depression in my scatterplot. Now this is not necessarily shown clearly in my map of The Netherlands.
+
+From someone else from the group, I am going to get a topojson map of The Netherlands, which I can use instead of my SVG-map. This will allow me to use D3 datamaps with my map of the The Netherlands as well.
+
+In regards to the website, I added the suicide data I already imported to the world map and created a color scale for this and the legend.
+
+![World map suicide rates](doc/world-map-suicide.png)
+
+Before Monday, I plan to have formatted all my data so I can create my visualizations and have them all working with the right data. 
