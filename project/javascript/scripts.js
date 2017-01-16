@@ -22,7 +22,6 @@ var svg = d3.select("#linecontainer").append("svg")
 // all colors to be used for the data (source: http://colorbrewer2.org/)
 var all_colors = ['#ffffb2','#fed976','#feb24c','#fd8d3c','#fc4e2a','#e31a1c','#b10026'];
 var color_values = [3, 5, 7, 10, 15, 20, 20.1];
-    // 44.6, 40.7, 36.7, 32.7, 28.7, 24.7, 20.8];
 
 // get data from csv file
 d3.csv("data/suicide_by_country.csv", function(error, data) {
@@ -43,7 +42,6 @@ d3.csv("data/suicide_by_country.csv", function(error, data) {
 
     // create dataset in map format
     data.forEach(function(d) {
-
         d.female = +d.female;
         d.male = +d.male;
         d.suicide = +d.suicide;
@@ -83,7 +81,6 @@ d3.csv("data/suicide_by_country.csv", function(error, data) {
     // width and height for rects of legend
     var r_width = 20,
         r_height = 20;
-
 
     var legendLabels = ["< 3", "3 - 5", "5 - 7", "7 - 10", "10 - 15", "15 - 20", "> 20"];
     legendLabels.reverse();
