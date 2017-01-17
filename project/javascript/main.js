@@ -4,6 +4,8 @@ queue()
     .defer(d3.csv, "/data/depression_2015.csv")
     .await(main);
 
+var legend;
+
 // set up margins, width and height for svg
 var margin = {top: 20, right: 20, bottom: 110, left: 50},
     width = 550 - margin.left - margin.right,
@@ -38,14 +40,20 @@ var legendWidth = 110,
 var r_width = 20,
     r_height = 20;
 
-var legendLabels = ["< 3", "3 - 5", "5 - 7", "7 - 10", "10 - 15", "15 - 20", "> 20"];
-legendLabels.reverse();
+var suicideLabels = ["< 3", "3 - 5", "5 - 7", "7 - 10", "10 - 15", "15 - 20", "> 20"];
+suicideLabels.reverse();
+var depressionLabels = ["< 3.5", "3.5 - 4", "4 - 4.5", "4.5 - 5", "5 - 5.5", "5.5 - 6", "6.5 >"];
+depressionLabels.reverse();
 
 var dataset;
 var dataset2;
 var worldmap;
 var suicide_data;
 var depression_data;
+
+// datasets in map format
+var data_s = {},
+    data_d = {};
 
 colorScale = d3.scale.quantile()
     .domain(color_values)
@@ -66,17 +74,21 @@ function main(error, data, data2) {
     dataset = {};
     dataset2 = {};
 
-    var map = new Datamap({
+    var dutchmap = new Datamap({
         element: document.getElementById('nl_container'),
         scope: "gemeentes",
         geographyConfig: {
             dataUrl: "/javascript/gemeentes.topojson"
         },
+        fills: {
+          // fill for countries without data
+          defaultFill: '#9ebcda'
+        },
         setProjection: function(element) {
             var projection = d3.geo.mercator()
-                .scale(5000)
+                .scale(6500)
                 .center([0, 53])
-                .rotate([-5.8, 0])
+                .rotate([-5.5, 0.75])
                 .translate([element.offsetWidth / 2, element.offsetHeight / 2]);
             var path = d3.geo.path()
                 .projection(projection);
@@ -85,35 +97,16 @@ function main(error, data, data2) {
         },
     });
 
-    // // set up dictionary with country names to country codes
-    // var codes = {};
-    // for (var i = 0; i < country_codes.length; i++) {
-    //     codes[country_codes[i][2]] = country_codes[i][1];
-    // }
 
-    console.log(data);
-    console.log(data2);
     depression_data = data2;
     suicide_data = data;
 
-    // colorScale = d3.scale.quantile()
-    //     .domain(color_values)
-    //     .range(all_colors);
-    //
-    // colorScale2 = d3.scale.quantile()
-    //     .domain(color_values2)
-    //     .range(all_colors);
-
-    var unkown_iso = [];
     // create dataset in map format
     data.forEach(function(d) {
         d.female = +d.female;
         d.male = +d.male;
         d.suicide = +d.suicide;
         var iso = codes[d.country];
-        if (iso === undefined) {
-            unkown_iso.push(d.country);
-        }
         dataset[iso] = {
             suicide: d.suicide,
             male: d.male,
@@ -121,8 +114,6 @@ function main(error, data, data2) {
             fillColor: colorScale(d.suicide)
         };
     });
-
-    console.log(unkown_iso);
 
     data2.forEach(function(d) {
         d.depression = +d.depression * 100;
@@ -134,11 +125,21 @@ function main(error, data, data2) {
         };
     });
 
-    // console.log(dataset2);
+    // datasets for the colorscale
+    suicide_data.forEach(function(d) {
+        var iso = codes[d.country];
+        data_s[iso] = { fillColor: colorScale(d.suicide) };
+    });
+
+    depression_data.forEach(function(d) {
+        var iso = codes[d.country];
+        data_d[iso] = { fillColor: colorScale2(d.depression) };
+    });
+
 
     // create map, legend and table
     worldmap = colorMap(dataset2);
-    var legend = makeLegend();
+    makeLegend();
     var table = makeTable(data, ["country", "suicide", "male", "female"]);
 
     // sort values in table by suicide
@@ -153,13 +154,101 @@ function main(error, data, data2) {
 // change graph to selected value (depression/suicide)
 window.toggle = function(d) {
     if (d.value == "suicide") {
-        // console.log("depression");
-        updateMap();
+        updateMap("suicide");
     } else if (d.value == "depression") {
-        // console.log("suicide");
-        revertMap();
+        updateMap("depression");
     }
 };
+
+// get data from csv file
+d3.csv("/data/zelfdoding2005-2015.csv", function(error, data) {
+    if (error) throw error;
+    var dataset = {};
+
+    var year05 = [],
+        year06 = [],
+        year07 = [],
+        year08 = [],
+        year09 = [],
+        year10 = [],
+        year11 = [],
+        year12 = [],
+        year13 = [],
+        year14 = [],
+        year15 = [];
+
+    data.forEach(function(d) {
+        if (d.periode == "2005JJ00") {
+            d.zelfdoding =+ d.zelfdoding;
+            year05.push(d.zelfdoding);
+        }
+        else if (d.periode == "2006JJ00") {
+            d.zelfdoding =+ d.zelfdoding;
+            year06.push(d.zelfdoding);
+        }
+        else if (d.periode == "2007JJ00") {
+            d.zelfdoding =+ d.zelfdoding;
+            year07.push(d.zelfdoding);
+        }
+        else if (d.periode == "2008JJ00") {
+            d.zelfdoding =+ d.zelfdoding;
+            year08.push(d.zelfdoding);
+        }
+        else if (d.periode == "2009JJ00") {
+            d.zelfdoding =+ d.zelfdoding;
+            year09.push(d.zelfdoding);
+        }
+        else if (d.periode == "2010JJ00") {
+            d.zelfdoding =+ d.zelfdoding;
+            year10.push(d.zelfdoding);
+        }
+        else if (d.periode == "2011JJ00") {
+            d.zelfdoding =+ d.zelfdoding;
+            year11.push(d.zelfdoding);
+        }
+        else if (d.periode == "2012JJ00") {
+            d.zelfdoding =+ d.zelfdoding;
+            year12.push(d.zelfdoding);
+        }
+        else if (d.periode == "2013JJ00") {
+            d.zelfdoding =+ d.zelfdoding;
+            year13.push(d.zelfdoding);
+        }
+        else if (d.periode == "2014JJ00") {
+            d.zelfdoding =+ d.zelfdoding;
+            year14.push(d.zelfdoding);
+        }
+        else if (d.periode == "2015JJ00") {
+            d.zelfdoding =+ d.zelfdoding;
+            year15.push(d.zelfdoding);
+        }
+    });
+
+    var five = year05.reduce(function(a, b){return a+b;});
+    console.log(five);
+    var six = year06.reduce(function(a, b){return a+b;});
+    console.log(six);
+    var seven = year07.reduce(function(a, b){return a+b;});
+    console.log(seven);
+    var eight = year08.reduce(function(a, b){return a+b;});
+    console.log(eight);
+    var nine = year09.reduce(function(a, b){return a+b;});
+    console.log(nine);
+    var ten = year10.reduce(function(a, b){return a+b;});
+    console.log(ten);
+    var eleven = year11.reduce(function(a, b){return a+b;});
+    console.log(eleven);
+    var twelve = year12.reduce(function(a, b){return a+b;});
+    console.log(twelve);
+    var thirteen = year13.reduce(function(a, b){return a+b;});
+    console.log(thirteen);
+    var fourteen = year14.reduce(function(a, b){return a+b;});
+    console.log(fourteen);
+    var fifteen = year15.reduce(function(a, b){return a+b;});
+    // console.log(year15);
+    console.log(fifteen);
+
+});
 
 // http://ghdx.healthdata.org/gbd-results-tool?params=querytool-permalink/6a6d68f2958f34482c33ecd1f831e9e5
 // http://ghdx.healthdata.org/gbd-results-tool?params=querytool-permalink/8cf6cac732db37277625c44b2da6b12d

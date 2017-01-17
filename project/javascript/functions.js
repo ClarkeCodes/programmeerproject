@@ -17,7 +17,7 @@ function makeLegend() {
         .attr("height", legendHeight)
         .attr("id", "legendContainer");
 
-    var legend = svg.selectAll("g.legend")
+    legend = svg.selectAll("g.legend")
         .data(color_values)
         .enter().append("g")
         .attr("class", "legend");
@@ -36,16 +36,15 @@ function makeLegend() {
     legend.append("text")
         .attr("x", 45)
         .attr("y", function(d, i) { return legendHeight - (i * r_height) - r_height - 5; })
-        .text(function(d, i) { return legendLabels[i]; });
+        .text(function(d, i) { return depressionLabels[i]; });
 
-    return legend;
+    // inital legend title
+    legend.append("text")
+        .attr("id", "legendTitle")
+        .attr("x", 20)
+        .attr("y", 290)
+        .text("Depression");
 
-    // // inital legend title
-    // svg.append("text")
-    //     .attr("id", "legendTitle")
-    //     .attr("x", 20)
-    //     .attr("y", 290)
-    //     .text("Suicide");
 }
 
 // The table generation function
@@ -89,84 +88,54 @@ function makeTable(data, columns) {
 }
 
 // functions to toggle map updates
-function updateMap() {
-    // create dataset in map format
-    var new_data = {};
-    suicide_data.forEach(function(d) {
-        var iso = codes[d.country];
-        new_data[iso] = { fillColor: colorScale(d.suicide) };
-    });
-
-    // update map colors
-    console.log("updateMap");
-    console.log(new_data);
-    worldmap.updateChoropleth(new_data);
-    // updateLegend();
-    // updateTable();
-    // updateCircles();
+function updateMap(dataset) {
+    if (dataset == "suicide") {
+        worldmap.updateChoropleth(data_s);
+        updateLegend("suicide");
+    }
+    else {
+        worldmap.updateChoropleth(data_d);
+        updateLegend("depression");
+    }
 }
 
-function revertMap() {
-    // create dataset in map format
-    var new_data = {};
-    depression_data.forEach(function(d) {
-        var iso = codes[d.country];
-        new_data[iso] = { fillColor: colorScale2(d.depression) };
-    });
-
-    // change values back
-    console.log("revertMap");
-    console.log(new_data);
-    worldmap.updateChoropleth(new_data);
-    // revertLegend();
-    // revertTable();
-    // revertCircles();
-}
-
-function updateLegend() {
+function updateLegend(dataset) {
     // remove current legend labels and title
-    d3.selectAll("g.legend text")
-        .remove();
-    // d3.selectAll("#legendTitle")
-    //     .remove();
-
-    var newLabels = ["45+", "40 - 45", "35 - 40", "30 - 35", "25 - 30", "20 - 25", "15 - 20", "10 - 15", "<10"];
-    newLabels.reverse();
-
-    // add new labels to legend
-    legend.append("text")
-        .attr("x", 45)
-        .attr("y", function(d, i) { return legendHeight - (i * r_height) - r_height - 5; })
-        .text(function(d, i) { return newLabels[i]; });
-
-    // add new legend title
-    svg.append("text")
-        .attr("id", "legendTitle")
-        .attr("x", 10)
-        .attr("y", 290)
-        .text("Happy Years");
-}
-
-function revertLegend() {
-    // remove current labels and title
     d3.selectAll("g.legend text")
         .remove();
     d3.selectAll("#legendTitle")
         .remove();
 
-    // add new labels to legend
-    legend.append("text")
-        .attr("x", 45)
-        .attr("y", function(d, i) { return legendHeight - (i * r_height) - r_height - 5; })
-        .text(function(d, i) { return legendLabels[i]; });
+    if (dataset == "suicide") {
+        // add new labels to legend
+        legend.append("text")
+            .attr("x", 45)
+            .attr("y", function(d, i) { return legendHeight - (i * r_height) - r_height - 5; })
+            .text(function(d, i) { return suicideLabels[i]; });
 
-    // add new legend title
-    svg.append("text")
-        .attr("id", "legendTitle")
-        .attr("x", 20)
-        .attr("y", 290)
-        .text("HPI");
+        // add new legend title
+        legend.append("text")
+            .attr("id", "legendTitle")
+            .attr("x", 10)
+            .attr("y", 290)
+            .text("Suicide");
+    }
+    else if (dataset == "depression") {
+        // add new labels to legend
+        legend.append("text")
+            .attr("x", 45)
+            .attr("y", function(d, i) { return legendHeight - (i * r_height) - r_height - 5; })
+            .text(function(d, i) { return depressionLabels[i]; });
+
+        // add new legend title
+        legend.append("text")
+            .attr("id", "legendTitle")
+            .attr("x", 10)
+            .attr("y", 290)
+            .text("Depression");
+    }
 }
+
 
 // function that lets users search for a country
 // adapted from this example: http://www.w3schools.com/howto/howto_js_filter_table.asp

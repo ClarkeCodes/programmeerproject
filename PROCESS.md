@@ -65,3 +65,18 @@ Today I started out with restructuring the files in my repository. I created fol
 From a classmate I received a topojson map of the Netherlands, which I imported into my website to replace my SVG-map. Tomorrow I will resize the map to fit the page well, and add the data to this map as well.
 
 ![Updated world map](doc/update_world_map.png)
+
+## day 2  
+
+Based on on the fact that I have not received any data yet from Monitor Volksgezondheid (which I requested last week), I decided to change a large part of my website. Without this data, I won't be able to show the depression and suicide rates on a map of The Netherlands, like I'd originally planned. Working with data that I *have* found, I want to show several things differently on my site.
+
+First of all, I want to have a line graph next to my world map, showing the change in rates of depression over the past ten years. This line graph will be linked to the world map, clicking a country on the map will highlight a line in the graph and the other way around. The example below is a different line graph, but in the same style as the one I want to make.
+
+![Line graph example](doc/example_line_graph.png)
+
+Below this, I still want to focus on The Netherlands, but in a different way. Instead of looking at different regions in The Netherlands, I want to look at the demographics of depression and the people who commit suicide. In a grouped bar chart, I want to show the different age groups on the x-axis and the rates of depression on the y-axis. You can select whether you want to show men, women, or the the total for both. I have other data I can show, but I am still unsure how to implement this.
+
+Finally, I want to look at the health costs of depression in The Netherlands. I think I will want to display this in a pie chart, but I am not sure yet.
+
+Today I also added a button (instead of a dropdown-menu) to my worldmap, and made my legend change when a new value is selected. Before I decided to change my website idea, I also got my topojson-map of The Netherlands to work (which will now be unnecessary).
+![Update website](doc/week2_21.png) ![Update website](doc/week2_22.png)
