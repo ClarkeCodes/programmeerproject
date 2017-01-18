@@ -1,15 +1,15 @@
 #main {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 50px;
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 50px;
+    -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 #paragraph-1 {
-    max-width: 600px;
     margin: 0 auto;
+    max-width: 600px;
     padding: 50px;
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
@@ -69,11 +69,11 @@ tbody {
 
 
 #tableInput {
-    width: 70%;
     align: left;
-    font-size: 16px;
-    padding: 12px 20px 12px 40px;
     border: 1px solid #ddd;
+    font-size: 16px;
+    width: 70%;
+    padding: 12px 20px 12px 40px;
     margin-bottom: 12px;
 }
 
@@ -103,9 +103,9 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Open Sans', 'Helvetica', 'Arial', 'sans-serif';
 }
 .alt-font {
-  font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
-  text-transform: uppercase;
-  letter-spacing: 2px;
+    font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 #netherlands_map, #bar_chart {
@@ -127,8 +127,8 @@ body {
 }
 
 .container-fluid {
-  min-height: 100%;
-  overflow:auto;
+    min-height: 100%;
+    overflow:auto;
 }
 
 #switcher {
@@ -137,4 +137,18 @@ body {
 
 #switcher:focus {
     background-color: #fff;
+}
+
+path {
+    stroke: steelblue;
+    stroke-width: 2;
+    fill: none;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: grey;
+    stroke-width: 1;
+    shape-rendering: crispEdges;
 }

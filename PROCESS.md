@@ -80,3 +80,9 @@ Finally, I want to look at the health costs of depression in The Netherlands. I 
 
 Today I also added a button (instead of a dropdown-menu) to my worldmap, and made my legend change when a new value is selected. Before I decided to change my website idea, I also got my topojson-map of The Netherlands to work (which will now be unnecessary).
 ![Update website](doc/week2_21.png) ![Update website](doc/week2_22.png)
+
+## day 3
+
+Today I made a style guide with my group. After this, I made new sketches for my website and asked someone from my group for feedback on my new ideas. I got the suggestion to focus my website on the world and not The Netherlands anymore, since it would be a better story that way.
+
+After I created more sketches and decided what visualizations I was going to do differently now, I started on formatting data for the interactive line graph I want to add to the world map. I created a new file for the visualization and made a beginning with my line graph. 

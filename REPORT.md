@@ -46,4 +46,4 @@ Isa heeft een bar chart gemaakt, alleen de tekst wordt nog niet helemaal mooi we
 **Aanwezig:** Isa Leijdekkers, ShanLi Nio, Lotte Slim, Eline Jacobse  
 **Afwezig** Jan Maarten de Vries
 
-Vandaag hebben we een [Style Guide](STYLE.md) gemaakt. 
+Vandaag hebben we een [Style Guide](STYLE.md) gemaakt.
