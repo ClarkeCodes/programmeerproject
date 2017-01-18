@@ -38,3 +38,12 @@ Vandaag heeft iedereen een plan gemaakt wat hij/zij deze week af wil hebben, wel
 
 Vandaag heeft iedereen laten zien wat zij gister gedaan heeft. Eline heeft de wereldkaart af, en bij Nederland is ze al ver. Het doel vandaag is de twee kaarten af hebben voor morgen.
 Isa heeft een bar chart gemaakt, alleen de tekst wordt nog niet helemaal mooi weergegeven op haar x-as. Lotte heeft haar worldmap en bar charts gemaakt. ShanLi heeft haar wereldkaart en bar chart af, ze wil alleen nog dat de kleuren uit de wereldkaart ook in haar bar chart te zien zijn. Vandaag gaat ze aan haar supervisualisatie beginnen.
+
+## Week 2 Dag 3 - woensdag 18 januari
+
+![Selfie dag 5](doc/report/selfie_5.jpeg)
+
+**Aanwezig:** Isa Leijdekkers, ShanLi Nio, Lotte Slim, Eline Jacobse  
+**Afwezig** Jan Maarten de Vries
+
+Vandaag hebben we een [Style Guide](STYLE.md) gemaakt. 
