@@ -11,6 +11,7 @@
     <script src="/javascript/datamaps.world.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="http://d3js.org/queue.v1.min.js"></script>
+    <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
     <script src="/javascript/countries.js"></script>
     <script src="/javascript/functions.js"></script>
     <!-- <script src="/javascript/linegraph.js"></script> -->
@@ -58,11 +59,11 @@
                 <!-- <div class="col-sm-10" id="linecontainer"></div> -->
                 <h4 id="linegraph_title">Prevalence of Depression from 1995-2015</h4>
                 <div class="btn-group-xs" id="region_buttons" style="padding-left: 200px;">
-                    <button type="button" class="btn btn-default" onclick="continent(this);" value="depression">Europe and Central Asia</button>
-                    <button type="button" class="btn btn-default" onclick="continent(this);" value="suicide">East Asia and Pacific</button>
-                    <button type="button" class="btn btn-default" onclick="continent(this);" value="depression">North Africa and Middle East</button>
-                    <button type="button" class="btn btn-default" onclick="continent(this);" value="suicide">Sub-Saharan Africa</button>
-                    <button type="button" class="btn btn-default" onclick="continent(this);" value="depression">Latin America and Carribean</button>
+                    <button type="button" class="btn btn-default" onclick="lineSelect(this);" value="Europe">Europe and Central Asia</button>
+                    <button type="button" class="btn btn-default" onclick="lineSelect(this);" value="suicide">East Asia and Pacific</button>
+                    <button type="button" class="btn btn-default" onclick="lineSelect(this);" value="North Africa and Middle East">North Africa and Middle East</button>
+                    <button type="button" class="btn btn-default" onclick="lineSelect(this);" value="Sub-Saharan Africa">Sub-Saharan Africa</button>
+                    <button type="button" class="btn btn-default" onclick="lineSelect(this);" value="Latin America">Latin America and Carribean</button>
                 </div>
                 <div id="linecontainer">
 

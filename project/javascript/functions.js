@@ -176,6 +176,8 @@ function makeBarchart() {
 
 }
 
+var highlightLine;
+
 function makeLinegraph() {
 
     // set up margins, width and height for svg
@@ -225,8 +227,8 @@ function makeLinegraph() {
 
         console.log(data);
 
-        var focus = svg.append("g")
-            .style("display", "none");
+        // var focus = svg.append("g")
+        //     .style("display", "none");
 
         // scale the range of the data
         x.domain(d3.extent(data, function(d) { return d.year; }));
@@ -249,26 +251,41 @@ function makeLinegraph() {
         //         .attr("id", d.key)
         //         .attr("d", valueline(d.values));
         // });
+        // var focus = this;
+
+        focus.legendtip = d3.tip()
+            .attr('class', 'd3-tip')
+            .offset([-10, 0])
+            .html(function (d) {
+                return d.country ;
+            });
 
         var countries = svg.selectAll(".country")
             .data(dataNest, function(d) { return d.key; })
            .enter().append("g")
+            .attr("id", function(d) { return d.key; })
+            // .attr("id", function(d) { return d.values["0"].continent; })
             .attr("class", "country");
 
         countries.append("path")
+            .attr("id", function(d) {return d.values["0"].continent; })
             .attr("class", "line")
+            // .attr("id", function(d) { return d.continent; })
             .attr("d", function(d) { return valueline(d.values); });
+
+        // focus.svg.call(focus.legendtip);
 
         svg.selectAll(".line")
             .on("mouseover", function() {
                 d3.select(this)
+                    .attr("z-index", "100")
                     .style("stroke", "steelblue")
-                    .style("stroke-width", "3px")
-                    .append("text")
-                    .attr("class", "country_name")
-                    .attr("dx", 8)
-                    .attr("dy", "-.3em")
-                    .text(function(d) { return d.country; });
+                    .style("stroke-width", "3px");
+                    // .append("text")
+                    // .attr("class", "country_name")
+                    // .attr("dx", 8)
+                    // .attr("dy", "-.3em")
+                    // .text(function(d) { return d.country; });
                 })
             .on("mouseout", function () {
                 d3.select(this)
@@ -286,7 +303,18 @@ function makeLinegraph() {
             .attr("class", "y axis")
             .call(yAxis);
 
+        highlightLine = function(continent) {
+            var continent_path = "path#" + continent + ".line";
+            console.log(continent_path);
+            svg.selectAll(continent_path)
+                .style("stroke", "red");
+
+            console.log(test);
+        };
     });
-
-
 }
+
+// // change graph to selected value (depression/suicide)
+// window.lineSelect = function(d) {
+//     highlightLine(d.value);
+// };

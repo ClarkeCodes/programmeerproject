@@ -47,3 +47,11 @@ Isa heeft een bar chart gemaakt, alleen de tekst wordt nog niet helemaal mooi we
 **Afwezig** Jan Maarten de Vries
 
 Vandaag hebben we een [Style Guide](STYLE.md) gemaakt.
+
+## Week 2 Dag 4 - donderdag 19 januari
+
+![Selfie dag 5](doc/report/selfie_6.jpeg)
+
+**Aanwezig:** Isa Leijdekkers, ShanLi Nio, Lotte Slim, Eline Jacobse, Jan Maarten de Vries
+
+We hebben de [Style Guide](STYLE.md) gecheckt.

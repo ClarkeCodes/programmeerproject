@@ -85,4 +85,16 @@ Today I also added a button (instead of a dropdown-menu) to my worldmap, and mad
 
 Today I made a style guide with my group. After this, I made new sketches for my website and asked someone from my group for feedback on my new ideas. I got the suggestion to focus my website on the world and not The Netherlands anymore, since it would be a better story that way.
 
-After I created more sketches and decided what visualizations I was going to do differently now, I started on formatting data for the interactive line graph I want to add to the world map. I created a new file for the visualization and made a beginning with my line graph. 
+After I created more sketches and decided what visualizations I was going to do differently now, I started on formatting data for the interactive line graph I want to add to the world map. I created a new file for the visualization and made a beginning with my line graph.
+
+## day 4
+
+I spent a large part of today formatting my dataset to create a line graph of depression from 1995-2015 around the world. I had trouble with this graph, because the line went from 1995 to 2005 and back to 2000, instead of doing this chronolically. I managed to find the problem and fix it, and finished the inital linegraph. I added buttons for the different continents, which allow you to highlight lines representing countries of a region in the linegraph. So far this works for the region of Europe and Central Asia, the rest of it I still have to fix.
+
+Tomorrow I want to finish this part of the line graph and link it to my world map. I also want to start on my last visualizations.
+
+![Update website](doc/worldmap_week2_4.png)![Update website](doc/linegraph_week2_4.png)
+
+And with one region selected:
+
+![Line graph highlighted](doc/linegraphHighlight_week2_4.png)
