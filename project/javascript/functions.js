@@ -44,7 +44,6 @@ function makeLegend() {
         .attr("x", 20)
         .attr("y", 290)
         .text("Depression");
-
 }
 
 // The table generation function
@@ -160,11 +159,134 @@ function searchTable() {
     }
 }
 
-// function dutchMap() {
-//     var map = new Datamap({
-//         element: document.getElementById('nl_container'),
-//         geographyConfig: {
-//             dataUrl: 'javascript/gemeentes.topojson'
-//         },
-//     });
-// }
+function makeBarchart() {
+
+    // set up margins, width and height for the barchart
+    var margin = {top: 20, right: 20, bottom: 110, left: 50},
+        width = 550 - margin.left - margin.right,
+        height = 400 - margin.top - margin.bottom;
+
+    // create svg with the specified size
+    var svg = d3.select("#barcontainer").append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+        .attr("class", "barchart")
+        .append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+}
+
+function makeLinegraph() {
+
+    // set up margins, width and height for svg
+    var margin = {top: 40, right: 50, bottom: 80, left: 50},
+        width = 850 - margin.left - margin.right,
+        height = 550 - margin.top - margin.bottom;
+
+    // Parse the date / time
+    var parseDate = d3.time.format("%Y").parse;
+
+    // set the ranges
+    var x = d3.time.scale()
+        .range([0, width]);
+    var y = d3.scale.linear()
+        .range([height, 0]);
+
+    // define the axes
+    var xAxis = d3.svg.axis().scale(x)
+        .orient("bottom").ticks(6);
+    var yAxis = d3.svg.axis().scale(y)
+        .orient("left").ticks(10);
+
+    // create svg with the specified size
+    var svg = d3.select("#linecontainer")
+        .append("svg")
+          .attr("width", width + margin.left + margin.right)
+          .attr("height", height + margin.top + margin.bottom)
+          .attr("class", "linegraph")
+        .append("g")
+          .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+    // Define the line
+    var valueline = d3.svg.line()
+        .x(function(d) { return x(d.year); })
+        .y(function(d) { return y(d.depression); });
+
+    // get data from csv file
+    d3.csv("/data/prevalence_depression_1995-2015.csv", function(error, data) {
+        if (error) throw error;
+
+        data.forEach(function(d) {
+            d.depression = +d.depression;
+            // d.year = +d.year;
+            d.year = parseDate(d.year);
+            console.log(d.year);
+        });
+
+        console.log(data);
+
+        var focus = svg.append("g")
+            .style("display", "none");
+
+        // scale the range of the data
+        x.domain(d3.extent(data, function(d) { return d.year; }));
+        // x.domain(data.map(function(d) { return d.year; }));
+        var minimum = d3.min(data, function(d) { return d.depression; });
+        y.domain([minimum, d3.max(data, function(d) { return d.depression; }) ]);
+
+        // Nest the entries by symbol
+        var dataNest = d3.nest()
+            // .key(function(d) {return d.year;})
+            .key(function(d) {return d.country;})
+            .entries(data);
+
+        console.log(dataNest);
+
+        // Loop through each symbol / key
+        // dataNest.forEach(function(d) {
+        //     svg.append("path")
+        //         .attr("class", "line")
+        //         .attr("id", d.key)
+        //         .attr("d", valueline(d.values));
+        // });
+
+        var countries = svg.selectAll(".country")
+            .data(dataNest, function(d) { return d.key; })
+           .enter().append("g")
+            .attr("class", "country");
+
+        countries.append("path")
+            .attr("class", "line")
+            .attr("d", function(d) { return valueline(d.values); });
+
+        svg.selectAll(".line")
+            .on("mouseover", function() {
+                d3.select(this)
+                    .style("stroke", "steelblue")
+                    .style("stroke-width", "3px")
+                    .append("text")
+                    .attr("class", "country_name")
+                    .attr("dx", 8)
+                    .attr("dy", "-.3em")
+                    .text(function(d) { return d.country; });
+                })
+            .on("mouseout", function () {
+                d3.select(this)
+                    .style("stroke", "#eee")
+                    .style("stroke-width", "1px"); });
+
+        // Add the X Axis
+        svg.append("g")
+            .attr("class", "x axis")
+            .attr("transform", "translate(0," + height + ")")
+            .call(xAxis);
+
+        // Add the Y Axis
+        svg.append("g")
+            .attr("class", "y axis")
+            .call(yAxis);
+
+    });
+
+
+}

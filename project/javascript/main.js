@@ -6,26 +6,15 @@ queue()
 
 var legend;
 
-// set up margins, width and height for svg
-var margin = {top: 20, right: 20, bottom: 110, left: 50},
-    width = 550 - margin.left - margin.right,
-    height = 400 - margin.top - margin.bottom;
+
 
 // create svg with the specified size
-var svg = d3.select("#barcontainer").append("svg")
-    .attr("width", width + margin.left + margin.right)
-    .attr("height", height + margin.top + margin.bottom)
-    .attr("class", "barchart")
-    .append("g")
-    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
-// create svg with the specified size
-var svg = d3.select("#linecontainer").append("svg")
-    .attr("width", width + margin.left + margin.right)
-    .attr("height", height + margin.top + margin.bottom)
-    .attr("class", "barchart")
-    .append("g")
-    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+// var svg = d3.select("#linecontainer").append("svg")
+//     .attr("width", width + margin.left + margin.right)
+//     .attr("height", height + margin.top + margin.bottom)
+//     .attr("class", "barchart")
+//     .append("g")
+//     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 // all colors to be used for the data (source: http://colorbrewer2.org/)
 var all_colors = ['#ffffb2','#fed976','#feb24c','#fd8d3c','#fc4e2a','#e31a1c','#b10026'];
@@ -148,6 +137,9 @@ function main(error, data, data2) {
     // format table header
     table.selectAll("thead th")
         .text(function(column) { return column.charAt(0).toUpperCase() + column.substr(1); });
+
+    makeBarchart();
+    makeLinegraph();
 
 }
 

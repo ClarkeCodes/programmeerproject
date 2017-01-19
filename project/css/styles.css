@@ -140,8 +140,8 @@ body {
 }
 
 path {
-    stroke: steelblue;
-    stroke-width: 2;
+    stroke: #eee;
+    stroke-width: 1;
     fill: none;
 }
 
@@ -150,5 +150,33 @@ path {
     fill: none;
     stroke: grey;
     stroke-width: 1;
+    opacity: 0.8;
     shape-rendering: crispEdges;
+}
+
+#linecontainer {
+    align: center;
+    margin: auto;
+    position: relative;
+    margin-bottom: 0;
+    top: -140px;
+    width: 850px;
+    /*position: absolute;;*/
+}
+.linegraph {
+    margin: 0 auto;
+    align: center;
+    /*position: absolute;;*/
+}
+
+h4#linegraph_title {
+    position: relative;
+    top: -140px;
+}
+
+#region_buttons {
+    position: relative;
+    top: -140px;
+    margin: auto;
+    align: center;
 }

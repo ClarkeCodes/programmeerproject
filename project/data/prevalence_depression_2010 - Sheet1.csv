@@ -1,0 +1,196 @@
+country,continent,year,depression
+Afghanistan,North Africa and Middle East ,2010,3.14
+Albania,Europe,2010,4.6
+Algeria,North Africa and Middle East ,2010,4.51
+American Samoa,Oceania,2010,3.13
+Andorra,Europe,2010,5.12
+Angola,Sub-Saharan Africa,2010,3.62
+Antigua and Barbuda,Latin America,2010,4.94
+Argentina,Latin America,2010,4.7
+Armenia,Central Asia,2010,4.77
+Australia,Australasia ,2010,5.98
+Austria,Europe,2010,5.06
+Azerbaijan,Central Asia,2010,4.48
+Bahrain,North Africa and Middle East ,2010,4.83
+Bangladesh,South Asia,2010,3.91
+Barbados,Latin America,2010,5.34
+Belarus,Europe,2010,5.51
+Belgium,Europe,2010,4.81
+Belize,Latin America,2010,4.2
+Benin,Sub-Saharan Africa,2010,3.79
+Bermuda,Latin America,2010,5
+Bhutan,South Asia,2010,3.98
+Bolivia,Latin America,2010,4.24
+Bosnia and Herzegovina,Europe,2010,5.03
+Botswana,Sub-Saharan Africa,2010,4.54
+Brazil,Latin America,2010,5.89
+Brunei,Asia Pacific,2010,3.93
+Bulgaria,Europe,2010,5.09
+Burkina Faso,Sub-Saharan Africa,2010,3.57
+Burundi,Sub-Saharan Africa,2010,4.2
+Cambodia,Southeast Asia,2010,3.28
+Cameroon,Sub-Saharan Africa,2010,3.81
+Canada,North America,2010,4.61
+Cape Verde,Sub-Saharan Africa,2010,4.8
+Central African Republic,Sub-Saharan Africa,2010,4.08
+Chad,Sub-Saharan Africa,2010,3.48
+Chile,Latin America,2010,4.92
+China,Southeast Asia,2010,4.11
+Colombia,Latin America,2010,4.61
+Comoros,Sub-Saharan Africa,2010,4.32
+Congo,Sub-Saharan Africa,2010,3.97
+Costa Rica,Latin America,2010,4.59
+Cote d'Ivoire,Sub-Saharan Africa,2010,3.73
+Croatia,Europe,2010,5.08
+Cuba,Latin America,2010,5.39
+Cyprus,Europe,2010,5
+Czech Republic,Europe,2010,5.16
+Democratic Republic of the Congo,Sub-Saharan Africa,2010,3.75
+Denmark,Europe,2010,4.94
+Djibouti,Sub-Saharan Africa,2010,4.93
+Dominica,Latin America,2010,4.87
+Dominican Republic,Latin America,2010,4.56
+Ecuador,Latin America,2010,4.48
+Egypt,North Africa and Middle East ,2010,3.43
+El Salvador,Latin America,2010,4.2
+Equatorial Guinea,Sub-Saharan Africa,2010,4.14
+Eritrea,Sub-Saharan Africa,2010,4.33
+Estonia,Europe,2010,5.98
+Ethiopia,Sub-Saharan Africa,2010,4.47
+Federated States of Micronesia,Oceania,2010,3.04
+Fiji,Oceania,2010,3.45
+Finland,Europe,2010,5.67
+France,Europe,2010,4.86
+Gabon,Sub-Saharan Africa,2010,4.27
+Georgia,Central Asia,2010,4.96
+Germany,Europe,2010,5.13
+Ghana,Sub-Saharan Africa,2010,4.11
+Greece,Europe,2010,5.78
+Greenland,North America,2010,4.33
+Grenada,Latin America,2010,4.63
+Guam,Oceania,2010,3.77
+Guatemala,Latin America,2010,3.55
+Guinea,Sub-Saharan Africa,2010,3.81
+Guinea-Bissau,Sub-Saharan Africa,2010,3.95
+Guyana,Latin America,2010,4.28
+Haiti,Latin America,2010,4.15
+Honduras,Latin America,2010,3.75
+Hungary,Europe,2010,5.06
+Iceland,Europe,2010,4.04
+India,South Asia,2010,4.34
+Indonesia,Southeast Asia,2010,3.6
+Iran,North Africa and Middle East ,2010,4.74
+Iraq,North Africa and Middle East,2010,3.71
+Ireland,Europe,2010,4.9
+Israel,Europe,2010,4.76
+Italy,Europe,2010,5.18
+Jamaica,Latin America,2010,4.64
+Japan,Asia Pacific,2010,4.2
+Jordan,North Africa and Middle East ,2010,3.94
+Kazakhstan,Central Asia,2010,4.4
+Kenya,Sub-Saharan Africa,2010,4.32
+Kiribati,Oceania,2010,3.11
+Kuwait,North Africa and Middle East,2010,4.89
+Kyrgyzstan,Central Asia,2010,4.09
+Laos,Southeast Asia,2010,3.08
+Latvia,Europe,2010,4.83
+Lebanon,North Africa and Middle East,2010,4.64
+Lesotho,Sub-Saharan Africa,2010,4.68
+Liberia,Sub-Saharan Africa,2010,3.46
+Libya,North Africa and Middle East,2010,4.48
+Lithuania,Europe,2010,5.5
+Luxembourg,Europe,2010,5.02
+Macedonia,Europe,2010,4.87
+Madagascar,Sub-Saharan Africa,2010,4.24
+Malawi,Sub-Saharan Africa,2010,4
+Malaysia,Southeast Asia,2010,3.65
+Maldives,Southeast Asia,2010,3.54
+Mali,Sub-Saharan Africa,2010,3.59
+Malta,Europe,2010,5
+Marshall Islands,Oceania,2010,2.97
+Mauritania,Sub-Saharan Africa,2010,4.03
+Mauritius,Southeast Asia,2010,4.19
+Mexico,Latin America,2010,4.02
+Moldova,Europe,2010,5.3
+Mongolia,Central Asia,2010,4.23
+Montenegro,Europe,2010,4.78
+Morocco,North Africa and Middle East ,2010,4.44
+Mozambique,Sub-Saharan Africa,2010,4.06
+Myanmar,Southeast Asia,2010,3.55
+Namibia,Sub-Saharan Africa,2010,4.33
+Nepal,South Asia,2010,3.03
+Netherlands,Europe,2010,4.74
+New Zealand,Australasia ,2010,5.36
+Nicaragua,Latin America,2010,4.02
+Niger,Sub-Saharan Africa,2010,3.45
+Nigeria,Sub-Saharan Africa,2010,4.04
+North Korea,Southeast Asia,2010,3.58
+Northern Mariana Islands,Oceania,2010,3.84
+Norway,Europe,2010,4.72
+Oman,North Africa and Middle East ,2010,4.37
+Pakistan,South Asia,2010,4.09
+Palestine,North Africa and Middle East ,2010,4.85
+Panama,Latin America,2010,4.3
+Papua New Guinea,Oceania,2010,2.91
+Paraguay,Latin America,2010,5.09
+Peru,Latin America,2010,4.65
+Philippines,Southeast Asia,2010,3.22
+Poland,Europe,2010,4.99
+Portugal,Europe,2010,5.64
+Puerto Rico,Latin America,2010,5.29
+Qatar,North Africa and Middle East,2010,5.15
+Romania,Europe,2010,4.95
+Russia,Europe,2010,5.45
+Rwanda,Sub-Saharan Africa,2010,3.72
+Saint Lucia,Latin America,2010,4.83
+Saint Vincent and the Grenadines,Latin America,2010,4.74
+Samoa,Oceania,2010,3.13
+Sao Tome and Principe,Sub-Saharan Africa,2010,3.84
+Saudi Arabia,North Africa and Middle East,2010,4.35
+Senegal,Sub-Saharan Africa,2010,3.86
+Serbia,Europe,2010,4.92
+Seychelles,Southeast Asia,2010,3.89
+Sierra Leone,Sub-Saharan Africa,2010,3.8
+Singapore,Asia Pacific,2010,4.6
+Slovakia,Europe,2010,5.02
+Slovenia,Europe,2010,5.13
+Solomon Islands,Oceania,2010,2.84
+Somalia,Sub-Saharan Africa,2010,3.95
+South Africa,Sub-Saharan Africa,2010,4.39
+South Korea,Asia Pacific,2010,4.04
+South Sudan,Sub-Saharan Africa,2010,4.36
+Spain,Europe,2010,5.24
+Sri Lanka,Southeast Asia,2010,3.95
+Sudan,North Africa and Middle East ,2010,3.46
+Suriname,Latin America,2010,4.69
+Swaziland,Sub-Saharan Africa,2010,4.11
+Sweden,Europe,2010,4.89
+Switzerland,Europe,2010,4.96
+Syria,North Africa and Middle East ,2010,4.02
+Taiwan,Southeast Asia,2010,3.71
+Tajikistan,Central Asia,2010,3.74
+Tanzania,Sub-Saharan Africa,2010,4.1
+Thailand,Southeast Asia,2010,4.26
+The Bahamas,Latin America,2010,5.1
+Gambia,Sub-Saharan Africa,2010,3.89
+East Timor,Southeast Asia,2010,2.93
+Togo,Sub-Saharan Africa,2010,3.86
+Tonga,Oceania,2010,3.15
+Trinidad and Tobago,Latin America,2010,5.17
+Tunisia,North Africa and Middle East,2010,4.84
+Turkey,North Africa and Middle East,2010,4.3
+Turkmenistan,Central Asia,2010,4.12
+Uganda,Sub-Saharan Africa,2010,4.56
+Ukraine,Europe,2010,6.24
+United Arab Emirates,North Africa and Middle East,2010,5.05
+United Kingdom,Europe,2010,4.37
+United States of America,North America,2010,5.62
+Uruguay,Latin America,2010,4.91
+Uzbekistan,Central Asia,2010,4.15
+Vanuatu,Oceania,2010,3.04
+Venezuela,Latin America,2010,4.09
+Vietnam,Southeast Asia,2010,3.9
+"Virgin Islands, U.S.",Latin America,2010,5.29
+Yemen,North Africa and Middle East ,2010,3.42
+Zambia,Sub-Saharan Africa,2010,3.98
+Zimbabwe,Sub-Saharan Africa,2010,3.99

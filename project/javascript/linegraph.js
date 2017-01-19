@@ -1,16 +1,16 @@
 // set up margins, width and height for svg
-var margin = {top: 40, right: 80, bottom: 80, left: 80},
-    width = 750 - margin.left - margin.right,
-    height = 550 - margin.top - margin.bottom;
+var margin = {top: 40, right: 50, bottom: 80, left: 50},
+    graphWidth = 850 - margin.left - margin.right,
+    graphHeight = 550 - margin.top - margin.bottom;
 
 // Parse the date / time
 var parseDate = d3.time.format("%Y").parse;
 
 // set the ranges
 var x = d3.time.scale()
-    .range([0, width]);
+    .range([0, graphWidth]);
 var y = d3.scale.linear()
-    .range([height, 0]);
+    .range([graphHeight, 0]);
 
 // define the axes
 var xAxis = d3.svg.axis().scale(x)
@@ -21,8 +21,8 @@ var yAxis = d3.svg.axis().scale(y)
 // create svg with the specified size
 var svg = d3.select("#linecontainer")
     .append("svg")
-      .attr("width", width + margin.left + margin.right)
-      .attr("height", height + margin.top + margin.bottom)
+      .attr("width", graphWidth + margin.left + margin.right)
+      .attr("height", graphHeight + margin.top + margin.bottom)
       .attr("class", "linegraph")
     .append("g")
       .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
@@ -34,7 +34,7 @@ var valueline = d3.svg.line()
 
 
 // get data from csv file
-d3.csv("data/prevalence_depression_1995-2015.csv", function(error, data) {
+d3.csv("data/Copy of prevalence_depression_1995-2015 - Sheet1.csv", function(error, data) {
     if (error) throw error;
     var dataset = {};
 
@@ -47,8 +47,11 @@ d3.csv("data/prevalence_depression_1995-2015.csv", function(error, data) {
 
     // Nest the entries by symbol
     var dataNest = d3.nest()
+        .key(function(d) {return d.year;})
         .key(function(d) {return d.country;})
         .entries(data);
+
+    console.log(dataNest);
 
     // Loop through each symbol / key
     dataNest.forEach(function(d) {
@@ -60,7 +63,7 @@ d3.csv("data/prevalence_depression_1995-2015.csv", function(error, data) {
     // Add the X Axis
     svg.append("g")
         .attr("class", "x axis")
-        .attr("transform", "translate(0," + height + ")")
+        .attr("transform", "translate(0," + graphHeight + ")")
         .call(xAxis);
 
     // Add the Y Axis

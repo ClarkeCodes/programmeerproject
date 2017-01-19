@@ -13,7 +13,7 @@
     <script src="http://d3js.org/queue.v1.min.js"></script>
     <script src="/javascript/countries.js"></script>
     <script src="/javascript/functions.js"></script>
-    <script src="/javascript/linegraph.js"></script>
+    <!-- <script src="/javascript/linegraph.js"></script> -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
@@ -38,7 +38,7 @@
             <!-- <div class="row">
                 <div class="col-md-2"></div> -->
                 <!-- <div class="col-md-3" > -->
-                    <div class = "btn-group">
+                    <div class = "btn-group-sm">
                         <button type="button" class="btn btn-default" id="switcher" onclick="toggle(this);" value="depression">Depression</button>
                         <button type="button" class="btn btn-default" id="switcher" onclick="toggle(this);" value="suicide">Suicide</button>
                     </div>
@@ -53,14 +53,25 @@
                 <!-- <div class="col-md-7"></div> -->
             <!-- </div> -->
             <div id="mapcontainer" style="width: 850px; height: 650px;"></div>
-            <div class="row">
-                <div class="col-sm-1"></div>
-                <div class="col-sm-10" id="linecontainer"></div>
-                <div class="col-sm-1"></div>
-            </div>
+            <!-- <div class="row"> -->
+                <!-- <div class="col-sm-1"></div> -->
+                <!-- <div class="col-sm-10" id="linecontainer"></div> -->
+                <h4 id="linegraph_title">Prevalence of Depression from 1995-2015</h4>
+                <div class="btn-group-xs" id="region_buttons" style="padding-left: 200px;">
+                    <button type="button" class="btn btn-default" onclick="continent(this);" value="depression">Europe and Central Asia</button>
+                    <button type="button" class="btn btn-default" onclick="continent(this);" value="suicide">East Asia and Pacific</button>
+                    <button type="button" class="btn btn-default" onclick="continent(this);" value="depression">North Africa and Middle East</button>
+                    <button type="button" class="btn btn-default" onclick="continent(this);" value="suicide">Sub-Saharan Africa</button>
+                    <button type="button" class="btn btn-default" onclick="continent(this);" value="depression">Latin America and Carribean</button>
+                </div>
+                <div id="linecontainer">
+
+                </div>
+                <!-- <div class="col-sm-1"></div> -->
+            <!-- </div> -->
             <!-- <img src="linegraph.png" alt="Linegraph" style="align-center; margin: 0 auto;"> -->
         </section>
-        <div class="row row-sm-margin" id="netherlands_map">
+        <div class="row" id="netherlands_map">
             <div class="col-sm-12"><h3 class="display-4">Depression and Suicide in The Netherlands</h3></div>
             <div class="row" id="nl_text">
                 <div class="col-sm-3"></div>
@@ -78,18 +89,18 @@
                 </div>
             </div>
         </div>
-        <div class="row row-sm-margin" id="line_graph">
+        <div class="row" id="line_graph">
             <div class="col-sm-3"></div>
             <div class="col-sm-6"><h3 class="display-4">Who get Depressed and Why?</h3><br>
                 This is text about depression in The Netherlands. Every 40 seconds someone dies of suicide. Depression, the main cause of suicide, is a problem that will affect one out of every five people during their lifetime.</div>
             <div class="col-sm-3"></div>
             <div class="row">
-                <div class="col-sm-1"></div>
-                <div class="col-sm-10" id="linecontainer"></div>
-                <div class="col-sm-1"></div>
+                <!-- <div class="col-sm-1"></div> -->
+                <!-- <div class="col-sm-10" id="linecontainer"></div> -->
+                <!-- <div class="col-sm-1"></div> -->
             </div>
         </div>
-        <div class="row row-sm-margin bottom-row" id="bar_chart">
+        <div class="row bottom-row" id="bar_chart">
             <div class="col-sm-3"></div>
             <div class="col-sm-6"><h3 class="display-4">What Depression Costs</h3><br>
                 This is text about depression in The Netherlands. Every 40 seconds someone dies of suicide. Depression, the main cause of suicide, is a problem that will affect one out of every five people during their lifetime.</div>
