@@ -98,3 +98,11 @@ Tomorrow I want to finish this part of the line graph and link it to my world ma
 And with one region selected:
 
 ![Line graph highlighted](doc/linegraphHighlight_week2_4.png)
+
+## day 5
+
+I slightly formatted my dataset to work with the line graph (selecting continents). I also made a quick new sketch for myself of the new layout I had in mind.
+
+![Sketch](doc/sketch_week2_5.jpg)
+
+Before Monday, I want to have finished formatting my final datasets for all the visualizations and finalize my idea for the new visualizations.
