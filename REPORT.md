@@ -55,3 +55,12 @@ Vandaag hebben we een [Style Guide](STYLE.md) gemaakt.
 **Aanwezig:** Isa Leijdekkers, ShanLi Nio, Lotte Slim, Eline Jacobse, Jan Maarten de Vries
 
 We hebben de [Style Guide](STYLE.md) gecheckt.
+
+## Week 3 Dag 1 - maandag 23 januari
+
+![Selfie dag 7](doc/report/selfie_7.jpeg)
+
+**Aanwezig:** ShanLi Nio, Lotte Slim, Jan Maarten de Vries, Eline Jacobse
+**Afwezig** Isa Leijdekkers
+
+We hebben onze plannen voor deze week besproken. Lotte wil vandaag de interactiviteit van haar wereldkaart met de barcharts en de tabel afmaken. Ze heeft ook nog meer data van verschillende jaren gevonden, dus als ze de rest van haar visualisatie helemaal af heeft wil ze misschien nog een time slider maken. Jan Maarten gaat vandaag het laatste van zijn data verzamelen en werkt deze week aan zijn pie chart over verschillende albums. ShanLi wil vandaag haar zoekfunctie voor bacteriën maken en verder de rest van haar visualisaties afmaken. Eline gaat vandaag haar line graph helemaal afmaken, en wil definitief besluiten welke visualisaties in ieder geval gemaakt moeten worden en welke optioneel zijn.

@@ -63,30 +63,6 @@ function main(error, data, data2) {
     dataset = {};
     dataset2 = {};
 
-    var dutchmap = new Datamap({
-        element: document.getElementById('nl_container'),
-        scope: "gemeentes",
-        geographyConfig: {
-            dataUrl: "/javascript/gemeentes.topojson"
-        },
-        fills: {
-          // fill for countries without data
-          defaultFill: '#9ebcda'
-        },
-        setProjection: function(element) {
-            var projection = d3.geo.mercator()
-                .scale(6500)
-                .center([0, 53])
-                .rotate([-5.5, 0.75])
-                .translate([element.offsetWidth / 2, element.offsetHeight / 2]);
-            var path = d3.geo.path()
-                .projection(projection);
-
-            return {path: path, projection: projection};
-        },
-    });
-
-
     depression_data = data2;
     suicide_data = data;
 
@@ -154,8 +130,8 @@ window.toggle = function(d) {
 
 // change graph to selected value (depression/suicide)
 window.lineSelect = function(d) {
-    console.log(d.value);
-    highlightLine(d.value);
+    var button = document.getElementById('btn' + d.value);
+    highlightLine(button, d.value);
 };
 
 // http://ghdx.healthdata.org/gbd-results-tool?params=querytool-permalink/6a6d68f2958f34482c33ecd1f831e9e5

@@ -244,15 +244,6 @@ function makeLinegraph() {
 
         console.log(dataNest);
 
-        // Loop through each symbol / key
-        // dataNest.forEach(function(d) {
-        //     svg.append("path")
-        //         .attr("class", "line")
-        //         .attr("id", d.key)
-        //         .attr("d", valueline(d.values));
-        // });
-        // var focus = this;
-
         focus.legendtip = d3.tip()
             .attr('class', 'd3-tip')
             .offset([-10, 0])
@@ -274,13 +265,17 @@ function makeLinegraph() {
             .attr("d", function(d) { return valueline(d.values); });
 
         // focus.svg.call(focus.legendtip);
+        var lineColor;
 
         svg.selectAll(".line")
             .on("mouseover", function() {
-                d3.select(this)
+                var element = d3.select(this)
                     .attr("z-index", "100")
-                    .style("stroke", "steelblue")
-                    .style("stroke-width", "3px");
+                    .style("stroke", function() {
+                        lineColor = getStyle(d3.select(this)[0][0], 'stroke');
+                        return "#000";
+                    })
+                    .style("stroke-width", "2px");
                     // .append("text")
                     // .attr("class", "country_name")
                     // .attr("dx", 8)
@@ -289,7 +284,15 @@ function makeLinegraph() {
                 })
             .on("mouseout", function () {
                 d3.select(this)
-                    .style("stroke", "#eee")
+                    .style("stroke", function() {
+                        if (lineColor != "#000") {
+                            return lineColor;
+                        }
+                        else {
+                            return '#eee';
+                        }
+                    })
+                    // .style("stroke", "#eee")
                     .style("stroke-width", "1px"); });
 
         // Add the X Axis
@@ -303,18 +306,98 @@ function makeLinegraph() {
             .attr("class", "y axis")
             .call(yAxis);
 
-        highlightLine = function(continent) {
-            var continent_path = "path#" + continent + ".line";
-            console.log(continent_path);
-            svg.selectAll(continent_path)
-                .style("stroke", "red");
+        var continentColors = {
+            Europe:'#ED7C31',
+            EastAsia: '#00BBD6',
+            SouthAsia:'#6E9E75',
+            NorthAfrica:'#E25f82',
+            SubSaharan:'#895881',
+            LatinAmerica:'#82A5C0',
+            NorthAmerica:'#BE1932'
+        };
 
-            console.log(test);
+        highlightLine = function(button, continent) {
+            var continent_path = "path#" + continent + ".line";
+            var newColor = continentColors[continent];
+
+            // change button color when clicked
+            if (button.style.color === "" ||
+                button.style.color == 'rgb(51, 51, 51)') {
+                console.log("test");
+                button.style.color = '#FFF';
+                button.style.backgroundColor = newColor;
+                svg.selectAll(continent_path)
+                    .style("stroke", newColor);
+            }
+            // change button back to original color
+            else {
+                button.style.color = '#333';
+                button.style.backgroundColor = '#FFF';
+                svg.selectAll(continent_path)
+                    .style("stroke", '#eee');
+
+            }
+
         };
     });
 }
+
+function getStyle(element, property) {
+    return window.getComputedStyle(element, null).getPropertyValue(property);
+}
+
+// source: http://haacked.com/archive/2009/12/29/convert-rgb-to-hex.aspx/
+function colorToHex(color) {
+    if (color.substr(0, 1) === '#') {
+        return color;
+    }
+    var digits = /(.*?)rgb\((\d+), (\d+), (\d+)\)/.exec(color);
+
+    var red = parseInt(digits[2]);
+    var green = parseInt(digits[3]);
+    var blue = parseInt(digits[4]);
+
+    var rgb = blue | (green << 8) | (red << 16);
+    return digits[1] + '#' + rgb.toString(16);
+}
+
+// var borderWidth = getStyle(box, 'border-width');
 
 // // change graph to selected value (depression/suicide)
 // window.lineSelect = function(d) {
 //     highlightLine(d.value);
 // };
+
+// if (colorToHex(button.style.backgroundColor) == newColor) {
+//     button.style.color = '#333';
+//     button.style.backgroundColor = '#FFF';
+//     svg.selectAll(continent_path)
+//         .style("stroke", '#eee');
+// }
+// else {
+//     button.style.color = '#FFF';
+//     button.style.backgroundColor = newColor;
+//     svg.selectAll(continent_path)
+//         .style("stroke", newColor);
+//
+// }
+// console.log(continent_path);
+// // console.log(newColor);
+// button.style.color = '#FFF';
+// button.style.backgroundColor = newColor;
+// var test = svg.selectAll(continent_path);
+// test = test[0][0];
+// // console.log(test);
+// svg.selectAll(continent_path)
+//     .style("stroke", function() {
+//         var currColor = colorToHex(getStyle(test, 'stroke')).toUpperCase();
+//
+//         // console.log("New Color: " + newColor);
+//         // console.log("Current Color: " + currColor);
+//         if (currColor == newColor) {
+//             return '#eee';
+//         }
+//         else {
+//             return newColor;
+//         }
+//     });

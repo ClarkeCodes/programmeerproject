@@ -24,11 +24,11 @@ Andorra,Europe,2000,5.1
 Andorra,Europe,2005,5.13
 Andorra,Europe,2010,5.12
 Andorra,Europe,2015,5.13
-Angola,Sub-Saharan,1995,3.67
-Angola,Sub-Saharan,2000,3.66
-Angola,Sub-Saharan,2005,3.63
-Angola,Sub-Saharan,2010,3.62
-Angola,Sub-Saharan,2015,3.65
+Angola,SubSaharan,1995,3.67
+Angola,SubSaharan,2000,3.66
+Angola,SubSaharan,2005,3.63
+Angola,SubSaharan,2010,3.62
+Angola,SubSaharan,2015,3.65
 Antigua and Barbuda,LatinAmerica,1995,4.76
 Antigua and Barbuda,LatinAmerica,2000,4.83
 Antigua and Barbuda,LatinAmerica,2005,4.83
@@ -89,11 +89,11 @@ Belize,LatinAmerica,2000,3.9
 Belize,LatinAmerica,2005,3.99
 Belize,LatinAmerica,2010,4.2
 Belize,LatinAmerica,2015,4.4
-Benin,Sub-Saharan,1995,3.74
-Benin,Sub-Saharan,2000,3.73
-Benin,Sub-Saharan,2005,3.76
-Benin,Sub-Saharan,2010,3.79
-Benin,Sub-Saharan,2015,3.85
+Benin,SubSaharan,1995,3.74
+Benin,SubSaharan,2000,3.73
+Benin,SubSaharan,2005,3.76
+Benin,SubSaharan,2010,3.79
+Benin,SubSaharan,2015,3.85
 Bermuda,LatinAmerica,1995,4.75
 Bermuda,LatinAmerica,2000,4.83
 Bermuda,LatinAmerica,2005,4.91
@@ -114,11 +114,11 @@ Bosnia and Herzegovina,Europe,2000,4.77
 Bosnia and Herzegovina,Europe,2005,4.92
 Bosnia and Herzegovina,Europe,2010,5.03
 Bosnia and Herzegovina,Europe,2015,5.07
-Botswana,Sub-Saharan,1995,4.06
-Botswana,Sub-Saharan,2000,4.24
-Botswana,Sub-Saharan,2005,4.38
-Botswana,Sub-Saharan,2010,4.54
-Botswana,Sub-Saharan,2015,4.66
+Botswana,SubSaharan,1995,4.06
+Botswana,SubSaharan,2000,4.24
+Botswana,SubSaharan,2005,4.38
+Botswana,SubSaharan,2010,4.54
+Botswana,SubSaharan,2015,4.66
 Brazil,LatinAmerica,1995,5.04
 Brazil,LatinAmerica,2000,5.55
 Brazil,LatinAmerica,2005,5.75
@@ -134,46 +134,46 @@ Bulgaria,Europe,2000,5
 Bulgaria,Europe,2005,5.09
 Bulgaria,Europe,2010,5.09
 Bulgaria,Europe,2015,5.16
-Burkina Faso,Sub-Saharan,1995,3.55
-Burkina Faso,Sub-Saharan,2000,3.56
-Burkina Faso,Sub-Saharan,2005,3.56
-Burkina Faso,Sub-Saharan,2010,3.57
-Burkina Faso,Sub-Saharan,2015,3.61
-Burundi,Sub-Saharan,1995,3.93
-Burundi,Sub-Saharan,2000,3.93
-Burundi,Sub-Saharan,2005,4.1
-Burundi,Sub-Saharan,2010,4.2
-Burundi,Sub-Saharan,2015,4.22
+Burkina Faso,SubSaharan,1995,3.55
+Burkina Faso,SubSaharan,2000,3.56
+Burkina Faso,SubSaharan,2005,3.56
+Burkina Faso,SubSaharan,2010,3.57
+Burkina Faso,SubSaharan,2015,3.61
+Burundi,SubSaharan,1995,3.93
+Burundi,SubSaharan,2000,3.93
+Burundi,SubSaharan,2005,4.1
+Burundi,SubSaharan,2010,4.2
+Burundi,SubSaharan,2015,4.22
 Cambodia,Southeast Asia,1995,2.74
 Cambodia,Southeast Asia,2000,2.88
 Cambodia,Southeast Asia,2005,3.08
 Cambodia,Southeast Asia,2010,3.28
 Cambodia,Southeast Asia,2015,3.4
-Cameroon,Sub-Saharan,1995,3.72
-Cameroon,Sub-Saharan,2000,3.74
-Cameroon,Sub-Saharan,2005,3.76
-Cameroon,Sub-Saharan,2010,3.81
-Cameroon,Sub-Saharan,2015,3.88
+Cameroon,SubSaharan,1995,3.72
+Cameroon,SubSaharan,2000,3.74
+Cameroon,SubSaharan,2005,3.76
+Cameroon,SubSaharan,2010,3.81
+Cameroon,SubSaharan,2015,3.88
 Canada,NorthAmerica,1995,4.51
 Canada,NorthAmerica,2000,4.52
 Canada,NorthAmerica,2005,4.56
 Canada,NorthAmerica,2010,4.61
 Canada,NorthAmerica,2015,4.65
-Cape Verde,Sub-Saharan,1995,4.05
-Cape Verde,Sub-Saharan,2000,4.18
-Cape Verde,Sub-Saharan,2005,4.46
-Cape Verde,Sub-Saharan,2010,4.8
-Cape Verde,Sub-Saharan,2015,4.93
-CAR,Sub-Saharan,1995,4.01
-CAR,Sub-Saharan,2000,4.04
-CAR,Sub-Saharan,2005,4.02
-CAR,Sub-Saharan,2010,4.08
-CAR,Sub-Saharan,2015,4.19
-Chad,Sub-Saharan,1995,3.57
-Chad,Sub-Saharan,2000,3.52
-Chad,Sub-Saharan,2005,3.49
-Chad,Sub-Saharan,2010,3.48
-Chad,Sub-Saharan,2015,3.5
+Cape Verde,SubSaharan,1995,4.05
+Cape Verde,SubSaharan,2000,4.18
+Cape Verde,SubSaharan,2005,4.46
+Cape Verde,SubSaharan,2010,4.8
+Cape Verde,SubSaharan,2015,4.93
+CAR,SubSaharan,1995,4.01
+CAR,SubSaharan,2000,4.04
+CAR,SubSaharan,2005,4.02
+CAR,SubSaharan,2010,4.08
+CAR,SubSaharan,2015,4.19
+Chad,SubSaharan,1995,3.57
+Chad,SubSaharan,2000,3.52
+Chad,SubSaharan,2005,3.49
+Chad,SubSaharan,2010,3.48
+Chad,SubSaharan,2015,3.5
 Chile,LatinAmerica,1995,4.65
 Chile,LatinAmerica,2000,4.76
 Chile,LatinAmerica,2005,4.82
@@ -189,25 +189,25 @@ Colombia,LatinAmerica,2000,4.38
 Colombia,LatinAmerica,2005,4.49
 Colombia,LatinAmerica,2010,4.61
 Colombia,LatinAmerica,2015,4.68
-Comoros,Sub-Saharan,1995,4.12
-Comoros,Sub-Saharan,2000,4.2
-Comoros,Sub-Saharan,2005,4.24
-Comoros,Sub-Saharan,2010,4.32
-Comoros,Sub-Saharan,2015,4.36
-Congo,Sub-Saharan,1995,3.99
-Congo,Sub-Saharan,2000,4.02
-Congo,Sub-Saharan,2005,3.99
-Congo,Sub-Saharan,2010,3.97
-Congo,Sub-Saharan,2015,3.95
+Comoros,SubSaharan,1995,4.12
+Comoros,SubSaharan,2000,4.2
+Comoros,SubSaharan,2005,4.24
+Comoros,SubSaharan,2010,4.32
+Comoros,SubSaharan,2015,4.36
+Congo,SubSaharan,1995,3.99
+Congo,SubSaharan,2000,4.02
+Congo,SubSaharan,2005,3.99
+Congo,SubSaharan,2010,3.97
+Congo,SubSaharan,2015,3.95
 Costa Rica,LatinAmerica,1995,4.16
 Costa Rica,LatinAmerica,2000,4.29
 Costa Rica,LatinAmerica,2005,4.44
 Costa Rica,LatinAmerica,2015,4.7
-Ivory Coast,Sub-Saharan,1995,3.73
-Ivory Coast,Sub-Saharan,2000,3.75
-Ivory Coast,Sub-Saharan,2005,3.7
-Ivory Coast,Sub-Saharan,2010,3.73
-Ivory Coast,Sub-Saharan,2015,3.79
+Ivory Coast,SubSaharan,1995,3.73
+Ivory Coast,SubSaharan,2000,3.75
+Ivory Coast,SubSaharan,2005,3.7
+Ivory Coast,SubSaharan,2010,3.73
+Ivory Coast,SubSaharan,2015,3.79
 Croatia,Europe,1995,4.93
 Croatia,Europe,2000,4.99
 Croatia,Europe,2005,5.04
@@ -228,21 +228,21 @@ Czech Republic,Europe,2000,5.06
 Czech Republic,Europe,2005,5.13
 Czech Republic,Europe,2010,5.16
 Czech Republic,Europe,2015,5.16
-Democratic Republic of the Congo,Sub-Saharan,1995,3.82
-Democratic Republic of the Congo,Sub-Saharan,2000,3.77
-Democratic Republic of the Congo,Sub-Saharan,2005,3.76
-Democratic Republic of the Congo,Sub-Saharan,2010,3.75
-Democratic Republic of the Congo,Sub-Saharan,2015,3.77
+Democratic Republic of the Congo,SubSaharan,1995,3.82
+Democratic Republic of the Congo,SubSaharan,2000,3.77
+Democratic Republic of the Congo,SubSaharan,2005,3.76
+Democratic Republic of the Congo,SubSaharan,2010,3.75
+Democratic Republic of the Congo,SubSaharan,2015,3.77
 Denmark,Europe,1995,5.06
 Denmark,Europe,2000,4.98
 Denmark,Europe,2005,4.93
 Denmark,Europe,2010,4.94
 Denmark,Europe,2015,4.98
-Djibouti,Sub-Saharan,1995,4.4
-Djibouti,Sub-Saharan,2000,4.54
-Djibouti,Sub-Saharan,2005,4.76
-Djibouti,Sub-Saharan,2010,4.93
-Djibouti,Sub-Saharan,2015,5.07
+Djibouti,SubSaharan,1995,4.4
+Djibouti,SubSaharan,2000,4.54
+Djibouti,SubSaharan,2005,4.76
+Djibouti,SubSaharan,2010,4.93
+Djibouti,SubSaharan,2015,5.07
 Dominica,LatinAmerica,1995,4.52
 Dominica,LatinAmerica,2000,4.67
 Dominica,LatinAmerica,2005,4.79
@@ -268,26 +268,26 @@ El Salvador,LatinAmerica,2000,3.91
 El Salvador,LatinAmerica,2005,3.99
 El Salvador,LatinAmerica,2010,4.2
 El Salvador,LatinAmerica,2015,4.4
-Equatorial Guinea,Sub-Saharan,1995,4.08
-Equatorial Guinea,Sub-Saharan,2000,4.04
-Equatorial Guinea,Sub-Saharan,2005,4.11
-Equatorial Guinea,Sub-Saharan,2010,4.14
-Equatorial Guinea,Sub-Saharan,2015,4.18
-Eritrea,Sub-Saharan,1995,3.9
-Eritrea,Sub-Saharan,2000,4.12
-Eritrea,Sub-Saharan,2005,4.35
-Eritrea,Sub-Saharan,2010,4.33
-Eritrea,Sub-Saharan,2015,4.33
+Equatorial Guinea,SubSaharan,1995,4.08
+Equatorial Guinea,SubSaharan,2000,4.04
+Equatorial Guinea,SubSaharan,2005,4.11
+Equatorial Guinea,SubSaharan,2010,4.14
+Equatorial Guinea,SubSaharan,2015,4.18
+Eritrea,SubSaharan,1995,3.9
+Eritrea,SubSaharan,2000,4.12
+Eritrea,SubSaharan,2005,4.35
+Eritrea,SubSaharan,2010,4.33
+Eritrea,SubSaharan,2015,4.33
 Estonia,Europe,1995,5.6
 Estonia,Europe,2000,5.85
 Estonia,Europe,2005,5.96
 Estonia,Europe,2010,5.98
 Estonia,Europe,2015,5.91
-Ethiopia,Sub-Saharan,1995,4.36
-Ethiopia,Sub-Saharan,2000,4.35
-Ethiopia,Sub-Saharan,2005,4.36
-Ethiopia,Sub-Saharan,2010,4.47
-Ethiopia,Sub-Saharan,2015,4.66
+Ethiopia,SubSaharan,1995,4.36
+Ethiopia,SubSaharan,2000,4.35
+Ethiopia,SubSaharan,2005,4.36
+Ethiopia,SubSaharan,2010,4.47
+Ethiopia,SubSaharan,2015,4.66
 Federated States of Micronesia,Oceania,1995,2.83
 Federated States of Micronesia,Oceania,2000,2.92
 Federated States of Micronesia,Oceania,2005,2.96
@@ -308,11 +308,11 @@ France,Europe,2000,4.96
 France,Europe,2005,4.9
 France,Europe,2010,4.86
 France,Europe,2015,4.84
-Gabon,Sub-Saharan,1995,4.12
-Gabon,Sub-Saharan,2000,4.14
-Gabon,Sub-Saharan,2005,4.2
-Gabon,Sub-Saharan,2010,4.27
-Gabon,Sub-Saharan,2015,4.29
+Gabon,SubSaharan,1995,4.12
+Gabon,SubSaharan,2000,4.14
+Gabon,SubSaharan,2005,4.2
+Gabon,SubSaharan,2010,4.27
+Gabon,SubSaharan,2015,4.29
 Georgia,Europe,1995,4.64
 Georgia,Europe,2000,4.75
 Georgia,Europe,2005,4.89
@@ -323,11 +323,11 @@ Germany,Europe,2000,5.02
 Germany,Europe,2005,5.09
 Germany,Europe,2010,5.13
 Germany,Europe,2015,5.19
-Ghana,Sub-Saharan,1995,3.88
-Ghana,Sub-Saharan,2000,3.95
-Ghana,Sub-Saharan,2005,4.03
-Ghana,Sub-Saharan,2010,4.11
-Ghana,Sub-Saharan,2015,4.15
+Ghana,SubSaharan,1995,3.88
+Ghana,SubSaharan,2000,3.95
+Ghana,SubSaharan,2005,4.03
+Ghana,SubSaharan,2010,4.11
+Ghana,SubSaharan,2015,4.15
 Greece,Europe,1995,5.6
 Greece,Europe,2000,5.68
 Greece,Europe,2005,5.77
@@ -353,16 +353,16 @@ Guatemala,LatinAmerica,2000,3.36
 Guatemala,LatinAmerica,2005,3.41
 Guatemala,LatinAmerica,2010,3.55
 Guatemala,LatinAmerica,2015,3.71
-Guinea,Sub-Saharan,1995,3.87
-Guinea,Sub-Saharan,2000,3.82
-Guinea,Sub-Saharan,2005,3.79
-Guinea,Sub-Saharan,2010,3.81
-Guinea,Sub-Saharan,2015,3.86
-Guinea-Bissau,Sub-Saharan,1995,3.82
-Guinea-Bissau,Sub-Saharan,2000,3.86
-Guinea-Bissau,Sub-Saharan,2005,3.88
-Guinea-Bissau,Sub-Saharan,2010,3.95
-Guinea-Bissau,Sub-Saharan,2015,4.02
+Guinea,SubSaharan,1995,3.87
+Guinea,SubSaharan,2000,3.82
+Guinea,SubSaharan,2005,3.79
+Guinea,SubSaharan,2010,3.81
+Guinea,SubSaharan,2015,3.86
+Guinea-Bissau,SubSaharan,1995,3.82
+Guinea-Bissau,SubSaharan,2000,3.86
+Guinea-Bissau,SubSaharan,2005,3.88
+Guinea-Bissau,SubSaharan,2010,3.95
+Guinea-Bissau,SubSaharan,2015,4.02
 Guyana,LatinAmerica,1995,4.07
 Guyana,LatinAmerica,2000,4.14
 Guyana,LatinAmerica,2005,4.16
@@ -443,11 +443,11 @@ Kazakhstan,Europe,2000,4.26
 Kazakhstan,Europe,2005,4.4
 Kazakhstan,Europe,2010,4.4
 Kazakhstan,Europe,2015,4.35
-Kenya,Sub-Saharan,1995,4.12
-Kenya,Sub-Saharan,2000,4.24
-Kenya,Sub-Saharan,2005,4.29
-Kenya,Sub-Saharan,2010,4.32
-Kenya,Sub-Saharan,2015,4.4
+Kenya,SubSaharan,1995,4.12
+Kenya,SubSaharan,2000,4.24
+Kenya,SubSaharan,2005,4.29
+Kenya,SubSaharan,2010,4.32
+Kenya,SubSaharan,2015,4.4
 Kiribati,Oceania,1995,2.87
 Kiribati,Oceania,2000,2.93
 Kiribati,Oceania,2005,3
@@ -478,16 +478,16 @@ Lebanon,NorthAfrica,2000,4.41
 Lebanon,NorthAfrica,2005,4.48
 Lebanon,NorthAfrica,2010,4.64
 Lebanon,NorthAfrica,2015,4.67
-Lesotho,Sub-Saharan,1995,4.49
-Lesotho,Sub-Saharan,2000,4.53
-Lesotho,Sub-Saharan,2005,4.56
-Lesotho,Sub-Saharan,2010,4.68
-Lesotho,Sub-Saharan,2015,4.77
-Liberia,Sub-Saharan,1995,3.38
-Liberia,Sub-Saharan,2000,3.52
-Liberia,Sub-Saharan,2005,3.45
-Liberia,Sub-Saharan,2010,3.46
-Liberia,Sub-Saharan,2015,3.5
+Lesotho,SubSaharan,1995,4.49
+Lesotho,SubSaharan,2000,4.53
+Lesotho,SubSaharan,2005,4.56
+Lesotho,SubSaharan,2010,4.68
+Lesotho,SubSaharan,2015,4.77
+Liberia,SubSaharan,1995,3.38
+Liberia,SubSaharan,2000,3.52
+Liberia,SubSaharan,2005,3.45
+Liberia,SubSaharan,2010,3.46
+Liberia,SubSaharan,2015,3.5
 Libya,NorthAfrica,1995,3.95
 Libya,NorthAfrica,2000,4.22
 Libya,NorthAfrica,2005,4.38
@@ -508,16 +508,16 @@ Macedonia,Europe,2000,4.64
 Macedonia,Europe,2005,4.78
 Macedonia,Europe,2010,4.87
 Macedonia,Europe,2015,4.95
-Madagascar,Sub-Saharan,1995,4.13
-Madagascar,Sub-Saharan,2000,4.14
-Madagascar,Sub-Saharan,2005,4.13
-Madagascar,Sub-Saharan,2010,4.24
-Madagascar,Sub-Saharan,2015,4.37
-Malawi,Sub-Saharan,1995,4.01
-Malawi,Sub-Saharan,2000,4
-Malawi,Sub-Saharan,2005,3.97
-Malawi,Sub-Saharan,2010,4
-Malawi,Sub-Saharan,2015,4.1
+Madagascar,SubSaharan,1995,4.13
+Madagascar,SubSaharan,2000,4.14
+Madagascar,SubSaharan,2005,4.13
+Madagascar,SubSaharan,2010,4.24
+Madagascar,SubSaharan,2015,4.37
+Malawi,SubSaharan,1995,4.01
+Malawi,SubSaharan,2000,4
+Malawi,SubSaharan,2005,3.97
+Malawi,SubSaharan,2010,4
+Malawi,SubSaharan,2015,4.1
 Malaysia,Southeast Asia,1995,3.27
 Malaysia,Southeast Asia,2000,3.38
 Malaysia,Southeast Asia,2005,3.52
@@ -528,11 +528,11 @@ Maldives,Southeast Asia,2000,3
 Maldives,Southeast Asia,2005,3.31
 Maldives,Southeast Asia,2010,3.54
 Maldives,Southeast Asia,2015,3.69
-Mali,Sub-Saharan,1995,3.66
-Mali,Sub-Saharan,2000,3.64
-Mali,Sub-Saharan,2005,3.58
-Mali,Sub-Saharan,2010,3.59
-Mali,Sub-Saharan,2015,3.57
+Mali,SubSaharan,1995,3.66
+Mali,SubSaharan,2000,3.64
+Mali,SubSaharan,2005,3.58
+Mali,SubSaharan,2010,3.59
+Mali,SubSaharan,2015,3.57
 Malta,Europe,1995,4.77
 Malta,Europe,2000,4.84
 Malta,Europe,2005,4.97
@@ -543,11 +543,11 @@ Marshall Islands,Oceania,2000,2.86
 Marshall Islands,Oceania,2005,2.92
 Marshall Islands,Oceania,2010,2.97
 Marshall Islands,Oceania,2015,3.07
-Mauritania,Sub-Saharan,1995,3.9
-Mauritania,Sub-Saharan,2000,3.94
-Mauritania,Sub-Saharan,2005,3.99
-Mauritania,Sub-Saharan,2010,4.03
-Mauritania,Sub-Saharan,2015,4.08
+Mauritania,SubSaharan,1995,3.9
+Mauritania,SubSaharan,2000,3.94
+Mauritania,SubSaharan,2005,3.99
+Mauritania,SubSaharan,2010,4.03
+Mauritania,SubSaharan,2015,4.08
 Mauritius,Southeast Asia,1995,3.83
 Mauritius,Southeast Asia,2000,3.93
 Mauritius,Southeast Asia,2005,4.04
@@ -578,21 +578,21 @@ Morocco,NorthAfrica,2000,4.14
 Morocco,NorthAfrica,2005,4.34
 Morocco,NorthAfrica,2010,4.44
 Morocco,NorthAfrica,2015,4.53
-Mozambique,Sub-Saharan,1995,4.24
-Mozambique,Sub-Saharan,2000,4.18
-Mozambique,Sub-Saharan,2005,4.13
-Mozambique,Sub-Saharan,2010,4.06
-Mozambique,Sub-Saharan,2015,4.1
+Mozambique,SubSaharan,1995,4.24
+Mozambique,SubSaharan,2000,4.18
+Mozambique,SubSaharan,2005,4.13
+Mozambique,SubSaharan,2010,4.06
+Mozambique,SubSaharan,2015,4.1
 Myanmar,Southeast Asia,1995,3.23
 Myanmar,Southeast Asia,2000,3.36
 Myanmar,Southeast Asia,2005,3.42
 Myanmar,Southeast Asia,2010,3.55
 Myanmar,Southeast Asia,2015,3.69
-Namibia,Sub-Saharan,1995,4.09
-Namibia,Sub-Saharan,2000,4.19
-Namibia,Sub-Saharan,2005,4.23
-Namibia,Sub-Saharan,2010,4.33
-Namibia,Sub-Saharan,2015,4.44
+Namibia,SubSaharan,1995,4.09
+Namibia,SubSaharan,2000,4.19
+Namibia,SubSaharan,2005,4.23
+Namibia,SubSaharan,2010,4.33
+Namibia,SubSaharan,2015,4.44
 Nepal,South Asia,1995,2.79
 Nepal,South Asia,2000,2.84
 Nepal,South Asia,2005,2.86
@@ -613,16 +613,16 @@ Nicaragua,LatinAmerica,2000,3.63
 Nicaragua,LatinAmerica,2005,3.81
 Nicaragua,LatinAmerica,2010,4.02
 Nicaragua,LatinAmerica,2015,4.18
-Niger,Sub-Saharan,1995,3.64
-Niger,Sub-Saharan,2000,3.61
-Niger,Sub-Saharan,2005,3.51
-Niger,Sub-Saharan,2010,3.45
-Niger,Sub-Saharan,2015,3.42
-Nigeria,Sub-Saharan,1995,4
-Nigeria,Sub-Saharan,2000,4.04
-Nigeria,Sub-Saharan,2005,4
-Nigeria,Sub-Saharan,2010,4.04
-Nigeria,Sub-Saharan,2015,3.93
+Niger,SubSaharan,1995,3.64
+Niger,SubSaharan,2000,3.61
+Niger,SubSaharan,2005,3.51
+Niger,SubSaharan,2010,3.45
+Niger,SubSaharan,2015,3.42
+Nigeria,SubSaharan,1995,4
+Nigeria,SubSaharan,2000,4.04
+Nigeria,SubSaharan,2005,4
+Nigeria,SubSaharan,2010,4.04
+Nigeria,SubSaharan,2015,3.93
 North Korea,Southeast Asia,1995,3.29
 North Korea,Southeast Asia,2000,3.37
 North Korea,Southeast Asia,2005,3.45
@@ -708,11 +708,11 @@ Russia,Europe,2000,5.31
 Russia,Europe,2005,5.42
 Russia,Europe,2010,5.45
 Russia,Europe,2015,5.51
-Rwanda,Sub-Saharan,1995,3.42
-Rwanda,Sub-Saharan,2000,3.64
-Rwanda,Sub-Saharan,2005,3.68
-Rwanda,Sub-Saharan,2010,3.72
-Rwanda,Sub-Saharan,2015,3.78
+Rwanda,SubSaharan,1995,3.42
+Rwanda,SubSaharan,2000,3.64
+Rwanda,SubSaharan,2005,3.68
+Rwanda,SubSaharan,2010,3.72
+Rwanda,SubSaharan,2015,3.78
 Saint Lucia,LatinAmerica,1995,4.22
 Saint Lucia,LatinAmerica,2000,4.41
 Saint Lucia,LatinAmerica,2005,4.65
@@ -728,21 +728,21 @@ Samoa,Oceania,2000,3
 Samoa,Oceania,2005,3.06
 Samoa,Oceania,2010,3.13
 Samoa,Oceania,2015,3.17
-Sao Tome and Principe,Sub-Saharan,1995,3.79
-Sao Tome and Principe,Sub-Saharan,2000,3.83
-Sao Tome and Principe,Sub-Saharan,2005,3.83
-Sao Tome and Principe,Sub-Saharan,2010,3.84
-Sao Tome and Principe,Sub-Saharan,2015,3.9
+Sao Tome and Principe,SubSaharan,1995,3.79
+Sao Tome and Principe,SubSaharan,2000,3.83
+Sao Tome and Principe,SubSaharan,2005,3.83
+Sao Tome and Principe,SubSaharan,2010,3.84
+Sao Tome and Principe,SubSaharan,2015,3.9
 Saudi Arabia,NorthAfrica,1995,3.72
 Saudi Arabia,NorthAfrica,2000,3.97
 Saudi Arabia,NorthAfrica,2005,4.16
 Saudi Arabia,NorthAfrica,2010,4.35
 Saudi Arabia,NorthAfrica,2015,4.52
-Senegal,Sub-Saharan,1995,3.77
-Senegal,Sub-Saharan,2000,3.81
-Senegal,Sub-Saharan,2005,3.84
-Senegal,Sub-Saharan,2010,3.86
-Senegal,Sub-Saharan,2015,3.87
+Senegal,SubSaharan,1995,3.77
+Senegal,SubSaharan,2000,3.81
+Senegal,SubSaharan,2005,3.84
+Senegal,SubSaharan,2010,3.86
+Senegal,SubSaharan,2015,3.87
 Serbia,Europe,1995,4.68
 Serbia,Europe,2000,4.76
 Serbia,Europe,2005,4.82
@@ -753,11 +753,11 @@ Seychelles,Southeast Asia,2000,3.63
 Seychelles,Southeast Asia,2005,3.78
 Seychelles,Southeast Asia,2010,3.89
 Seychelles,Southeast Asia,2015,3.96
-Sierra Leone,Sub-Saharan,1995,3.73
-Sierra Leone,Sub-Saharan,2000,3.73
-Sierra Leone,Sub-Saharan,2005,3.76
-Sierra Leone,Sub-Saharan,2010,3.8
-Sierra Leone,Sub-Saharan,2015,3.88
+Sierra Leone,SubSaharan,1995,3.73
+Sierra Leone,SubSaharan,2000,3.73
+Sierra Leone,SubSaharan,2005,3.76
+Sierra Leone,SubSaharan,2010,3.8
+Sierra Leone,SubSaharan,2015,3.88
 Singapore,Asia Pacific,1995,4.51
 Singapore,Asia Pacific,2000,4.55
 Singapore,Asia Pacific,2005,4.51
@@ -778,26 +778,26 @@ Solomon Islands,Oceania,2000,2.78
 Solomon Islands,Oceania,2005,2.81
 Solomon Islands,Oceania,2010,2.84
 Solomon Islands,Oceania,2015,2.9
-Somalia,Sub-Saharan,1995,4.08
-Somalia,Sub-Saharan,2000,4.05
-Somalia,Sub-Saharan,2005,3.94
-Somalia,Sub-Saharan,2010,3.95
-Somalia,Sub-Saharan,2015,3.96
-South Africa,Sub-Saharan,1995,4.15
-South Africa,Sub-Saharan,2000,4.17
-South Africa,Sub-Saharan,2005,4.26
-South Africa,Sub-Saharan,2010,4.39
-South Africa,Sub-Saharan,2015,4.58
+Somalia,SubSaharan,1995,4.08
+Somalia,SubSaharan,2000,4.05
+Somalia,SubSaharan,2005,3.94
+Somalia,SubSaharan,2010,3.95
+Somalia,SubSaharan,2015,3.96
+South Africa,SubSaharan,1995,4.15
+South Africa,SubSaharan,2000,4.17
+South Africa,SubSaharan,2005,4.26
+South Africa,SubSaharan,2010,4.39
+South Africa,SubSaharan,2015,4.58
 South Korea,Asia Pacific,1995,4.06
 South Korea,Asia Pacific,2000,4.12
 South Korea,Asia Pacific,2005,3.96
 South Korea,Asia Pacific,2010,4.04
 South Korea,Asia Pacific,2015,4.1
-South Sudan,Sub-Saharan,1995,4.17
-South Sudan,Sub-Saharan,2000,4.24
-South Sudan,Sub-Saharan,2005,4.29
-South Sudan,Sub-Saharan,2010,4.36
-South Sudan,Sub-Saharan,2015,4.42
+South Sudan,SubSaharan,1995,4.17
+South Sudan,SubSaharan,2000,4.24
+South Sudan,SubSaharan,2005,4.29
+South Sudan,SubSaharan,2010,4.36
+South Sudan,SubSaharan,2015,4.42
 Spain,Europe,1995,5.03
 Spain,Europe,2000,5.19
 Spain,Europe,2005,5.19
@@ -818,11 +818,11 @@ Suriname,LatinAmerica,2000,4.4
 Suriname,LatinAmerica,2005,4.6
 Suriname,LatinAmerica,2010,4.69
 Suriname,LatinAmerica,2015,4.81
-Swaziland,Sub-Saharan,1995,3.67
-Swaziland,Sub-Saharan,2000,3.84
-Swaziland,Sub-Saharan,2005,3.95
-Swaziland,Sub-Saharan,2010,4.11
-Swaziland,Sub-Saharan,2015,4.19
+Swaziland,SubSaharan,1995,3.67
+Swaziland,SubSaharan,2000,3.84
+Swaziland,SubSaharan,2005,3.95
+Swaziland,SubSaharan,2010,4.11
+Swaziland,SubSaharan,2015,4.19
 Sweden,Europe,1995,4.87
 Sweden,Europe,2000,4.86
 Sweden,Europe,2005,4.88
@@ -848,11 +848,11 @@ Tajikistan,Europe,2000,3.41
 Tajikistan,Europe,2005,3.58
 Tajikistan,Europe,2010,3.74
 Tajikistan,Europe,2015,3.81
-Tanzania,Sub-Saharan,1995,4.11
-Tanzania,Sub-Saharan,2000,4.11
-Tanzania,Sub-Saharan,2005,4.11
-Tanzania,Sub-Saharan,2010,4.1
-Tanzania,Sub-Saharan,2015,4.14
+Tanzania,SubSaharan,1995,4.11
+Tanzania,SubSaharan,2000,4.11
+Tanzania,SubSaharan,2005,4.11
+Tanzania,SubSaharan,2010,4.1
+Tanzania,SubSaharan,2015,4.14
 Thailand,Southeast Asia,1995,3.72
 Thailand,Southeast Asia,2000,3.94
 Thailand,Southeast Asia,2005,4.07
@@ -863,21 +863,21 @@ The Bahamas,LatinAmerica,2000,4.69
 The Bahamas,LatinAmerica,2005,4.95
 The Bahamas,LatinAmerica,2010,5.1
 The Bahamas,LatinAmerica,2015,5.18
-Gambia,Sub-Saharan,1995,3.94
-Gambia,Sub-Saharan,2000,3.96
-Gambia,Sub-Saharan,2005,3.96
-Gambia,Sub-Saharan,2010,3.89
-Gambia,Sub-Saharan,2015,3.91
+Gambia,SubSaharan,1995,3.94
+Gambia,SubSaharan,2000,3.96
+Gambia,SubSaharan,2005,3.96
+Gambia,SubSaharan,2010,3.89
+Gambia,SubSaharan,2015,3.91
 East Timor,Southeast Asia,1995,2.95
 East Timor,Southeast Asia,2000,2.63
 East Timor,Southeast Asia,2005,2.67
 East Timor,Southeast Asia,2010,2.93
 East Timor,Southeast Asia,2015,2.99
-Togo,Sub-Saharan,1995,3.73
-Togo,Sub-Saharan,2000,3.79
-Togo,Sub-Saharan,2005,3.83
-Togo,Sub-Saharan,2010,3.86
-Togo,Sub-Saharan,2015,3.93
+Togo,SubSaharan,1995,3.73
+Togo,SubSaharan,2000,3.79
+Togo,SubSaharan,2005,3.83
+Togo,SubSaharan,2010,3.86
+Togo,SubSaharan,2015,3.93
 Tonga,Oceania,1995,3.08
 Tonga,Oceania,2000,3.09
 Tonga,Oceania,2005,3.14
@@ -903,11 +903,11 @@ Turkmenistan,Europe,2000,3.77
 Turkmenistan,Europe,2005,3.98
 Turkmenistan,Europe,2010,4.12
 Turkmenistan,Europe,2015,4.23
-Uganda,Sub-Saharan,1995,4.78
-Uganda,Sub-Saharan,2000,4.69
-Uganda,Sub-Saharan,2005,4.64
-Uganda,Sub-Saharan,2010,4.56
-Uganda,Sub-Saharan,2015,4.64
+Uganda,SubSaharan,1995,4.78
+Uganda,SubSaharan,2000,4.69
+Uganda,SubSaharan,2005,4.64
+Uganda,SubSaharan,2010,4.56
+Uganda,SubSaharan,2015,4.64
 Ukraine,Europe,1995,5.94
 Ukraine,Europe,2000,6.12
 Ukraine,Europe,2005,6.27
@@ -963,13 +963,13 @@ Yemen,NorthAfrica,2000,3.14
 Yemen,NorthAfrica,2005,3.27
 Yemen,NorthAfrica,2010,3.42
 Yemen,NorthAfrica,2015,3.57
-Zambia,Sub-Saharan,1995,4
-Zambia,Sub-Saharan,2000,4
-Zambia,Sub-Saharan,2005,3.98
-Zambia,Sub-Saharan,2010,3.98
-Zambia,Sub-Saharan,2015,4.01
-Zimbabwe,Sub-Saharan,1995,3.9
-Zimbabwe,Sub-Saharan,2000,3.95
-Zimbabwe,Sub-Saharan,2005,3.96
-Zimbabwe,Sub-Saharan,2010,3.99
-Zimbabwe,Sub-Saharan,2015,4.04
+Zambia,SubSaharan,1995,4
+Zambia,SubSaharan,2000,4
+Zambia,SubSaharan,2005,3.98
+Zambia,SubSaharan,2010,3.98
+Zambia,SubSaharan,2015,4.01
+Zimbabwe,SubSaharan,1995,3.9
+Zimbabwe,SubSaharan,2000,3.95
+Zimbabwe,SubSaharan,2005,3.96
+Zimbabwe,SubSaharan,2010,3.99
+Zimbabwe,SubSaharan,2015,4.04
