@@ -124,11 +124,11 @@ Brazil,LatinAmerica,2000,5.55
 Brazil,LatinAmerica,2005,5.75
 Brazil,LatinAmerica,2010,5.89
 Brazil,LatinAmerica,2015,5.76
-Brunei,Asia Pacific,1995,3.63
-Brunei,Asia Pacific,2000,3.76
-Brunei,Asia Pacific,2005,3.87
-Brunei,Asia Pacific,2010,3.93
-Brunei,Asia Pacific,2015,4.03
+Brunei,EastAsia,1995,3.63
+Brunei,EastAsia,2000,3.76
+Brunei,EastAsia,2005,3.87
+Brunei,EastAsia,2010,3.93
+Brunei,EastAsia,2015,4.03
 Bulgaria,Europe,1995,4.87
 Bulgaria,Europe,2000,5
 Bulgaria,Europe,2005,5.09
@@ -428,11 +428,11 @@ Jamaica,LatinAmerica,2000,4.4
 Jamaica,LatinAmerica,2005,4.51
 Jamaica,LatinAmerica,2010,4.64
 Jamaica,LatinAmerica,2015,4.82
-Japan,Asia Pacific,1995,4.17
-Japan,Asia Pacific,2000,4.18
-Japan,Asia Pacific,2005,4.19
-Japan,Asia Pacific,2010,4.2
-Japan,Asia Pacific,2015,4.24
+Japan,EastAsia,1995,4.17
+Japan,EastAsia,2000,4.18
+Japan,EastAsia,2005,4.19
+Japan,EastAsia,2010,4.2
+Japan,EastAsia,2015,4.24
 Jordan,NorthAfrica,1995,3.69
 Jordan,NorthAfrica,2000,3.73
 Jordan,NorthAfrica,2005,3.83
@@ -758,11 +758,11 @@ Sierra Leone,SubSaharan,2000,3.73
 Sierra Leone,SubSaharan,2005,3.76
 Sierra Leone,SubSaharan,2010,3.8
 Sierra Leone,SubSaharan,2015,3.88
-Singapore,Asia Pacific,1995,4.51
-Singapore,Asia Pacific,2000,4.55
-Singapore,Asia Pacific,2005,4.51
-Singapore,Asia Pacific,2010,4.6
-Singapore,Asia Pacific,2015,4.57
+Singapore,EastAsia,1995,4.51
+Singapore,EastAsia,2000,4.55
+Singapore,EastAsia,2005,4.51
+Singapore,EastAsia,2010,4.6
+Singapore,EastAsia,2015,4.57
 Slovakia,Europe,1995,4.63
 Slovakia,Europe,2000,4.79
 Slovakia,Europe,2005,4.93
@@ -788,11 +788,11 @@ South Africa,SubSaharan,2000,4.17
 South Africa,SubSaharan,2005,4.26
 South Africa,SubSaharan,2010,4.39
 South Africa,SubSaharan,2015,4.58
-South Korea,Asia Pacific,1995,4.06
-South Korea,Asia Pacific,2000,4.12
-South Korea,Asia Pacific,2005,3.96
-South Korea,Asia Pacific,2010,4.04
-South Korea,Asia Pacific,2015,4.1
+South Korea,EastAsia,1995,4.06
+South Korea,EastAsia,2000,4.12
+South Korea,EastAsia,2005,3.96
+South Korea,EastAsia,2010,4.04
+South Korea,EastAsia,2015,4.1
 South Sudan,SubSaharan,1995,4.17
 South Sudan,SubSaharan,2000,4.24
 South Sudan,SubSaharan,2005,4.29

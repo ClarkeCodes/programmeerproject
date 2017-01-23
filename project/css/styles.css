@@ -153,9 +153,12 @@ path {
     opacity: 0.8;
     shape-rendering: crispEdges;
 }
+/*#textcontainer {
+    float: right;
+}*/
 
 #linecontainer {
-    align: center;
+    align: left;
     margin: auto;
     position: relative;
     margin-bottom: 0;

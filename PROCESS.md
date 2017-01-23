@@ -106,3 +106,10 @@ I slightly formatted my dataset to work with the line graph (selecting continent
 ![Sketch](doc/sketch_week2_5.jpg)
 
 Before Monday, I want to have finished formatting my final datasets for all the visualizations and finalize my idea for the new visualizations.
+
+# week 3
+## day 1
+
+I mostly worked on my line graph today, and finally got the tooltip and the continents to work. I also decided what my final visualizations will be and what I need to do for my MVP.
+
+![Line graph](doc/linegraph_3_1.png)

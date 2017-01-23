@@ -181,7 +181,7 @@ var highlightLine;
 function makeLinegraph() {
 
     // set up margins, width and height for svg
-    var margin = {top: 40, right: 50, bottom: 80, left: 50},
+    var margin = {top: 40, right: 100, bottom: 80, left: 50},
         width = 850 - margin.left - margin.right,
         height = 550 - margin.top - margin.bottom;
 
@@ -227,6 +227,16 @@ function makeLinegraph() {
 
         console.log(data);
 
+        var focus = svg.append("g")
+            .attr('class', 'focus')
+            .style("visibility", "hidden");
+
+        // add text placeholders for date and temperatures
+        focus.append("text")
+            .attr("class", "countryName")
+            .attr("dx", 8)
+            .attr("dy", "-.3em");
+
         // var focus = svg.append("g")
         //     .style("display", "none");
 
@@ -244,31 +254,39 @@ function makeLinegraph() {
 
         console.log(dataNest);
 
-        focus.legendtip = d3.tip()
-            .attr('class', 'd3-tip')
-            .offset([-10, 0])
-            .html(function (d) {
-                return d.country ;
-            });
 
         var countries = svg.selectAll(".country")
             .data(dataNest, function(d) { return d.key; })
            .enter().append("g")
             .attr("id", function(d) { return d.key; })
-            // .attr("id", function(d) { return d.values["0"].continent; })
             .attr("class", "country");
 
         countries.append("path")
             .attr("id", function(d) {return d.values["0"].continent; })
             .attr("class", "line")
-            // .attr("id", function(d) { return d.continent; })
             .attr("d", function(d) { return valueline(d.values); });
 
-        // focus.svg.call(focus.legendtip);
+
         var lineColor;
 
+
         svg.selectAll(".line")
-            .on("mouseover", function() {
+            .on("mouseover", function(d) {
+                console.log(d);
+                console.log(d3.select(this));
+                var thisHeight = y(d.values[4].depression);
+                console.log(thisHeight);
+
+
+                // var countryName = d3.select(this.parentNode).attr('id');
+                // add text to be displayed when moving cursor over graph
+                focus.select("text.countryName")
+                    .attr("transform", "translate(" + (width - 5) + "," + (thisHeight + 5) + ")")
+                    .text(d.key);
+
+                d3.selectAll('.focus')
+                    .style("visibility", "visible");
+
                 var element = d3.select(this)
                     .attr("z-index", "100")
                     .style("stroke", function() {
@@ -276,13 +294,12 @@ function makeLinegraph() {
                         return "#000";
                     })
                     .style("stroke-width", "2px");
-                    // .append("text")
-                    // .attr("class", "country_name")
-                    // .attr("dx", 8)
-                    // .attr("dy", "-.3em")
-                    // .text(function(d) { return d.country; });
+
                 })
             .on("mouseout", function () {
+                d3.selectAll('.focus')
+                    .style("visibility", "hidden");
+
                 d3.select(this)
                     .style("stroke", function() {
                         if (lineColor != "#000") {
@@ -292,8 +309,8 @@ function makeLinegraph() {
                             return '#eee';
                         }
                     })
-                    // .style("stroke", "#eee")
-                    .style("stroke-width", "1px"); });
+                    .style("stroke-width", "1px");
+                });
 
         // Add the X Axis
         svg.append("g")
@@ -360,44 +377,3 @@ function colorToHex(color) {
     var rgb = blue | (green << 8) | (red << 16);
     return digits[1] + '#' + rgb.toString(16);
 }
-
-// var borderWidth = getStyle(box, 'border-width');
-
-// // change graph to selected value (depression/suicide)
-// window.lineSelect = function(d) {
-//     highlightLine(d.value);
-// };
-
-// if (colorToHex(button.style.backgroundColor) == newColor) {
-//     button.style.color = '#333';
-//     button.style.backgroundColor = '#FFF';
-//     svg.selectAll(continent_path)
-//         .style("stroke", '#eee');
-// }
-// else {
-//     button.style.color = '#FFF';
-//     button.style.backgroundColor = newColor;
-//     svg.selectAll(continent_path)
-//         .style("stroke", newColor);
-//
-// }
-// console.log(continent_path);
-// // console.log(newColor);
-// button.style.color = '#FFF';
-// button.style.backgroundColor = newColor;
-// var test = svg.selectAll(continent_path);
-// test = test[0][0];
-// // console.log(test);
-// svg.selectAll(continent_path)
-//     .style("stroke", function() {
-//         var currColor = colorToHex(getStyle(test, 'stroke')).toUpperCase();
-//
-//         // console.log("New Color: " + newColor);
-//         // console.log("Current Color: " + currColor);
-//         if (currColor == newColor) {
-//             return '#eee';
-//         }
-//         else {
-//             return newColor;
-//         }
-//     });
