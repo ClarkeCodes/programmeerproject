@@ -180,6 +180,20 @@ h4#linegraph_title {
 #region_buttons {
     position: relative;
     top: -140px;
-    margin: auto;
-    align: center;
+    /*margin: auto;*/
+    align: left;
+}
+
+p.text_up {
+    position: relative;
+    top: -40px;
+}
+
+.datamaps-subunits {
+    z-index: 2;
+}
+
+#linegraphWrapper {
+    position: relative;
+    top: -50px;
 }

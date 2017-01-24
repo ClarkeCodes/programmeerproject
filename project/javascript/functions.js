@@ -5,7 +5,45 @@ function colorMap(dataset){
       // fill for countries without data
       defaultFill: '#e2e2e2'
     },
-    data: dataset
+    data: dataset,
+    done: function(map) {
+        d3.selectAll('.datamaps-subunit')
+            .on('mouseover', function(geo) {
+                console.log(codes);
+                // console.log(codes_reverse);
+                // change fillcolor on mouseover
+                d3.select(this)
+                    .style("fill", "black");
+
+                // highlight value of country in scatterplot and table
+                var country_code = codes[geo.properties.name];
+                // console.log(country_code);
+                // console.log(dataset);
+                // console.log(dataset[country_code].fillColor)
+                // highlightCircle(country_code);
+                // highlightTable(country_code);
+                highlightLine(country_code);
+            })
+            .on('mouseout', function(geo) {
+                // change fill back to previous color
+                var country_code = codes[geo.properties.name];
+                d3.select(this)
+                    .style("fill", function() {
+                        // map return to grey if there is no data
+                        if (dataset[country_code] === undefined) {
+                            return '#e2e2e2';
+                        } else {
+                            return dataset[country_code].fillColor;
+                        }
+                    });
+                revertLine();
+                // revertCircle(country_code);
+            });
+            // .on('click', function(geo) {
+            //     var country_code = codes[geo.properties.name];
+            //     highlightLine(country_code);
+            // });
+        }
     });
     return worldmap;
 }
@@ -163,8 +201,8 @@ function makeBarchart() {
 
     // set up margins, width and height for the barchart
     var margin = {top: 20, right: 20, bottom: 110, left: 50},
-        width = 550 - margin.left - margin.right,
-        height = 400 - margin.top - margin.bottom;
+        width = 750 - margin.left - margin.right,
+        height = 600 - margin.top - margin.bottom;
 
     // create svg with the specified size
     var svg = d3.select("#barcontainer").append("svg")
@@ -174,16 +212,36 @@ function makeBarchart() {
         .append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
+    // get data from csv file
+    d3.csv("/data/depression_demographics_both_2015.csv", function(error, data) {
+        if (error) throw error;
+        var dataset = {};
+
+        data.forEach(function(d) {
+            d.rate = +d.rate;
+        });
+
+        // Nest the entries by symbol
+        var dataNest = d3.nest()
+            // .key(function(d) {return d.year;})
+            .key(function(d) {return d.country;})
+            .entries(data);
+
+        console.log(dataNest);
+
+    });
 }
 
+var highlightLines;
 var highlightLine;
+var revertLine;
 
 function makeLinegraph() {
 
     // set up margins, width and height for svg
     var margin = {top: 40, right: 100, bottom: 80, left: 50},
-        width = 850 - margin.left - margin.right,
-        height = 550 - margin.top - margin.bottom;
+        width = 600 - margin.left - margin.right,
+        height = 650 - margin.top - margin.bottom;
 
     // Parse the date / time
     var parseDate = d3.time.format("%Y").parse;
@@ -222,10 +280,10 @@ function makeLinegraph() {
             d.depression = +d.depression;
             // d.year = +d.year;
             d.year = parseDate(d.year);
-            console.log(d.year);
+            // console.log(d.year);
         });
 
-        console.log(data);
+        // console.log(data);
 
         var focus = svg.append("g")
             .attr('class', 'focus')
@@ -252,18 +310,27 @@ function makeLinegraph() {
             .key(function(d) {return d.country;})
             .entries(data);
 
-        console.log(dataNest);
+        // console.log(dataNest);
 
 
         var countries = svg.selectAll(".country")
             .data(dataNest, function(d) { return d.key; })
            .enter().append("g")
-            .attr("id", function(d) { return d.key; })
+            // .attr("id", function (d) {
+            //     // console.log(codes);
+            //     // console.log(d.key);
+            //     // console.log(codes[d.key]);
+            //     return codes[d.key];
+            // })
             .attr("class", "country");
+
 
         countries.append("path")
             .attr("id", function(d) {return d.values["0"].continent; })
-            .attr("class", "line")
+            .attr("class", function (d) {
+                var lineClass = "line " + codes[d.key];
+                return lineClass;
+            })
             .attr("d", function(d) { return valueline(d.values); });
 
 
@@ -272,12 +339,14 @@ function makeLinegraph() {
 
         svg.selectAll(".line")
             .on("mouseover", function(d) {
-                console.log(d);
-                console.log(d3.select(this));
+                var country = d3.select(this)[0][0].classList[1];
+                console.log(country);
+                var selector = '.datamaps-subunit.' + country;
+                console.log(selector);
+                d3.selectAll(selector)
+                    .style("fill", "black");
+
                 var thisHeight = y(d.values[4].depression);
-                console.log(thisHeight);
-
-
                 // var countryName = d3.select(this.parentNode).attr('id');
                 // add text to be displayed when moving cursor over graph
                 focus.select("text.countryName")
@@ -297,6 +366,20 @@ function makeLinegraph() {
 
                 })
             .on("mouseout", function () {
+                var country = d3.select(this)[0][0].classList[1];
+                console.log(country);
+                var selector = '.datamaps-subunit.' + country;
+                console.log(selector);
+                d3.selectAll(selector)
+                    .style("fill", function() {
+                        // map return to grey if there is no data
+                        if (dataset[country] === undefined) {
+                            return '#e2e2e2';
+                        } else {
+                            return dataset[country].fillColor;
+                        }
+                    });
+
                 d3.selectAll('.focus')
                     .style("visibility", "hidden");
 
@@ -333,14 +416,13 @@ function makeLinegraph() {
             NorthAmerica:'#BE1932'
         };
 
-        highlightLine = function(button, continent) {
+        highlightLines = function(button, continent) {
             var continent_path = "path#" + continent + ".line";
             var newColor = continentColors[continent];
 
             // change button color when clicked
             if (button.style.color === "" ||
                 button.style.color == 'rgb(51, 51, 51)') {
-                console.log("test");
                 button.style.color = '#FFF';
                 button.style.backgroundColor = newColor;
                 svg.selectAll(continent_path)
@@ -355,6 +437,18 @@ function makeLinegraph() {
 
             }
 
+        };
+        highlightLine = function (countryCode) {
+            var selector = 'path.line.' + countryCode;
+            svg.selectAll(selector)
+                .style("stroke-width", "2px")
+                .style("stroke", '#333');
+
+        };
+        revertLine = function () {
+            svg.selectAll('.line')
+                .style("stroke-width", "1px")
+                .style("stroke", '#eee');
         };
     });
 }

@@ -58,6 +58,11 @@ for (var i = 0; i < country_codes.length; i++) {
     codes[country_codes[i][2]] = country_codes[i][1];
 }
 
+var codes_reverse = {};
+for (var i = 0; i < country_codes.length; i++) {
+    codes_reverse[country_codes[i][1]] = country_codes[i][2];
+}
+
 function main(error, data, data2) {
     if (error) throw error;
     dataset = {};
@@ -131,9 +136,10 @@ window.toggle = function(d) {
 // change graph to selected value (depression/suicide)
 window.lineSelect = function(d) {
     var button = document.getElementById('btn' + d.value);
-    highlightLine(button, d.value);
+    highlightLines(button, d.value);
 };
 
 // http://ghdx.healthdata.org/gbd-results-tool?params=querytool-permalink/6a6d68f2958f34482c33ecd1f831e9e5
 // http://ghdx.healthdata.org/gbd-results-tool?params=querytool-permalink/8cf6cac732db37277625c44b2da6b12d
 // http://ghdx.healthdata.org/gbd-results-tool?params=querytool-permalink/ad846927870303fd5d05624bf298cfc9
+// http://ghdx.healthdata.org/gbd-results-tool?params=querytool-permalink/260096cd8076654cce1354b8fddc7e12

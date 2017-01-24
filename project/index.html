@@ -39,10 +39,10 @@
             <!-- <div class="row">
                 <div class="col-md-2"></div> -->
                 <!-- <div class="col-md-3" > -->
-                    <div class = "btn-group-sm">
-                        <button type="button" class="btn btn-default" id="switcher" onclick="toggle(this);" value="depression">Depression</button>
-                        <button type="button" class="btn btn-default" id="switcher" onclick="toggle(this);" value="suicide">Suicide</button>
-                    </div>
+                <div class="btn-group-sm" style="padding-left: 20px; z-index: 10;">
+                    <button type="button" class="btn btn-default" id="switcher" onclick="toggle(this);" value="depression">Depression</button>
+                    <button type="button" class="btn btn-default" id="switcher" onclick="toggle(this);" value="suicide">Suicide</button>
+                </div>
 
                     <!-- <div id="button">
                         <select class="btn btn-secondary dropdown-toggle" onchange="toggle(this);">
@@ -57,22 +57,30 @@
             <!-- <div class="row"> -->
                 <!-- <div class="col-sm-1"></div> -->
                 <!-- <div class="col-sm-10" id="linecontainer"></div> -->
-                <h4 id="linegraph_title">Prevalence of Depression from 1995-2015</h4>
-                <div class="btn-group-xs" id="region_buttons" style="padding-left: 200px;">
-                    <button type="button" class="btn btn-default" onclick="lineSelect(this);" id="btnEurope" value="Europe">Europe and Central Asia</button>
-                    <button type="button" class="btn btn-default" onclick="lineSelect(this);" id="btnEastAsia" value="EastAsia">East Asia and Pacific</button>
-                    <button type="button" class="btn btn-default" onclick="lineSelect(this);" id="btnSouthAsia" value="SouthAsia">South Asia</button>
-                    <button type="button" class="btn btn-default" onclick="lineSelect(this);" id="btnNorthAfrica" value="NorthAfrica">North Africa and Middle East</button>
-                    <button type="button" class="btn btn-default" onclick="lineSelect(this);" id="btnSubSaharan" value="SubSaharan">Sub-Saharan Africa</button>
-                    <button type="button" class="btn btn-default" onclick="lineSelect(this);" id="btnLatinAmerica" value="LatinAmerica">Latin America and Carribean</button>
-                    <button type="button" class="btn btn-default" onclick="lineSelect(this);" id="btnNorthAmerica" value="NorthAmerica">North America</button>
-                </div>
-                <div id="linecontainer"></div>
-                <div id="textcontainer" class="pull-right">
-                    <p>Test text.</p>
-                </div>
+
+                <div class="row" id="linegraphWrapper">
+                    <div class="col-sm-12 col-md-5">
+                    <h4 id="linegraph_title">Prevalence of Depression from 1995-2015</h4>
+                        <div class="btn-group-xs" id="region_buttons" style="padding-left: 50px;">
+                            <button type="button" class="btn btn-default" onclick="lineSelect(this);" id="btnEurope" value="Europe">Europe and Central Asia</button>
+                            <button type="button" class="btn btn-default" onclick="lineSelect(this);" id="btnEastAsia" value="EastAsia">East Asia and Pacific</button>
+                            <button type="button" class="btn btn-default" onclick="lineSelect(this);" id="btnSouthAsia" value="SouthAsia">South Asia</button>
+                            <button type="button" class="btn btn-default" onclick="lineSelect(this);" id="btnNorthAfrica" value="NorthAfrica">North Africa and Middle East</button>
+                            <button type="button" class="btn btn-default" onclick="lineSelect(this);" id="btnSubSaharan" value="SubSaharan">Sub-Saharan Africa</button>
+                            <button type="button" class="btn btn-default" onclick="lineSelect(this);" id="btnLatinAmerica" value="LatinAmerica">Latin America and Carribean</button>
+                            <button type="button" class="btn btn-default" onclick="lineSelect(this);" id="btnNorthAmerica" value="NorthAmerica">North America</button>
+                        </div>
+                        <div id="linecontainer"></div>
+                    </div>
+                    <div class="col-md-12 col-md-7">
+                    <!-- <div id="textcontainer" class="pull-right"> -->
+                        <div id="barcontainer"></div>
+                        <!-- <h4 id="linegraph_title">Subtitle about this text</h4> -->
+                        <!-- <p class="text_up">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p> -->
+                        <!-- <p class="text_up">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p> -->
+                    </div>
                 <!-- <div class="col-sm-1"></div> -->
-            <!-- </div> -->
+                </div>
         </section>
         <div class="row" id="netherlands_map">
             <div class="col-sm-12"><h3 class="display-4">Who is at Risk?</h3></div>
@@ -98,7 +106,7 @@
             <div class="col-sm-3"></div>
             <div class="row">
                 <div class="col-sm-1"></div>
-                <div class="col-sm-10" id="barcontainer"></div>
+                <!-- <div class="col-sm-10" id="barcontainer"></div> -->
                 <div class="col-sm-1"></div>
             </div>
         </div>

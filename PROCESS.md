@@ -113,3 +113,7 @@ Before Monday, I want to have finished formatting my final datasets for all the 
 I mostly worked on my line graph today, and finally got the tooltip and the continents to work. I also decided what my final visualizations will be and what I need to do for my MVP.
 
 ![Line graph](doc/linegraph_3_1.png)
+
+## day 2
+
+I linked my world map to the line chart, and I asked feedback on my ideas for linked a third visualization to the rest of my website. I've decided to make a bar graph when you click on a country that shows the demographic of depression in that country. This will be displayed next to my line graph. I want to use an automatic scroll function that will scroll to the visualization of the bar chart and line graph when clicking on a country. 
