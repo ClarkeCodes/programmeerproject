@@ -213,7 +213,7 @@ function makeBarchart() {
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
     // get data from csv file
-    d3.csv("/data/depression_demographics_both_2015.csv", function(error, data) {
+    d3.csv("/project/data/depression_demographics_both_2015.csv", function(error, data) {
         if (error) throw error;
         var dataset = {};
 
@@ -273,7 +273,7 @@ function makeLinegraph() {
         .y(function(d) { return y(d.depression); });
 
     // get data from csv file
-    d3.csv("/data/prevalence_depression_1995-2015.csv", function(error, data) {
+    d3.csv("/project/data/prevalence_depression_1995-2015.csv", function(error, data) {
         if (error) throw error;
 
         data.forEach(function(d) {
