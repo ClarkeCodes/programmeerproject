@@ -1,7 +1,7 @@
 // set up queue to load data
 queue()
-    .defer(d3.csv, "/project/data/suicide_by_country.csv")
-    .defer(d3.csv, "/project/data/depression_2015.csv")
+    .defer(d3.csv, "project/data/suicide_by_country.csv")
+    .defer(d3.csv, "project/data/depression_2015.csv")
     .await(main);
 
 var legend;
