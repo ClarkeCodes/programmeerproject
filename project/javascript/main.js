@@ -1,3 +1,4 @@
+// var q = d3_queue.queue();
 // set up queue to load data
 queue()
     .defer(d3.csv, "project/data/suicide_by_country.csv")
