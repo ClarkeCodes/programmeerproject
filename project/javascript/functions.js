@@ -197,7 +197,8 @@ function searchTable() {
     }
 }
 
-function makeBarchart() {
+
+function makeBarchart(both, female, male) {
 
     // set up margins, width and height for the barchart
     var margin = {top: 20, right: 20, bottom: 110, left: 50},
@@ -212,24 +213,190 @@ function makeBarchart() {
         .append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-    // get data from csv file
-    d3.csv("project/data/depression_demographics_both_2015.csv", function(error, data) {
-        if (error) throw error;
-        var dataset = {};
+    // // set up scale for x and y-axis
+    // var x0 = d3.scale.ordinal()
+    //     .rangeRoundBands([0, width], .1);
+    //
+    // var x1 = d3.scale.ordinal();
 
-        data.forEach(function(d) {
-            d.rate = +d.rate;
-        });
+    // set up scale for x and y-axis
+    var x = d3.scale.ordinal()
+        .rangeRoundBands([0, width], .09);
 
-        // Nest the entries by symbol
-        var dataNest = d3.nest()
-            // .key(function(d) {return d.year;})
-            .key(function(d) {return d.country;})
-            .entries(data);
+    var y = d3.scale.linear()
+        .range([height, 0]);
 
-        console.log(dataNest);
+    // set up axes
+    var xAxis = d3.svg.axis()
+        .scale(x)
+        .orient("bottom");
 
+    var yAxis = d3.svg.axis()
+        .scale(y)
+        .orient("left");
+
+    both.forEach(function(d) {
+        d.age10_14 =+ d.age10_14;
+        d.age15_19 =+ d.age15_19;
+        d.age20_24 =+ d.age20_24;
+        d.age25_29 =+ d.age25_29;
+        d.age30_34 =+ d.age30_34;
+        d.age35_39 =+ d.age35_39;
+        d.age40_44 =+ d.age40_44;
+        d.age45_49 =+ d.age45_49;
+        d.age50_54 =+ d.age50_54;
+        d.age55_59 =+ d.age55_59;
+        d.age60_64 =+ d.age60_64;
+        d.age65_69 =+ d.age65_69;
+        d.age70_74 =+ d.age70_74;
+        d.age75_79 =+ d.age75_79;
+        d.age80plus =+ d.age80plus;
+        d.all =+ d.all;
     });
+
+    dataset = {};
+    console.log(both[0].age10_14);
+
+    var ageNames = d3.keys(both[0]).filter(function(key) { return key !== "country"; });
+    console.log(ageNames.length);
+    var i;
+
+    // for (i = 0; i < ageNames.length; i++) {
+    //     dataset[ageNames[i]] = both[0][]
+    // }
+
+    // console.log(dataset);
+
+    // both[0]
+
+    // age10_14,age15_19,age20_24,age25_29,age30_34,age35_39,age40_44,age45_49,age50_54,age55_59,age60_64,age65_69,age70_74,age75_79,age80plus,all
+
+        // data = both[0];
+        // data_female = female[0];
+        // data_male = male[0];
+
+        // var ageNames = d3.keys(data).filter(function(key) { return key !== "country"; });
+        // console.log(ageNames);
+
+        // both.forEach(function(d) {
+        //     d.ages = ageNames.map(function(name) { return {name: name, value: +d[name]}; });
+        // });
+
+        // female.forEach(function(d) {
+        //     d.ages = ageNames.map(function(name) { return {name: name, value: +d[name]}; });
+        // });
+        //
+        // male.forEach(function(d) {
+        //     d.ages = ageNames.map(function(name) { return {name: name, value: +d[name]}; });
+        // });
+
+        // data_female = female[0];
+        // data_male = male[0];
+        // console.log(data_female);
+
+    // x0.domain(ageNames.map(function(d) { return d.name; }));
+    // x1.domain(ageNames)
+    //     .rangeRoundBands([0, x0.rangeBand()]);
+
+    x.domain(both.map(function(d) { return d.country; }));
+
+    // y.domain([0, d3.max(both, function(d) { return d3.max(d.ages, function(d) { return d.value; }); })]);
+
+    svg.append("g")
+        .attr("class", "x axis")
+        .attr("transform", "translate(0," + height + ")")
+        .call(xAxis);
+
+    svg.append("g")
+        .attr("class", "y axis")
+        .call(yAxis)
+       .append("text")
+       .attr("transform", "rotate(-90)")
+       .attr("y", 6)
+       .attr("dy", ".71em")
+       .style("text-anchor", "end")
+       .text("Depression");
+
+   var country = svg.selectAll(".country")
+        .data(both[0])
+        .enter().append("g")
+        .attr("class", "g")
+        .attr("transform", function(d) { return "translate(" + x0(d.country) + ",0)"; });
+
+    country.selectAll("rect")
+    .data(function(d) { return d.ages; })
+  .enter().append("rect")
+    //  .attr("width", x1.rangeBand())
+     .attr("x", function(d) { return x1(d.name); })
+     .attr("y", function(d) { return y(d.value); })
+     .attr("height", function(d) { return height - y(d.value); })
+     .style("fill", "steelblue");
+
+
+
+
+    // format the datasets
+    // both.forEach(function(d) {
+    //     d.age10_14 =+ d.age10_14;
+    //     d.age15_19 =+ d.age15_19;
+    //     d.age20_24 =+ d.age20_24;
+    //     d.age25_29 =+ d.age25_29;
+    //     d.age30_34 =+ d.age30_34;
+    //     d.age35_39 =+ d.age35_39;
+    //     d.age40_44 =+ d.age40_44;
+    //     d.age45_49 =+ d.age45_49;
+    //     d.age50_54 =+ d.age50_54;
+    //     d.age55_59 =+ d.age55_59;
+    //     d.age60_64 =+ d.age60_64;
+    //     d.age65_69 =+ d.age65_69;
+    //     d.age70_74 =+ d.age70_74;
+    //     d.age75_79 =+ d.age75_79;
+    //     d.age80plus =+ d.age80plus;
+    //     d.all =+ d.all;
+    // });
+
+    female.forEach(function(d) {
+        d.age10_14 =+ d.age10_14;
+        d.age15_19 =+ d.age15_19;
+        d.age20_24 =+ d.age20_24;
+        d.age25_29 =+ d.age25_29;
+        d.age30_34 =+ d.age30_34;
+        d.age35_39 =+ d.age35_39;
+        d.age40_44 =+ d.age40_44;
+        d.age45_49 =+ d.age45_49;
+        d.age50_54 =+ d.age50_54;
+        d.age55_59 =+ d.age55_59;
+        d.age60_64 =+ d.age60_64;
+        d.age65_69 =+ d.age65_69;
+        d.age70_74 =+ d.age70_74;
+        d.age75_79 =+ d.age75_79;
+        d.age80plus =+ d.age80plus;
+        d.all =+ d.all;
+    });
+
+    male.forEach(function(d) {
+        d.age10_14 =+ d.age10_14;
+        d.age15_19 =+ d.age15_19;
+        d.age20_24 =+ d.age20_24;
+        d.age25_29 =+ d.age25_29;
+        d.age30_34 =+ d.age30_34;
+        d.age35_39 =+ d.age35_39;
+        d.age40_44 =+ d.age40_44;
+        d.age45_49 =+ d.age45_49;
+        d.age50_54 =+ d.age50_54;
+        d.age55_59 =+ d.age55_59;
+        d.age60_64 =+ d.age60_64;
+        d.age65_69 =+ d.age65_69;
+        d.age70_74 =+ d.age70_74;
+        d.age75_79 =+ d.age75_79;
+        d.age80plus =+ d.age80plus;
+        d.all =+ d.all;
+    });
+
+    // console.log(both);
+
+    // console.log(both.map(function(d) { return d.country; }));
+
 }
 
 var highlightLines;

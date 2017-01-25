@@ -1,4 +1,3 @@
-country,age,rate
 Afghanistan,10 to 14,1455
 Afghanistan,15 to 19,3565
 Afghanistan,20 to 24,4741
@@ -1599,7 +1598,6 @@ Lithuania,70 to 74,8087
 Lithuania,75 to 79,8118
 Lithuania,80 plus,5794
 Lithuania,All Ages,5382
-location,age,val
 Luxembourg,10 to 14,1644
 Luxembourg,15 to 19,3905
 Luxembourg,20 to 24,5336

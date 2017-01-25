@@ -3,6 +3,9 @@
 queue()
     .defer(d3.csv, "project/data/suicide_by_country.csv")
     .defer(d3.csv, "project/data/depression_2015.csv")
+    .defer(d3.csv, "project/data/depression_both_2015.csv")
+    .defer(d3.csv, "project/data/depression_female_2015.csv")
+    .defer(d3.csv, "project/data/depression_male_2015.csv")
     .await(main);
 
 var legend;
@@ -64,7 +67,7 @@ for (var i = 0; i < country_codes.length; i++) {
     codes_reverse[country_codes[i][1]] = country_codes[i][2];
 }
 
-function main(error, data, data2) {
+function main(error, data, data2, both, female, male) {
     if (error) throw error;
     dataset = {};
     dataset2 = {};
@@ -120,7 +123,7 @@ function main(error, data, data2) {
     table.selectAll("thead th")
         .text(function(column) { return column.charAt(0).toUpperCase() + column.substr(1); });
 
-    makeBarchart();
+    makeBarchart(both, female, male);
     makeLinegraph();
 
 }
