@@ -116,4 +116,12 @@ I mostly worked on my line graph today, and finally got the tooltip and the cont
 
 ## day 2
 
-I linked my world map to the line chart, and I asked feedback on my ideas for linked a third visualization to the rest of my website. I've decided to make a bar graph when you click on a country that shows the demographic of depression in that country. This will be displayed next to my line graph. I want to use an automatic scroll function that will scroll to the visualization of the bar chart and line graph when clicking on a country. 
+I linked my world map to the line chart, and I asked feedback on my ideas for linked a third visualization to the rest of my website. I've decided to make a bar graph when you click on a country that shows the demographic of depression in that country. This will be displayed next to my line graph. I want to use an automatic scroll function that will scroll to the visualization of the bar chart and line graph when clicking on a country.
+
+## day 3
+
+I wrote a script to format my datasets for my barchart in Python, and I started working on the barchart. I also setup my website with GitHub Pages.
+
+Screenshots of the website currently (without the header):
+
+![Current site](doc/website_week3_31.png) ![Current site](doc/website_week3_32.png)
