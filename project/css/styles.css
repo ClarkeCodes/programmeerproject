@@ -197,3 +197,11 @@ p.text_up {
     position: relative;
     top: -50px;
 }
+
+.bar {
+  fill: steelblue;
+}
+
+.bar:hover {
+  fill: brown;
+}

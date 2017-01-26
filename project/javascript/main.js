@@ -48,6 +48,10 @@ var depression_data;
 var data_s = {},
     data_d = {};
 
+var dataBoth;
+var dataFemale;
+var dataMale;
+
 colorScale = d3.scale.quantile()
     .domain(color_values)
     .range(all_colors);
@@ -123,7 +127,65 @@ function main(error, data, data2, both, female, male) {
     table.selectAll("thead th")
         .text(function(column) { return column.charAt(0).toUpperCase() + column.substr(1); });
 
-    makeBarchart(both, female, male);
+    both.forEach(function(d) {
+        d.age10_14 =+ d.age10_14;
+        d.age15_19 =+ d.age15_19;
+        d.age20_24 =+ d.age20_24;
+        d.age25_29 =+ d.age25_29;
+        d.age30_34 =+ d.age30_34;
+        d.age35_39 =+ d.age35_39;
+        d.age40_44 =+ d.age40_44;
+        d.age45_49 =+ d.age45_49;
+        d.age50_54 =+ d.age50_54;
+        d.age55_59 =+ d.age55_59;
+        d.age60_64 =+ d.age60_64;
+        d.age65_69 =+ d.age65_69;
+        d.age70_74 =+ d.age70_74;
+        d.age75_79 =+ d.age75_79;
+        d.age80plus =+ d.age80plus;
+        d.all =+ d.all;
+    });
+
+    var ageNames = d3.keys(both[0]).filter(function(key) { return key !== "country"; });
+    console.log(ageNames);
+
+    var i = 0;
+    var j;
+    for (i; i < both.length; i++) {
+        j = 0;
+        // for (j; j < ageNames.length; j++) {
+        //     ageName = ageNames[j];
+        both[i].age10_19 = (both[i].age10_14 + both[i].age15_19)/2;
+        delete both[i].age10_14;
+        delete both[i].age15_19;
+        both[i].age20_29 = (both[i].age20_24 + both[i].age25_29)/2;
+        delete both[i].age20_24;
+        delete both[i].age25_29;
+        both[i].age30_39 = (both[i].age30_34 + both[i].age35_39)/2;
+        delete both[i].age30_34;
+        delete both[i].age35_39;
+        both[i].age40_49 = (both[i].age40_44 + both[i].age45_49)/2;
+        delete both[i].age40_44;
+        delete both[i].age45_49;
+        both[i].age50_59 = (both[i].age50_54 + both[i].age55_59)/2;
+        delete both[i].age50_54;
+        delete both[i].age55_59;
+        both[i].age60_69 = (both[i].age60_64 + both[i].age65_69)/2;
+        delete both[i].age60_64;
+        delete both[i].age65_69;
+        both[i].age70plus = (both[i].age70_74 + both[i].age75_79 + both[i].age80plus)/3;
+        delete both[i].age70_74;
+        delete both[i].age75_79;
+        delete both[i].age80plus;
+        delete both[i].all;
+        // d.age10_14 =+ d.age10_14;
+        // d.age15_19 =+ d.age15_19;
+        // }
+    }
+    console.log(both);
+
+    dataBoth = both;
+    makeBarchart("Netherlands");
     makeLinegraph();
 
 }
