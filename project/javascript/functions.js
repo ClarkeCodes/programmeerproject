@@ -1,4 +1,7 @@
 function colorMap(dataset){
+    var mapcontainer = document.getElementById("mapcontainer");
+    var tooltip = d3.select('body').append('div')
+        .attr('class', 'hidden tooltip');
     var worldmap = new Datamap({
         element: document.getElementById("mapcontainer"),
     fills: {
@@ -9,6 +12,14 @@ function colorMap(dataset){
     done: function(map) {
         d3.selectAll('.datamaps-subunit')
             .on('mouseover', function(geo) {
+                // var mouse = d3.mouse(mapcontainer.node()).map(function(d) {
+                //     return parseInt(d);
+                // });
+                // tooltip.classed('hidden', false)
+                //     .attr('style', 'left:' + (mouse[0] + 15) +
+                //             'px; top:' + (mouse[1] - 35) + 'px')
+                //     .html(geo.properties.name);
+
                 console.log(codes);
                 // console.log(codes_reverse);
                 // change fillcolor on mouseover
@@ -17,15 +28,13 @@ function colorMap(dataset){
 
                 // highlight value of country in scatterplot and table
                 var country_code = codes[geo.properties.name];
-                // console.log(country_code);
-                // console.log(dataset);
-                // console.log(dataset[country_code].fillColor)
                 // highlightCircle(country_code);
                 // highlightTable(country_code);
                 highlightLine(country_code);
             })
             .on('mouseout', function(geo) {
                 // change fill back to previous color
+                // tooltip.classed('hidden', true);
                 var country_code = codes[geo.properties.name];
                 d3.select(this)
                     .style("fill", function() {
@@ -87,7 +96,8 @@ function makeLegend() {
         .attr("id", "legendTitle")
         .attr("x", 20)
         .attr("y", 290)
-        .text("Depression");
+        .attr("transform", "rotate(-90)")
+        .text("Depression in % of population");
 }
 
 // The table generation function
@@ -208,7 +218,7 @@ var updateBarchart;
 function makeBarchart(countryName) {
 
     // set up margins, width and height for the barchart
-    var margin = {top: 20, right: 20, bottom: 110, left: 100},
+    var margin = {top: 30, right: 20, bottom: 110, left: 100},
         width = 650 - margin.left - margin.right,
         height = 650 - margin.top - margin.bottom;
 
@@ -241,6 +251,13 @@ function makeBarchart(countryName) {
     var yAxis = d3.svg.axis()
         .scale(y)
         .orient("left");
+
+    // set up tooltip for numbers
+    var tip = d3.tip()
+        .attr("class", "d3-tip")
+        .html(function(d) {
+              return d3.format(",")(d.depression.toFixed(1));
+          });
 
 
     var index = findIndexOf(dataBoth, countryName);
@@ -288,7 +305,7 @@ function makeBarchart(countryName) {
        .attr("y", 6)
        .attr("dy", ".71em")
        .style("text-anchor", "end")
-       .text("Depression");
+       .text("Depression per 100,000");
 
    var ages = svg.selectAll(".age")
         .data(dataset)
@@ -306,6 +323,8 @@ function makeBarchart(countryName) {
   //    .style("fill", "steelblue");
   // set up the domain for x and y-axis
 
+  // call tooltip
+  svg.call(tip);
 
   // draw bars of chart
   svg.selectAll("bar")
@@ -315,8 +334,19 @@ function makeBarchart(countryName) {
       .attr("x", function(d) { return x(d.age); })
       .attr("width", x.rangeBand())
       .attr("y", function(d) { return y(d.depression); })
-      .attr("height", function(d) { return height - y(d.depression);});
+      .attr("height", function(d) { return height - y(d.depression);})
+      //show and hide the tooltip during mouse events
+      .on("mouseover", tip.show)
+      .on("mouseout", tip.hide);
     //   .style("fill", "steelblue");
+
+    svg.append("text")
+        .attr("x", (width / 2))
+        .attr("y", 0 - (margin.top / 2))
+        .attr("text-anchor", "middle")
+        .attr("class", "barTitle")
+        .style("font-size", "16px")
+        .text("Demographics of Depression in " + countryName);
 
     updateBarchart = function (countryName) {
           var index = findIndexOf(dataBoth, countryName);
@@ -365,6 +395,19 @@ function makeBarchart(countryName) {
          .attr("dy", ".71em")
          .style("text-anchor", "end")
          .text("Depression");
+
+         svg.select(".barTitle").remove();
+
+         svg.append("text")
+             .attr("x", (width / 2))
+             .attr("y", 0 - (margin.top / 2))
+             .attr("text-anchor", "middle")
+             .attr("class", "barTitle")
+             .style("font-size", "16px")
+             .text("Demographics of Depression in " + countryName);
+
+
+
     };
 
 }
@@ -432,8 +475,14 @@ function makeLinegraph() {
             .attr("dx", 8)
             .attr("dy", "-.3em");
 
-        // var focus = svg.append("g")
-        //     .style("display", "none");
+        var selected = svg.append("g")
+            .attr('class', 'focus')
+            .style("visibility", "hidden");
+
+        selected.append("text")
+            .attr("class", "selected")
+            .attr("dx", 8)
+            .attr("dy", "-.3em");
 
         // scale the range of the data
         x.domain(d3.extent(data, function(d) { return d.year; }));
@@ -447,12 +496,10 @@ function makeLinegraph() {
             .key(function(d) {return d.country;})
             .entries(data);
 
-
         var countries = svg.selectAll(".country")
             .data(dataNest, function(d) { return d.key; })
            .enter().append("g")
             .attr("class", "country");
-
 
         countries.append("path")
             .attr("id", function(d) {return d.values["0"].continent; })
@@ -521,11 +568,32 @@ function makeLinegraph() {
                     })
                     .style("stroke-width", "1px");
                 })
-                .on("click", function () {
-                    var country = d3.select(this)[0][0].classList[1];
-                    country = codes_reverse[country];
-                    updateBarchart(country);
-                });
+            .on("click", function (d) {
+                var country = d3.select(this)[0][0].classList[1];
+                country = codes_reverse[country];
+                updateBarchart(country);
+
+                d3.selectAll('.selected')
+                    .style("visibility", "hidden");
+
+                var thisHeight = y(d.values[4].depression);
+                // add text to be displayed next to graph
+                selected.select("text.selected")
+                    .attr("transform", "translate(" + (width - 5) + "," + (thisHeight + 5) + ")")
+                    .text(d.key);
+                d3.selectAll('.selected')
+                    .style("visibility", "visible");
+
+                // change color of line
+                var element = d3.select(this)
+                    .attr("z-index", "200")
+                    .style("stroke", function() {
+                        lineColor = getStyle(d3.select(this)[0][0], 'stroke');
+                        return "#000";
+                    })
+                    .style("stroke-width", "2px");
+
+            });
 
         // Add the X Axis
         svg.append("g")
@@ -613,4 +681,4 @@ function findIndexOf(data, value) {
             return index;
         }
     }
-};
+}

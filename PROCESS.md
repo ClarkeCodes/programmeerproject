@@ -125,3 +125,9 @@ I wrote a script to format my datasets for my barchart in Python, and I started 
 Screenshots of the website currently (without the header):
 
 ![Current site](doc/website_week3_31.png) ![Current site](doc/website_week3_32.png)
+
+## day 4
+
+I got my bar chart to work and linked it to both my line chart and the world map. When you click on the worldmap, it will scroll down to the other two visualizations where it changes the barchart (and title) to display demographics for the selected country.
+
+![Working bar chart](doc/barchart_week3.png)
