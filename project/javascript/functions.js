@@ -12,8 +12,8 @@ function colorMap(dataset){
     done: function(map) {
         d3.selectAll('.datamaps-subunit')
             .on('mouseover', function(geo) {
-                // var mouse = d3.mouse(mapcontainer.node()).map(function(d) {
-                //     return parseInt(d);
+                // var mouse = d3.mouse(element.node()).map(function(d) {
+                //     return parseInt(d.country);
                 // });
                 // tooltip.classed('hidden', false)
                 //     .attr('style', 'left:' + (mouse[0] + 15) +
@@ -100,46 +100,6 @@ function makeLegend() {
         .text("Depression in % of population");
 }
 
-// The table generation function
-function makeTable(data, columns) {
-    var table = d3.select("#tablecontainer").append("table")
-        .attr("class", "table table-hover")
-        .attr("id", "info_table"),
-        thead = table.append("thead")
-        .attr("class", "thead-inverse"),
-        tbody = table.append("tbody");
-
-    // append the header row
-    thead.append("tr")
-        .selectAll("th")
-        .data(columns)
-        .enter()
-        .append("th")
-        .text(function(column) { return column; });
-
-    // create a row for each object in the data
-    var rows = tbody.selectAll("tr")
-        .data(data)
-        .enter()
-        .append("tr");
-
-    // create a cell in each row for each column
-    var cells = rows.selectAll("td")
-        .data(function(row) {
-            return columns.map(function(column) {
-                return {
-                    column: column,
-                    value: row[column]
-                };
-            });
-        })
-        .enter()
-        .append("td")
-        .html(function(d) { return d.value; });
-
-    return table;
-}
-
 // functions to toggle map updates
 function updateMap(dataset) {
     if (dataset == "suicide") {
@@ -189,30 +149,6 @@ function updateLegend(dataset) {
     }
 }
 
-
-// function that lets users search for a country
-// adapted from this example: http://www.w3schools.com/howto/howto_js_filter_table.asp
-function searchTable() {
-    // Declare variables
-    var input, filter, table, tr, td, i;
-    input = document.getElementById("tableInput");
-    filter = input.value.toUpperCase();
-    table = document.getElementById("info_table");
-    tr = table.getElementsByTagName("tr");
-
-    // Loop through all table rows, and hide those who don't match the search query
-    for (i = 0; i < tr.length; i++) {
-        td = tr[i].getElementsByTagName("td")[0];
-        if (td) {
-            if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
-                tr[i].style.display = "";
-            } else {
-                tr[i].style.display = "none";
-            }
-        }
-    }
-}
-
 var updateBarchart;
 
 function makeBarchart(countryName) {
@@ -233,10 +169,19 @@ function makeBarchart(countryName) {
     // // set up scale for x and y-axis
     // var x0 = d3.scale.ordinal()
     //     .rangeRoundBands([0, width], .1);
-    //
+    // //
     // var x1 = d3.scale.ordinal();
 
-    // set up scale for x and y-axis
+    // function to color the bar of the grouped bar chart
+    var color = function (gender) {
+        if (gender == female) {
+            return "#ff8c00";
+        }
+        else {
+            return "#6b486b";
+        }
+    };
+    // // set up scale for x and y-axis
     var x = d3.scale.ordinal()
         .rangeRoundBands([0, width], .09);
 
@@ -260,9 +205,9 @@ function makeBarchart(countryName) {
           });
 
 
-    var index = findIndexOf(dataBoth, countryName);
-    var ageNames = d3.keys(dataBoth[index]).filter(function(key) { return key !== "country"; });
-    console.log(dataBoth[index]);
+    var index = findIndexOf(dataFemale, countryName);
+    var ageNames = d3.keys(dataFemale[index]).filter(function(key) { return key !== "country"; });
+    // console.log(dataFemale[index]);
     var dataset = [];
 
     var i = 0;
@@ -272,20 +217,25 @@ function makeBarchart(countryName) {
         dataset.push({
             age: ageNames[i],
             depression: dataBoth[index][ageName]
+            // gender: {
+            //     female: dataFemale[index][ageName],
+            //     male: dataMale[index][ageName]
+            // }
+            // female: dataFemale[index][ageName],
+            // male: dataMale[index][ageName]
         });
     }
     console.log(dataset);
 
+    // domains for regular bar chart
     x.domain(dataset.map(function(d) { return d.age; }));
     y.domain([0, d3.max(dataset, function(d) { return d.depression + 500; })]);
 
-    // x0.domain(ageNames.map(function(d) { return d.name; }));
-    // x1.domain(ageNames)
+
+    // domains for grouped bar chart
+    // x0.domain(dataset.map(function(d) { return d.age; }));
+    // x1.domain(2)
     //     .rangeRoundBands([0, x0.rangeBand()]);
-
-    // x.domain(both.map(function(d) { return d.country; }));
-
-    // y.domain([0, d3.max(both, function(d) { return d3.max(d.ages, function(d) { return d.value; }); })]);
 
     svg.append("g")
         .attr("class", "x axis")
@@ -679,6 +629,69 @@ function findIndexOf(data, value) {
         if (data[i].country == value) {
             index = i;
             return index;
+        }
+    }
+}
+
+// The table generation function
+function makeTable(data, columns) {
+    var table = d3.select("#tablecontainer").append("table")
+        .attr("class", "table table-hover")
+        .attr("id", "info_table"),
+        thead = table.append("thead")
+        .attr("class", "thead-inverse"),
+        tbody = table.append("tbody");
+
+    // append the header row
+    thead.append("tr")
+        .selectAll("th")
+        .data(columns)
+        .enter()
+        .append("th")
+        .text(function(column) { return column; });
+
+    // create a row for each object in the data
+    var rows = tbody.selectAll("tr")
+        .data(data)
+        .enter()
+        .append("tr");
+
+    // create a cell in each row for each column
+    var cells = rows.selectAll("td")
+        .data(function(row) {
+            return columns.map(function(column) {
+                return {
+                    column: column,
+                    value: row[column]
+                };
+            });
+        })
+        .enter()
+        .append("td")
+        .html(function(d) { return d.value; });
+
+    return table;
+}
+
+// function that lets users search for a country
+// adapted from this example: http://www.w3schools.com/howto/howto_js_filter_table.asp
+function searchTable() {
+    // Declare variables
+    var input, filter, table, tr, td, i;
+    input = document.getElementById("tableInput");
+    filter = input.value.toUpperCase();
+    table = document.getElementById("info_table");
+    tr = table.getElementsByTagName("tr");
+
+    // Loop through all table rows, and hide those who don't match the search query
+    for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[0];
+        if (td) {
+            if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                tr[i].style.display = "";
+            } else {
+                tr[i].style.display = "none";
+            }
         }
     }
 }

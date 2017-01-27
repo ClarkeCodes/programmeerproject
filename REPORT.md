@@ -83,3 +83,11 @@ Vandaag hebben we besproken hoe ver we zijn gekomen met de plannen die we gister
 **Afwezig:** ShanLi Nio, Jan Maarten de Vries
 
 We hebben elkaar geholpen met de structuur van onze repository. De vraag hierbij die bij ons opkwam was of het beter is om 1 main javascript te hebben en 1 javascript waar alle functies instaan, of 1 main en dan allemaal verschillende javascripts met de aparte functies erin. Verder hebben we besproken of we het beter vinden om tekst op onze pagina te zetten.
+
+## Week 3 Dag 4 - donderdag 26 januari
+
+![Selfie dag 10](doc/report/selfie_10.jpeg)
+
+**Aanwezig:** Lotte Slim, Eline Jacobse, Isa Leijdekkers, ShanLi Nio, Jan Maarten de Vries
+
+Vandaag hebben we onze projecten tot nu toe aan elkaar laten zien en we hebben verteld wat we nog moeten doen. Eline is bezig met haar laatste visualisatie, een bar chart. Deze moet nog samen met het linken van de visualisaties afgemaakt worden. Lotte heeft bijna alle interactiviteit af. Alleen het springen naar het juiste land in de tabel werkt nog niet. Shan Li werkt nog aan de tooltip van haar eerste visualisatie. De map en barchart zijn zo goed als klaar, er zitten alleen nog hele kleine bugs in. De pie chart van Jan Maarten klopt nog niet helemaal, dus daar gaat hij nog aan werken. Ook wil hij nog informatie toevoegen over wanneer de albums zijn gemaakt. Isa moet de bubble chart nog afmaken en de zoekfunctie optimaliseren. Ook moeten de visualisaties nog gelinkt worden.

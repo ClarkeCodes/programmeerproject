@@ -131,3 +131,7 @@ Screenshots of the website currently (without the header):
 I got my bar chart to work and linked it to both my line chart and the world map. When you click on the worldmap, it will scroll down to the other two visualizations where it changes the barchart (and title) to display demographics for the selected country.
 
 ![Working bar chart](doc/barchart_week3.png)
+
+## day 5
+
+Today I spent most time on getting the grouped bar chart to work. I reformatted the dataset so I can use data from the different files (male and female depression rates), and I set up part of the bar chart. I couldn't fully get it to work yet, but I will finish it this weekend. 
