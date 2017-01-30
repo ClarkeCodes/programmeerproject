@@ -19,7 +19,8 @@ queue()
 var legend;
 
 // all colors to be used for the data (source: http://colorbrewer2.org/)
-var all_colors = ['#ffffb2', '#fed976', '#feb24c', '#fd8d3c', '#fc4e2a', '#e31a1c', '#b10026'];
+// var all_colors = ['#ffffb2', '#fed976', '#feb24c', '#fd8d3c', '#fc4e2a', '#e31a1c', '#b10026'];
+var all_colors = ['#c6dbef','#9ecae1','#6baed6','#4292c6','#2171b5','#08519c','#08306b'];
 // var all_colors = ['#f1eef6','#d0d1e6','#a6bddb','#74a9cf','#3690c0','#0570b0','#034e7b'];
 var color_values = [3, 5, 7, 10, 15, 20, 20.1];
 var color_values2 = [3.5, 4, 4.5, 5, 5.5, 6, 6.5];
@@ -237,9 +238,6 @@ function main(error, data, data2, both, female, male) {
         delete female[i].age75_79;
         delete female[i].age80plus;
         delete female[i].all;
-        // d.age10_14 =+ d.age10_14;
-        // d.age15_19 =+ d.age15_19;
-        // }
     }
 
     i = 0;
@@ -283,6 +281,9 @@ function main(error, data, data2, both, female, male) {
 
 // change graph to selected value (depression/suicide)
 window.toggle = function(d) {
+    // var value = document.getElementById('test_form')['options'].value;
+    // var value = document.querySelector('input[name="options"]:checked').value;
+    // console.log(value);
     if (d.value == "suicide") {
         updateMap("suicide");
     } else if (d.value == "depression") {

@@ -86,56 +86,41 @@ function makeLinegraph() {
             .attr("dy", "-.3em");
 
         // scale the range of the data
-        x.domain(d3.extent(data, function(d) {
-            return d.year;
-        }));
+        x.domain(d3.extent(data, function(d) { return d.year; }));
         // x.domain(data.map(function(d) { return d.year; }));
-        var minimum = d3.min(data, function(d) {
-            return d.depression;
-        });
-        y.domain([minimum, d3.max(data, function(d) {
-            return d.depression;
-        })]);
+        var minimum = d3.min(data, function(d) { return d.depression; });
+        y.domain([minimum, d3.max(data, function(d) { return d.depression; })]);
 
         // Nest the entries by symbol
         var dataNest = d3.nest()
-            .key(function(d) {
-                return d.country;
-            })
+            .key(function(d) { return d.country; })
             .entries(data);
 
         var countries = svg.selectAll(".country")
-            .data(dataNest, function(d) {
-                return d.key;
-            })
+            .data(dataNest, function(d) { return d.key; })
             .enter().append("g")
             .attr("class", "country");
 
         countries.append("path")
-            .attr("id", function(d) {
-                return d.values["0"].continent;
-            })
+            .attr("id", function(d) { return d.values["0"].continent; })
             .attr("class", function(d) {
                 var lineClass = "line " + codes[d.key];
                 return lineClass;
             })
-            .attr("d", function(d) {
-                return valueline(d.values);
-            });
+            .attr("d", function(d) { return valueline(d.values); });
 
         var lineColor;
 
         svg.selectAll(".line")
             .on("mouseover", function(d) {
                 var country = d3.select(this)[0][0].classList[1];
-                console.log(country);
+                // console.log(country);
                 var selector = '.datamaps-subunit.' + country;
-                console.log(selector);
+                // console.log(selector);
                 d3.selectAll(selector)
                     .style("fill", "black");
 
                 var thisHeight = y(d.values[4].depression);
-                // var countryName = d3.select(this.parentNode).attr('id');
                 // add text to be displayed when moving cursor over graph
                 focus.select("text.countryName")
                     .attr("transform", "translate(" + (width - 5) + "," + (thisHeight + 5) + ")")
@@ -155,9 +140,9 @@ function makeLinegraph() {
             })
             .on("mouseout", function() {
                 var country = d3.select(this)[0][0].classList[1];
-                console.log(country);
+                // console.log(country);
                 var selector = '.datamaps-subunit.' + country;
-                console.log(selector);
+                // console.log(selector);
                 d3.selectAll(selector)
                     .style("fill", function() {
                         // map return to grey if there is no data
@@ -197,15 +182,43 @@ function makeLinegraph() {
                 d3.selectAll('.selected')
                     .style("visibility", "visible");
 
-                // change color of line
-                var element = d3.select(this)
+                // change color of all other lines back
+                var lines = d3.selectAll('.line');
+                lines = lines[0];
+                console.log(lines);
+
+                var i = 0;
+                for (i; i < lines.length; i++) {
+                    lineColor = getStyle(lines[i], 'stroke');
+                    lineColor = colorToHex(lineColor);
+                    if (lineColor == "#0") {
+                        console.log(d3.selectAll(".line." + lines[i].classList[1]));
+                        d3.selectAll(".line." + lines[i].classList[1])
+                            .style("stroke", "#eee");
+                    }
+                }
+
+                // lines.forEach(function(d, i) {
+                //     lineColor = getStyle(lines[i], 'stroke');
+                //     lineColor = colorToHex(lineColor);
+                //     // console.log(lines[i].classList[1]);
+                //     // console.log(colorToHex(lineColor));
+                //     if (lineColor == "#0") {
+                //         console.log(d3.selectAll(".line." + lines[i].classList[1]));
+                //         d3.selectAll(".line." + lines[i].classList[1])
+                //             .style("stroke", "#eee");
+                //     }
+                // });
+
+
+                // change color of this line
+                d3.select(this)
                     .attr("z-index", "200")
                     .style("stroke", function() {
                         lineColor = getStyle(d3.select(this)[0][0], 'stroke');
                         return "#000";
                     })
                     .style("stroke-width", "2px");
-
             });
 
         // Add the X Axis
@@ -232,6 +245,8 @@ function makeLinegraph() {
         highlightLines = function(button, continent) {
             var continent_path = "path#" + continent + ".line";
             var newColor = continentColors[continent];
+
+            console.log(svg.selectAll(continent_path));
 
             // change button color when clicked
             if (button.style.color === "" ||

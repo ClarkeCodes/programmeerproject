@@ -9,7 +9,7 @@ function colorMap(dataset) {
             var projection = d3.geo.equirectangular()
                 .center([19, -3])
                 .rotate([4.4, 0])
-                .scale(120)
+                .scale(160)
                 .translate([element.offsetWidth / 2, element.offsetHeight / 2]);
             var path = d3.geo.path()
                 .projection(projection);
@@ -25,25 +25,31 @@ function colorMap(dataset) {
         done: function(map) {
             d3.selectAll('.datamaps-subunit')
                 .on('mouseover', function(geo) {
+                    var country_id = codes[geo.properties.name];
                     var mouse = d3.mouse(this);
                     tooltip.classed('hidden', false)
                         .attr('style', 'left:' + (mouse[0] + 15) +
                             'px; top:' + (mouse[1] - 55) + 'px')
                         .html(function() {
-
-                            //   if (data[d.id]) {
-                            return "<strong>Country:</strong> <span>" + geo.properties.name + "</span> <br/> <strong>";
-                            //   + ":</strong> <span>" + data[d.id].number + "</span>";
-                            //   }
-                            //   return "<strong>Country:</strong> <span>" + geo.properties.name + "</span> <br/> <strong>";
-                            // + ":</strong> <span> <i>No Data</i> </span>";
+                            // get countr id
+                            if (dataset[country_id]) {
+                                return "<strong><span>" + geo.properties.name + "</span></strong>" +
+                                        "<br><strong>Depression: </strong><span>" + dataset[country_id].depression.toFixed(2) + "% </span>";
+                            }
+                            else {
+                                return "<strong><span>" + geo.properties.name + "</span></strong>" +
+                                "<br></strong> <span> <i>No Data</i> </span>";
+                            }
                         });
 
-                    console.log(codes);
-                    // console.log(codes_reverse);
                     // change fillcolor on mouseover
                     d3.select(this)
-                        .style("fill", "black");
+                        .style("fill", function() {
+                            if (dataset[country_id]) {
+                                return d3.rgb(dataset[country_id].fillColor).darker(1);
+                            }
+                            return d3.rgb('#e2e2e2').darker(1);
+                        });
 
                     // highlight value of country in scatterplot and table
                     var country_code = codes[geo.properties.name];
@@ -104,34 +110,40 @@ function makeLegend() {
     // add labels to legend
     legend.append("text")
         .attr("x", 45)
-        .attr("y", function(d, i) {
-            return legendHeight - (i * r_height) - r_height - 5;
-        })
-        .text(function(d, i) {
-            return depressionLabels[i];
-        });
+        .attr("y", function(d, i) { return legendHeight - (i * r_height) - r_height - 5; })
+        .text(function(d, i) { return depressionLabels[i]; });
 
     // inital legend title
-    legend.append("text")
+    svg.append("text")
         .attr("id", "legendTitle")
-        .attr("x", 20)
-        .attr("y", 290)
-        .attr("transform", "rotate(-90)")
-        .text("Depression in % of population");
+        .style("text-anchor", "left")
+        .attr("x", -480)
+        .attr("y", 10)
+        .attr('transform', 'rotate(-90)')
+        .text("Depressed population in %");
 }
+
+var buttonSuicide = d3.selectAll('#btnSuicide')[0][0];
+var buttonDepression = d3.selectAll('#btnDepression')[0][0];
 
 // functions to toggle map updates
 function updateMap(dataset) {
     if (dataset == "suicide") {
+        buttonSuicide.style.backgroundColor = '#fff';
+        buttonDepression.style.backgroundColor = '#eee';
         worldmap.updateChoropleth(data_s);
         updateLegend("suicide");
+
     } else {
+        buttonDepression.style.backgroundColor = '#fff';
+        buttonSuicide.style.backgroundColor = '#eee';
         worldmap.updateChoropleth(data_d);
         updateLegend("depression");
     }
 }
 
 function updateLegend(dataset) {
+    var svg = d3.select("#legendContainer");
     // remove current legend labels and title
     d3.selectAll("g.legend text")
         .remove();
@@ -142,35 +154,32 @@ function updateLegend(dataset) {
         // add new labels to legend
         legend.append("text")
             .attr("x", 45)
-            .attr("y", function(d, i) {
-                return legendHeight - (i * r_height) - r_height - 5;
-            })
-            .text(function(d, i) {
-                return suicideLabels[i];
-            });
+            .attr("y", function(d, i) { return legendHeight - (i * r_height) - r_height - 5; })
+            .text(function(d, i) { return suicideLabels[i]; });
 
         // add new legend title
-        legend.append("text")
+        svg.append("text")
             .attr("id", "legendTitle")
-            .attr("x", 10)
-            .attr("y", 290)
-            .text("Suicide");
+            .style("text-anchor", "left")
+            .attr("x", -480)
+            .attr("y", 10)
+            .attr('transform', 'rotate(-90)')
+            .text("Suicide rate per 100,000");
+
     } else if (dataset == "depression") {
         // add new labels to legend
         legend.append("text")
             .attr("x", 45)
-            .attr("y", function(d, i) {
-                return legendHeight - (i * r_height) - r_height - 5;
-            })
-            .text(function(d, i) {
-                return depressionLabels[i];
-            });
+            .attr("y", function(d, i) { return legendHeight - (i * r_height) - r_height - 5; })
+            .text(function(d, i) { return depressionLabels[i]; });
 
         // add new legend title
-        legend.append("text")
+        svg.append("text")
             .attr("id", "legendTitle")
-            .attr("x", 10)
-            .attr("y", 290)
-            .text("Depression");
+            .style("text-anchor", "left")
+            .attr("x", -480)
+            .attr("y", 10)
+            .attr('transform', 'rotate(-90)')
+            .text("Depressed population in %");
     }
 }

@@ -30,9 +30,9 @@ function makeBarchart(countryName) {
     // function to color the bar of the grouped bar chart
     var color = function(gender) {
         if (gender == "Female") {
-            return "#ff8c00";
+            return "#fd8d3c";
         } else {
-            return "#6b486b";
+            return '#2171b5';
         }
     };
 
@@ -60,7 +60,7 @@ function makeBarchart(countryName) {
     var tip = d3.tip()
         .attr("class", "d3-tip")
         .html(function(d) {
-            return d3.format(",")(d.depression.toFixed(1));
+            return d3.format(",")(d.depression[0].toFixed(1));
         });
 
     // finds the index of country
@@ -93,6 +93,9 @@ function makeBarchart(countryName) {
         return d.gender;
     });
     console.log(genders);
+
+    var all_ages = ["10 - 19", "20 - 29", "30 - 39", "40 - 49",
+        "50 - 59", "60 - 69", "70+"];
 
     // domains for grouped bar chart
     x0.domain(ageNames);
@@ -135,10 +138,12 @@ function makeBarchart(countryName) {
             return "translate(" + x0(d.age) + ",0)";
         });
 
+    var div = d3.select('body').append('div')
+    .attr('class', 'tooltip')
+    .style('opacity', 0);
+
     bar.selectAll("rect")
-        .data(function(d) {
-            return d.depression;
-        })
+        .data(function(d) { return d.depression; })
         .enter().append("rect")
         .attr("width", x1.rangeBand())
         .attr("x", function(d) { return x1(d.gender); })
@@ -146,11 +151,18 @@ function makeBarchart(countryName) {
         .attr("y", function(d) { return y(0); })
         .attr("height", function(d) { return height - y(0); })
         .on("mouseover", function(d) {
-            tip.show;
+            console.log(d.rate);
+            div.transition()
+                .duration(200)
+                .style('opacity', 0.9);
+            div.html('<h3>' + d.rate.toFixed(0) + '</h3>')
+                .style('left', (d3.event.pageX) + 'px')
+                .style('top', function(d) { return height - y(0); });
             d3.select(this).style("fill", d3.rgb(color(d.gender)).darker(2));
         })
         .on("mouseout", function(d) {
-            tip.hide;
+            // tip.hide;
+            div.style('opacity', 0);
             d3.select(this).style("fill", color(d.gender));
         });
 
@@ -163,28 +175,24 @@ function makeBarchart(countryName) {
 
 
     var legend = svg.selectAll(".legend")
-        .data(dataset[0].depression.map(function(d) { return d.gender; }).reverse())
+        .data(dataset[0].depression.map(function(d) { return d.gender; }))
         .enter().append("g")
         .attr("class", "legend")
         .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; })
-        .style("opacity", "0");
+        .style("opacity", "100");
 
     legend.append("rect")
         .attr("x", width - 18)
         .attr("width", 18)
         .attr("height", 18)
-        .style("fill", function(d) {
-            return color(d);
-        });
+        .style("fill", function(d) { return color(d); });
 
     legend.append("text")
         .attr("x", width - 24)
         .attr("y", 9)
         .attr("dy", ".35em")
         .style("text-anchor", "end")
-        .text(function(d) {
-            return d;
-        });
+        .text(function(d) { return d; });
 
     // add title to barchart
     svg.append("text")
@@ -252,17 +260,20 @@ function makeBarchart(countryName) {
             .attr("y", function(d) { return y(d.rate); })
             .attr("height", function(d) { return height - y(d.rate); });
 
-        svg.select(".y.axis").remove();
+        svg.select(".y.axis")
+            .transition()
+            .duration(750)
+            .call(yAxis);
         // Existing code to draw y-axis:
-        svg.append("g")
-            .attr("class", "y axis")
-            .call(yAxis)
-            .append("text")
-            .attr("transform", "rotate(-90)")
-            .attr("y", 6)
-            .attr("dy", ".71em")
-            .style("text-anchor", "end")
-            .text("Depression");
+        // svg.append("g")
+        //     .attr("class", "y axis")
+        //     .call(yAxis)
+        //     .append("text")
+        //     .attr("transform", "rotate(-90)")
+        //     .attr("y", 6)
+        //     .attr("dy", ".71em")
+        //     .style("text-anchor", "end")
+        //     .text("Depression per 100,000");
 
         svg.select(".barTitle").remove();
 
@@ -275,5 +286,4 @@ function makeBarchart(countryName) {
             .text("Demographics of Depression in " + countryName);
 
     };
-
 }

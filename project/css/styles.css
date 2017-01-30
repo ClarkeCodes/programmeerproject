@@ -135,18 +135,49 @@ body {
     margin-bottom: 0px;
 }
 
+.btn-group-sm {
+    /*white-space: nowrap;*/
+    /*display: inline-block;*/
+    /*text-align:center;*/
+    display: flex;
+}
+
+.btn-group-sm>.btn, .btn-sm {
+    border-radius: 1.5px !important;
+}
+
+.btn-default.active {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+
+}
+
+.btn-default {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
+
 .container-fluid {
     min-height: 100%;
     overflow:auto;
 }
 
-#switcher {
+#btnSuicide {
     background-color: #eee;
+    /*left: -20px;*/
+    /*white-space: nowrap;*/
 }
 
-#switcher:focus {
+#btnDepression {
     background-color: #fff;
+    /*white-space: nowrap;*/
 }
+
+/*#switcher:focus {
+    background-color: #fff;
+}*/
 
 path {
     stroke: #eee;
