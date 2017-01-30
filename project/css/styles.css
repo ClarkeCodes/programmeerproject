@@ -1,3 +1,12 @@
+/**
+ * styles.css
+ *
+ * Eline Jacobse
+ * Programmeerproject
+ * Student: 11136235
+ *
+ */
+
 #main {
     margin: 0 auto;
     max-width: 600px;
@@ -193,7 +202,7 @@ p.text_up {
     z-index: 2;
 }
 
-#linegraphWrapper {
+.linegraphWrapper {
     position: relative;
     top: -50px;
 }
@@ -219,3 +228,32 @@ div.tooltip {
 .hidden {
         display: none;
 }
+
+.affix {
+    top: 0;
+    width: 100%;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.affix-top {
+    position: static;
+    top: -35px;
+}
+
+.navbar {
+    z-index: 9999;
+}
+
+/*header {*/
+    /*background: #f5b335;*/
+    /*height: 40px;
+    position: fixed;
+    top: 0;
+    transition: top 0.2s ease-in-out;
+    width: 100%;
+}*/
+
+/*.nav-up {
+    top: -40px;
+}*/
