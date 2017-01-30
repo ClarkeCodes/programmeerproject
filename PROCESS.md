@@ -134,4 +134,14 @@ I got my bar chart to work and linked it to both my line chart and the world map
 
 ## day 5
 
-Today I spent most time on getting the grouped bar chart to work. I reformatted the dataset so I can use data from the different files (male and female depression rates), and I set up part of the bar chart. I couldn't fully get it to work yet, but I will finish it this weekend. 
+Today I spent most time on getting the grouped bar chart to work. I reformatted the dataset so I can use data from the different files (male and female depression rates), and I set up part of the bar chart. I couldn't fully get it to work yet, but I will finish it this weekend.
+
+# Week 4
+
+## day 1
+
+Today I finished the grouped bar charts, which now also update for each country. I also animated the y-axis transition, instead of just creating a new one. I fixed the button of the world map (it now stays white when selected), and added info to the onhover of the World Map.
+
+All continents on the line graph now work with the continent buttons. I also spent time on the layout, I added a main screen with an intro that will be the first thing you see when you open the website. I created new sketches for the final layout of the website.
+
+![Website](doc/website_week4_1.png)![Website](doc/website_week4_12.png)![Website](doc/website_week4_13.png)![Website](doc/website_week4_14.png)

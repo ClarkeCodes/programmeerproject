@@ -11,9 +11,41 @@
     margin: 0 auto;
     max-width: 600px;
     padding: 50px;
+    text-align: left;
     -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
           box-sizing: border-box;
+}
+.glyphicon-menu-down {
+    color: #fff;
+    
+}
+
+#page-intro {
+  height: 800px;
+	color: #fff;
+  background-image: url("/project/img/intro-bg.jpg");
+  background-size: cover;
+}
+
+.container {
+   z-index:2;
+   min-width: 1300px;
+}
+
+/*@media
+.container {
+    padding-left: 0px;
+    padding-right: 0px;
+}*/
+
+.header {
+  margin-top:12%;
+  color:#fff;
+}
+
+.header h1 {
+   color:#fff;
 }
 
 #paragraph-1 {
