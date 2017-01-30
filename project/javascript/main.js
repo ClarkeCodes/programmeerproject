@@ -118,18 +118,7 @@ function main(error, data, data2, both, female, male) {
     // create map, legend and table
     worldmap = colorMap(dataset2);
     makeLegend();
-    // var table = makeTable(data, ["country", "suicide", "male", "female"]);
-    //
-    // // sort values in table by suicide
-    // table.selectAll("tbody tr")
-    //     .sort(function(a, b) {
-    //         return d3.descending(a.suicide, b.suicide);
-    //     });
-    // // format table header
-    // table.selectAll("thead th")
-    //     .text(function(column) {
-    //         return column.charAt(0).toUpperCase() + column.substr(1);
-    //     });
+
 
     both.forEach(function(d) {
         d.age10_14 = +d.age10_14;
