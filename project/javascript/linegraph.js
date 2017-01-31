@@ -156,10 +156,18 @@ function makeLinegraph() {
                 d3.selectAll('.focus')
                     .style("visibility", "hidden");
 
+                var curLine = d3.select(this)["0"]["0"].style.stroke;
+                curLine = colorToHex(curLine);
+                console.log(curLine);
+
                 d3.select(this)
                     .style("stroke", function() {
-                        if (lineColor != "#000") {
+
+                        console.log("Line " + lineColor);
+                        if (lineColor != "#0") {
                             return lineColor;
+                        } else if (lineColor == "#000") {
+                            return '#000';
                         } else {
                             return '#eee';
                         }
@@ -185,14 +193,14 @@ function makeLinegraph() {
                 // change color of all other lines back
                 var lines = d3.selectAll('.line');
                 lines = lines[0];
-                console.log(lines);
+                // console.log(lines);
 
                 var i = 0;
                 for (i; i < lines.length; i++) {
                     lineColor = getStyle(lines[i], 'stroke');
                     lineColor = colorToHex(lineColor);
                     if (lineColor == "#0") {
-                        console.log(d3.selectAll(".line." + lines[i].classList[1]));
+                        // console.log(d3.selectAll(".line." + lines[i].classList[1]));
                         d3.selectAll(".line." + lines[i].classList[1])
                             .style("stroke", "#eee");
                     }
@@ -212,13 +220,17 @@ function makeLinegraph() {
 
 
                 // change color of this line
-                d3.select(this)
-                    .attr("z-index", "200")
-                    .style("stroke", function() {
-                        lineColor = getStyle(d3.select(this)[0][0], 'stroke');
-                        return "#000";
-                    })
-                    .style("stroke-width", "2px");
+                var thisLine = d3.select(this);
+                thisLine = thisLine["0"]["0"].classList[1];
+                highlightLine(thisLine);
+                // console.log(thisLine["0"]["0"].classList[1]);
+                // ["0"]["0"].classList[1]
+                    // .attr("z-index", "200")
+                    // .style("stroke", function() {
+                    //     lineColor = getStyle(d3.select(this)[0][0], 'stroke');
+                    //     return "#000";
+                    // })
+                    // .style("stroke-width", "2px");
             });
 
         // Add the X Axis

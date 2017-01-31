@@ -103,3 +103,12 @@ Eline: Paar legendas en bugs in de bargraph. Lay out goed maken, en tekst erbij.
 Isa: tekst overal bij en titels. en een kleine bug. Lijkt ons ook realistisch.
 Lotte: vooral haar buttons moet ze fixen, en verder kijken naar de kleurkeuze. Ook realistisch.
 Jan Maarten: data aanpassen, en een rare bug fixen. Lijkt ons ook wel realistisch.
+
+## Week 4 Dag 2 - dinsdag 31 januari
+
+**Aanwezig:** Lotte Slim, Eline Jacobse, Isa Leijdekkers, ShanLi Nio**
+**Afwezig:** Jan Maarten de Vries
+
+![Selfie dag 12](doc/report/selfie_12.jpeg)
+
+Lotte heeft alle fouten uit haar data gehaald en gewerkt aan de verschillende buttons. Vandaag gaat ze de assen van de grafieken fixen en de bronnen overal bij zetten. ShanLi heeft de bug uit haar kaart gehaald on hover, ze heeft gewerkt aan de layout (de informatiebox). Eline heeft aan de layout van haar website gewerkt en een aantal bugs verbeterd. Isa heeft tekst op haar website gezet en een legenda toegevoegd aan haar bubble chart.

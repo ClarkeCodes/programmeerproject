@@ -18,13 +18,13 @@
 }
 .glyphicon-menu-down {
     color: #fff;
-    
+
 }
 
 #page-intro {
   height: 800px;
 	color: #fff;
-  background-image: url("/project/img/intro-bg.jpg");
+  /*background-image: url("/project/img/intro-bg.jpg");*/
   background-size: cover;
 }
 
@@ -66,10 +66,10 @@ h3, h4, h5 {
 
 #mapcontainer {
     align: center;
-    margin: auto;
+    /*margin: auto;*/
     position: relative;
     margin-bottom: 0;
-    top: -140px;
+    top: -50px;
 }
 
 p {
@@ -129,10 +129,19 @@ tbody {
     top: -140px;
 }
 
+.display_4 {
+    margin-top: 100px;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Open Sans', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: 200;
   letter-spacing: 1px;
+}
+
+#mapbuttons {
+    margin-top: 20px;
+    margin-bottom: 50px;
 }
 
 .heading-font {
@@ -160,6 +169,7 @@ footer {
 
 body {
    overflow-x: hidden;
+   background-color: #eee;
 }
 
 .bottom-row {
@@ -194,6 +204,7 @@ body {
 .container-fluid {
     min-height: 100%;
     overflow:auto;
+    background-color: #eee;
 }
 
 #btnSuicide {
@@ -234,24 +245,25 @@ path {
     margin: auto;
     position: relative;
     margin-bottom: 0;
-    top: -140px;
+    /*top: -80px;*/
     width: 850px;
     /*position: absolute;;*/
 }
 .linegraph {
     margin: 0 auto;
     align: center;
+    /*background-color: #fff;*/
     /*position: absolute;;*/
 }
 
 h4#linegraph_title {
     position: relative;
-    top: -140px;
+    /*top: -100px;*/
 }
 
 #region_buttons {
     position: relative;
-    top: -140px;
+    /*top: -100px;*/
     /*margin: auto;*/
     align: left;
 }
@@ -267,7 +279,8 @@ p.text_up {
 
 .linegraphWrapper {
     position: relative;
-    top: -50px;
+    padding-top: 50px;
+    /*top: -50px;*/
 }
 
 .bar {
@@ -319,4 +332,23 @@ div.tooltip {
 
 /*.nav-up {
     top: -40px;
+}*/
+
+#maptitle {
+    text-align: left;
+}
+
+#section1 {
+    margin-top: 150px;
+    margin-bottom: 50px;
+    /*background-color: #eee;*/
+}
+
+#section2 {
+    background-color: #fff;
+    /*margin-top: 150px;*/
+}
+
+/*#barcontainer {
+    margin-top: 1
 }*/

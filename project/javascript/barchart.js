@@ -8,6 +8,14 @@
  */
 
 var updateBarchart;
+// function to color the bar of the grouped bar chart
+var color = function(gender) {
+    if (gender == "Female") {
+        return "#fd8d3c";
+    } else {
+        return '#2171b5';
+    }
+};
 
 function makeBarchart(countryName) {
 
@@ -19,22 +27,13 @@ function makeBarchart(countryName) {
             left: 100
         },
         width = 700 - margin.left - margin.right,
-        height = 650 - margin.top - margin.bottom;
+        height = 600 - margin.top - margin.bottom;
 
     // set up scale for x and y-axis
     var x0 = d3.scale.ordinal()
         .rangeRoundBands([0, width], 0.1);
 
     var x1 = d3.scale.ordinal();
-
-    // function to color the bar of the grouped bar chart
-    var color = function(gender) {
-        if (gender == "Female") {
-            return "#fd8d3c";
-        } else {
-            return '#2171b5';
-        }
-    };
 
     var y = d3.scale.linear()
         .range([height, 0]);
@@ -63,6 +62,8 @@ function makeBarchart(countryName) {
             return d3.format(",")(d.depression[0].toFixed(1));
         });
 
+    // reduces the dataset to only items that match the 'test':
+    // var angolaObj = dataset.filter(function (d) { return d.key == "Angola" });
     // finds the index of country
     var index = findIndexOf(dataFemale, countryName);
     var ageNames = d3.keys(dataFemale[index]).filter(function(key) {

@@ -53,7 +53,7 @@ function colorMap(dataset) {
 
                     // highlight value of country in scatterplot and table
                     var country_code = codes[geo.properties.name];
-                    highlightLine(country_code);
+                    // highlightLine(country_code);
                 })
                 .on('mouseout', function(geo) {
                     // change fill back to previous color
@@ -68,13 +68,17 @@ function colorMap(dataset) {
                                 return dataset[country_code].fillColor;
                             }
                         });
-                    revertLine();
+                    // revertLine();
                 })
                 .on('click', function(geo) {
-                    $('html, body').animate({
-                        scrollTop: $("#linegraph_title").offset().top - 50
-                    }, 1000);
-                    updateBarchart(geo.properties.name);
+                    var country_code = codes[geo.properties.name];
+                    if (dataset[country_code]) {
+                        highlightLine(country_code);
+                        $('html, body').animate({
+                            scrollTop: $("#linegraph_title").offset().top - 50
+                        }, 1000);
+                        updateBarchart(geo.properties.name);
+                    }
                 });
         }
     });
