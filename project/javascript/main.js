@@ -16,7 +16,6 @@ queue()
     .defer(d3.csv, "project/data/depression_male_2015.csv")
     .await(main);
 
-var legend;
 
 // all colors to be used for the data (source: http://colorbrewer2.org/)
 // var all_colors = ['#ffffb2', '#fed976', '#feb24c', '#fd8d3c', '#fc4e2a', '#e31a1c', '#b10026'];
@@ -25,13 +24,7 @@ var all_colors = ['#c6dbef','#9ecae1','#6baed6','#4292c6','#2171b5','#08519c','#
 var color_values = [3, 5, 7, 10, 15, 20, 20.1];
 var color_values2 = [3.5, 4, 4.5, 5, 5.5, 6, 6.5];
 
-// set up attributes for legend
-var legendWidth = 110,
-    legendHeight = 500;
 
-// width and height for rects of legend
-var r_width = 20,
-    r_height = 20;
 
 var suicideLabels = ["< 3", "3 - 5", "5 - 7", "7 - 10", "10 - 15", "15 - 20", "> 20"];
 suicideLabels.reverse();
@@ -296,6 +289,17 @@ window.lineSelect = function(d) {
     var button = document.getElementById('btn' + d.value);
     highlightLines(button, d.value);
 };
+
+
+// function that enables smooth scrolling when clicking on links
+// source: http://stackoverflow.com/questions/7717527/smooth-scrolling-when-clicking-an-anchor-link
+var $root = $('html, body');
+$('a').click(function() {
+    $root.animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top - 140
+    }, 800);
+    return false;
+});
 
 // http://ghdx.healthdata.org/gbd-results-tool?params=querytool-permalink/6a6d68f2958f34482c33ecd1f831e9e5
 // http://ghdx.healthdata.org/gbd-results-tool?params=querytool-permalink/8cf6cac732db37277625c44b2da6b12d

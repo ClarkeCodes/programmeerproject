@@ -115,10 +115,10 @@ function makeLinegraph() {
             .on("mouseover", function(d) {
                 var country = d3.select(this)[0][0].classList[1];
                 // console.log(country);
-                var selector = '.datamaps-subunit.' + country;
+                // var selector = '.datamaps-subunit.' + country;
                 // console.log(selector);
-                d3.selectAll(selector)
-                    .style("fill", "black");
+                // d3.selectAll(selector)
+                //     .style("fill", "black");
 
                 var thisHeight = y(d.values[4].depression);
                 // add text to be displayed when moving cursor over graph
@@ -129,50 +129,18 @@ function makeLinegraph() {
                 d3.selectAll('.focus')
                     .style("visibility", "visible");
 
-                var element = d3.select(this)
-                    .attr("z-index", "100")
-                    .style("stroke", function() {
-                        lineColor = getStyle(d3.select(this)[0][0], 'stroke');
-                        return "#000";
-                    })
-                    .style("stroke-width", "2px");
+                d3.select(this)
+                    .classed("hovered", true);
 
             })
             .on("mouseout", function() {
-                var country = d3.select(this)[0][0].classList[1];
-                // console.log(country);
-                var selector = '.datamaps-subunit.' + country;
-                // console.log(selector);
-                d3.selectAll(selector)
-                    .style("fill", function() {
-                        // map return to grey if there is no data
-                        if (dataset[country] === undefined) {
-                            return '#e2e2e2';
-                        } else {
-                            return dataset[country].fillColor;
-                        }
-                    });
-
+                // var country = d3.select(this)[0][0].classList[1];
                 d3.selectAll('.focus')
                     .style("visibility", "hidden");
 
-                var curLine = d3.select(this)["0"]["0"].style.stroke;
-                curLine = colorToHex(curLine);
-                console.log(curLine);
-
                 d3.select(this)
-                    .style("stroke", function() {
+                    .classed("hovered", false);
 
-                        console.log("Line " + lineColor);
-                        if (lineColor != "#0") {
-                            return lineColor;
-                        } else if (lineColor == "#000") {
-                            return '#000';
-                        } else {
-                            return '#eee';
-                        }
-                    })
-                    .style("stroke-width", "1px");
             })
             .on("click", function(d) {
                 var country = d3.select(this)[0][0].classList[1];
@@ -190,47 +158,12 @@ function makeLinegraph() {
                 d3.selectAll('.selected')
                     .style("visibility", "visible");
 
-                // change color of all other lines back
-                var lines = d3.selectAll('.line');
-                lines = lines[0];
-                // console.log(lines);
+                d3.select('.clicked')
+                    .classed("clicked", false);
 
-                var i = 0;
-                for (i; i < lines.length; i++) {
-                    lineColor = getStyle(lines[i], 'stroke');
-                    lineColor = colorToHex(lineColor);
-                    if (lineColor == "#0") {
-                        // console.log(d3.selectAll(".line." + lines[i].classList[1]));
-                        d3.selectAll(".line." + lines[i].classList[1])
-                            .style("stroke", "#eee");
-                    }
-                }
+                d3.select(this)
+                    .classed("clicked", true);
 
-                // lines.forEach(function(d, i) {
-                //     lineColor = getStyle(lines[i], 'stroke');
-                //     lineColor = colorToHex(lineColor);
-                //     // console.log(lines[i].classList[1]);
-                //     // console.log(colorToHex(lineColor));
-                //     if (lineColor == "#0") {
-                //         console.log(d3.selectAll(".line." + lines[i].classList[1]));
-                //         d3.selectAll(".line." + lines[i].classList[1])
-                //             .style("stroke", "#eee");
-                //     }
-                // });
-
-
-                // change color of this line
-                var thisLine = d3.select(this);
-                thisLine = thisLine["0"]["0"].classList[1];
-                highlightLine(thisLine);
-                // console.log(thisLine["0"]["0"].classList[1]);
-                // ["0"]["0"].classList[1]
-                    // .attr("z-index", "200")
-                    // .style("stroke", function() {
-                    //     lineColor = getStyle(d3.select(this)[0][0], 'stroke');
-                    //     return "#000";
-                    // })
-                    // .style("stroke-width", "2px");
             });
 
         // Add the X Axis
@@ -274,7 +207,6 @@ function makeLinegraph() {
                 button.style.backgroundColor = '#FFF';
                 svg.selectAll(continent_path)
                     .style("stroke", '#eee');
-
             }
 
         };

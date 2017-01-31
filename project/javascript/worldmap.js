@@ -1,3 +1,13 @@
+var legend;
+
+// set up attributes for legend
+var legendWidth = 110,
+    legendHeight = 400;
+
+// width and height for rects of legend
+var r_width = 20,
+    r_height = 20;
+
 function colorMap(dataset) {
     var mapcontainer = document.getElementById("mapcontainer");
     var tooltip = d3.select('#mapcontainer').append('div')
@@ -19,7 +29,7 @@ function colorMap(dataset) {
             };
         },
         fills: {
-            defaultFill: '#e2e2e2'
+            defaultFill: '#B3B6B7'
         },
         data: dataset,
         done: function(map) {
@@ -50,10 +60,6 @@ function colorMap(dataset) {
                             }
                             return d3.rgb('#e2e2e2').darker(1);
                         });
-
-                    // highlight value of country in scatterplot and table
-                    var country_code = codes[geo.properties.name];
-                    // highlightLine(country_code);
                 })
                 .on('mouseout', function(geo) {
                     // change fill back to previous color
@@ -73,7 +79,13 @@ function colorMap(dataset) {
                 .on('click', function(geo) {
                     var country_code = codes[geo.properties.name];
                     if (dataset[country_code]) {
-                        highlightLine(country_code);
+
+                        d3.select('.clicked')
+                            .classed("clicked", false);
+                        var selector = '.line.' + country_code;
+                        var line = d3.select(selector)
+                            .classed("clicked", true);
+
                         $('html, body').animate({
                             scrollTop: $("#linegraph_title").offset().top - 50
                         }, 1000);
@@ -121,7 +133,7 @@ function makeLegend() {
     svg.append("text")
         .attr("id", "legendTitle")
         .style("text-anchor", "left")
-        .attr("x", -480)
+        .attr("x", -380)
         .attr("y", 10)
         .attr('transform', 'rotate(-90)')
         .text("Depressed population in %");
@@ -165,7 +177,7 @@ function updateLegend(dataset) {
         svg.append("text")
             .attr("id", "legendTitle")
             .style("text-anchor", "left")
-            .attr("x", -480)
+            .attr("x", -380)
             .attr("y", 10)
             .attr('transform', 'rotate(-90)')
             .text("Suicide rate per 100,000");
@@ -181,7 +193,7 @@ function updateLegend(dataset) {
         svg.append("text")
             .attr("id", "legendTitle")
             .style("text-anchor", "left")
-            .attr("x", -480)
+            .attr("x", -380)
             .attr("y", 10)
             .attr('transform', 'rotate(-90)')
             .text("Depressed population in %");

@@ -13,7 +13,7 @@ var color = function(gender) {
     if (gender == "Female") {
         return "#fd8d3c";
     } else {
-        return '#2171b5';
+        return '#9ecae1';
     }
 };
 
@@ -27,7 +27,7 @@ function makeBarchart(countryName) {
             left: 100
         },
         width = 700 - margin.left - margin.right,
-        height = 600 - margin.top - margin.bottom;
+        height = 550 - margin.top - margin.bottom;
 
     // set up scale for x and y-axis
     var x0 = d3.scale.ordinal()

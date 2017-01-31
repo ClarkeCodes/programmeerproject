@@ -69,7 +69,7 @@ h3, h4, h5 {
     /*margin: auto;*/
     position: relative;
     margin-bottom: 0;
-    top: -50px;
+    /*top: -50px;*/
 }
 
 p {
@@ -130,7 +130,7 @@ tbody {
 }
 
 .display_4 {
-    margin-top: 100px;
+    /*margin-top: 100px;*/
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -141,7 +141,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #mapbuttons {
     margin-top: 20px;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
 }
 
 .heading-font {
@@ -283,13 +283,13 @@ p.text_up {
     /*top: -50px;*/
 }
 
-.bar {
+/*.bar {
   fill: steelblue;
 }
 
 .bar:hover {
   fill: brown;
-}
+}*/
 
 div.tooltip {
         color: #222;
@@ -340,15 +340,54 @@ div.tooltip {
 
 #section1 {
     margin-top: 150px;
-    margin-bottom: 50px;
+    margin-bottom: 150px;
     /*background-color: #eee;*/
 }
 
 #section2 {
     background-color: #fff;
+    margin: 10px;
+    width: 100%;
+    background-size: cover;
     /*margin-top: 150px;*/
 }
 
-/*#barcontainer {
-    margin-top: 1
-}*/
+.glyphicon-menu-up {
+    color: #9d9d9d;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+#barcontainer {
+    margin-top: 50px;
+}
+
+#lineWrapper {
+    margin-top: 50px;
+}
+
+#barRow {
+    /*margin-top: 50px;*/
+}
+
+.line.clicked {
+    stroke: #000;
+    stroke-width: 2px;
+    z-index: 9999;
+}
+
+.line.hovered {
+    stroke: #000;
+    stroke-width: 2px;
+    z-index: 9998;
+}
+
+.line {
+    stroke: #eee;
+    z-index: 10;
+}
+
+.bg-info {
+    /*color: #eee;*/
+    background-color: #eee !important;
+}
