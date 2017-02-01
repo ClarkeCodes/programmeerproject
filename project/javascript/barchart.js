@@ -7,6 +7,10 @@
  *
  */
 
+
+// reduces the dataset to only items that match the 'test':
+// var angolaObj = dataset.filter(function (d) { return d.key == "Angola" });
+// finds the index of country
 var updateBarchart;
 // function to color the bar of the grouped bar chart
 var color = function(gender) {
@@ -59,22 +63,17 @@ var index;
 var ageNames;
 var dataset;
 
+// set up tooltip for numbers
+var tip = d3.tip()
+    .attr("class", "d3-tip")
+    .html(function(d) {
+        console.log(d.rate);
+        console.log(d.rate[0]);
+        return d3.format(",")(d.rate.toFixed(1));
+    });
+
 function makeBarchart(countryName) {
-
-    // reduces the dataset to only items that match the 'test':
-    // var angolaObj = dataset.filter(function (d) { return d.key == "Angola" });
-    // finds the index of country
-
     dataset = formatData(countryName);
-
-    // set up tooltip for numbers
-    var tip = d3.tip()
-        .attr("class", "d3-tip")
-        .html(function(d) {
-            console.log(d.rate);
-            console.log(d.rate[0]);
-            return d3.format(",")(d.rate.toFixed(1));
-        });
 
     var genders = dataset[0].depression.map(function(d) {
         return d.gender;
@@ -133,7 +132,6 @@ function makeBarchart(countryName) {
         .attr("height", function(d) { return height - y(0); })
         .on("mouseover", function(d) {
             var thisHeight = y(d.rate);
-            console.log(thisHeight);
             tip.show(d, y(d.rate));
             d3.select(this).style("fill", d3.rgb(color(d.gender)).darker(2));
         })
@@ -161,7 +159,6 @@ function makeBarchart(countryName) {
     makeBarLegend();
 
     updateBarchart = function(countryName) {
-
         dataset = formatData(countryName);
 
         var genders = dataset[0].depression.map(function(d) { return d.gender; });
@@ -211,7 +208,6 @@ function makeBarchart(countryName) {
             .attr("class", "barTitle")
             .style("font-size", "16px")
             .text("Demographics of Depression in " + countryName);
-
     };
 }
 
@@ -235,7 +231,6 @@ function makeBarLegend() {
         .attr("dy", ".35em")
         .style("text-anchor", "end")
         .text(function(d) { return d; });
-
 }
 
 function formatData (countryName) {

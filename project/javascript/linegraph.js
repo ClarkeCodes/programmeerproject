@@ -22,9 +22,8 @@ var continentColors = {
     NorthAmerica: '#BE1932'
 };
 
-
-
-
+// Parse the date / time
+var parseDate = d3.time.format("%Y").parse;
 
 function makeLinegraph() {
     // set up margins, width and height for svg
@@ -45,9 +44,6 @@ function makeLinegraph() {
         .attr("class", "linegraph")
         .append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
-    // Parse the date / time
-    var parseDate = d3.time.format("%Y").parse;
 
     // set the ranges
     var x = d3.time.scale()
@@ -121,7 +117,7 @@ function makeLinegraph() {
 
         svg.selectAll(".line")
             .on("mouseover", function(d) {
-                var country = d3.select(this)[0][0].classList[1]; 
+                var country = d3.select(this)[0][0].classList[1];
                 // var selector = '.datamaps-subunit.' + country;
                 // d3.selectAll(selector)
                 //     .style("fill", "black");
