@@ -216,9 +216,9 @@ function makeBarLegend() {
 
 function formatData (countryName) {
     var dataset = [];
-    index = findIndexOf(dataBoth, countryName);
-    console.log(dataBoth);
-    ageNames = d3.keys(dataBoth[index]).filter(function(key) {
+    index = findIndexOf(dataFemale, countryName);
+    console.log(dataFemale);
+    ageNames = d3.keys(dataFemale[index]).filter(function(key) {
         return key !== "country";
     });
 

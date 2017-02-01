@@ -25,6 +25,7 @@
   height: 800px;
 	color: #fff;
 
+    background: no-repeat fixed;
   /*background-image: url("/project/img/intro-bg.jpg");*/
   background-size: cover;
   width: 100%;

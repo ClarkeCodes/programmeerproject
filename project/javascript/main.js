@@ -11,7 +11,6 @@
 queue()
     .defer(d3.csv, "project/data/suicide_by_country.csv")
     .defer(d3.csv, "project/data/depression_2015.csv")
-    .defer(d3.csv, "project/data/depression_both_2015.csv")
     .defer(d3.csv, "project/data/depression_female_2015.csv")
     .defer(d3.csv, "project/data/depression_male_2015.csv")
     .await(main);
@@ -58,7 +57,7 @@ for (var i = 0; i < country_codes.length; i++) {
     codes_reverse[country_codes[i][1]] = country_codes[i][2];
 }
 
-function main(error, data, data2, both, female, male) {
+function main(error, data, data2, female, male) {
     if (error) throw error;
     dataset = {};
     dataset2 = {};
@@ -109,11 +108,11 @@ function main(error, data, data2, both, female, male) {
     worldmap = colorMap(dataset2);
     makeLegend();
 
-    barData(both);
+    // barData(both);
     barData(female);
     barData(male);
 
-    dataBoth = both;
+    // dataBoth = both;
     dataFemale = female;
     dataMale = male;
 
