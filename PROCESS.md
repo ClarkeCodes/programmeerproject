@@ -145,3 +145,7 @@ Today I finished the grouped bar charts, which now also update for each country.
 All continents on the line graph now work with the continent buttons. I also spent time on the layout, I added a main screen with an intro that will be the first thing you see when you open the website. I created new sketches for the final layout of the website.
 
 ![Website](doc/website_week4_1.png)![Website](doc/website_week4_12.png)![Website](doc/website_week4_13.png)![Website](doc/website_week4_14.png)
+
+## day 2
+
+I finally fixed the bug in the line graph, where the lines would stay black after a new line was clicked. I also added some changes to the layout and my code, and started on the report. 
