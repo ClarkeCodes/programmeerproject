@@ -12,8 +12,21 @@ var highlightLines;
 var highlightLine;
 var revertLine;
 
-function makeLinegraph() {
+var continentColors = {
+    Europe: '#ED7C31',
+    EastAsia: '#00BBD6',
+    SouthAsia: '#6E9E75',
+    NorthAfrica: '#E25f82',
+    SubSaharan: '#895881',
+    LatinAmerica: '#82A5C0',
+    NorthAmerica: '#BE1932'
+};
 
+
+
+
+
+function makeLinegraph() {
     // set up margins, width and height for svg
     var margin = {
             top: 40,
@@ -23,6 +36,15 @@ function makeLinegraph() {
         },
         width = 600 - margin.left - margin.right,
         height = 650 - margin.top - margin.bottom;
+
+    // create svg with the specified size
+    var svg = d3.select("#linecontainer")
+        .append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+        .attr("class", "linegraph")
+        .append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
     // Parse the date / time
     var parseDate = d3.time.format("%Y").parse;
@@ -38,15 +60,6 @@ function makeLinegraph() {
         .orient("bottom").ticks(6);
     var yAxis = d3.svg.axis().scale(y)
         .orient("left").ticks(10);
-
-    // create svg with the specified size
-    var svg = d3.select("#linecontainer")
-        .append("svg")
-        .attr("width", width + margin.left + margin.right)
-        .attr("height", height + margin.top + margin.bottom)
-        .attr("class", "linegraph")
-        .append("g")
-        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
     // Define the line
     var valueline = d3.svg.line()
@@ -153,11 +166,8 @@ function makeLinegraph() {
                 d3.selectAll('.selected')
                     .style("visibility", "visible");
 
-                d3.select('.clicked')
-                    .classed("clicked", false);
-
-                d3.select(this)
-                    .classed("clicked", true);
+                var selector = '.line.' + d3.select(this)[0][0].classList[1];
+                highlightLine(selector);
 
             });
 
@@ -172,44 +182,28 @@ function makeLinegraph() {
             .attr("class", "y axis")
             .call(yAxis);
 
-        var continentColors = {
-            Europe: '#ED7C31',
-            EastAsia: '#00BBD6',
-            SouthAsia: '#6E9E75',
-            NorthAfrica: '#E25f82',
-            SubSaharan: '#895881',
-            LatinAmerica: '#82A5C0',
-            NorthAmerica: '#BE1932'
-        };
 
         highlightLines = function(button, continent) {
             var continent_path = "path#" + continent + ".line";
-            var newColor = continentColors[continent];
+            var selector = '#btn' + continent;
 
-            console.log(svg.selectAll(continent_path));
+            // highlight lines of continent
+            d3.selectAll(continent_path)
+                .classed(continent, function (d, i) {
+                    return !d3.select(this).classed(continent);
+                });
 
-            // change button color when clicked
-            if (button.style.color === "" ||
-                button.style.color == 'rgb(51, 51, 51)') {
-                button.style.color = '#FFF';
-                button.style.backgroundColor = newColor;
-                svg.selectAll(continent_path)
-                    .style("stroke", newColor);
-            }
-            // change button back to original color
-            else {
-                button.style.color = '#333';
-                button.style.backgroundColor = '#FFF';
-                svg.selectAll(continent_path)
-                    .style("stroke", '#eee');
-            }
-
+            // change buton color
+            d3.selectAll(selector)
+                .classed('clicked', function (d, i) {
+                    return !d3.select(this).classed('clicked');
+                });
         };
-        highlightLine = function(countryCode) {
-            var selector = 'path.line.' + countryCode;
-            svg.selectAll(selector)
-                .style("stroke-width", "2px")
-                .style("stroke", '#333');
+        highlightLine = function(selector) {
+            d3.select('.line.clicked')
+                .classed("clicked", false);
+            var line = d3.select(selector)
+                .classed("clicked", true);
 
         };
         revertLine = function() {

@@ -387,6 +387,69 @@ div.tooltip {
     z-index: 10;
 }
 
+.line.Europe{
+    stroke: #ED7C31;
+}
+.line.EastAsia {
+    stroke: #00BBD6;
+}
+.line.SouthAsia {
+    stroke: #6E9E75;
+}
+.line.NorthAfrica {
+    stroke: #E25f82;
+}
+.line.SubSaharan {
+    stroke: #895881;
+}
+.line.LatinAmerica {
+    stroke: #82A5C0;
+}
+.line.NorthAmerica {
+    stroke: #BE1932;
+}
+
+#btnEurope.clicked {
+    color: #FFF;
+    background-color: #ED7C31;
+}
+#btnEastAsia.clicked {
+    color: #FFF;
+    background-color: #00BBD6;
+}
+#btnSouthAsia.clicked {
+    color: #FFF;
+    background-color: #6E9E75;
+}
+#btnNorthAfrica.clicked {
+    color: #FFF;
+    background-color: #E25f82;
+
+}
+#btnSubSaharan.clicked {
+    color: #FFF;
+    background-color: #895881;
+
+}
+#btnLatinAmerica.clicked {
+    color: #FFF;
+    background-color: #82A5C0;
+
+}
+#btnNorthAmerica.clicked {
+    color: #FFF;
+    background-color: #BE1932;
+
+}
+
+/*Europe: '#ED7C31',
+EastAsia: '#00BBD6',
+SouthAsia: '#6E9E75',
+NorthAfrica: '#E25f82',
+SubSaharan: '#895881',
+LatinAmerica: '#82A5C0',
+NorthAmerica: '#BE1932'*/
+
 .bg-info {
     /*color: #eee;*/
     background-color: #eee !important;

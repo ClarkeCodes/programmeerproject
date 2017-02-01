@@ -51,7 +51,6 @@ function colorMap(dataset) {
                                 "<br></strong> <span> <i>No Data</i> </span>";
                             }
                         });
-
                     // change fillcolor on mouseover
                     d3.select(this)
                         .style("fill", function() {
@@ -74,17 +73,11 @@ function colorMap(dataset) {
                                 return dataset[country_code].fillColor;
                             }
                         });
-                    // revertLine();
                 })
                 .on('click', function(geo) {
                     var country_code = codes[geo.properties.name];
                     if (dataset[country_code]) {
-
-                        d3.select('.clicked')
-                            .classed("clicked", false);
-                        var selector = '.line.' + country_code;
-                        var line = d3.select(selector)
-                            .classed("clicked", true);
+                        highlightLine(selector);
 
                         $('html, body').animate({
                             scrollTop: $("#linegraph_title").offset().top - 50
