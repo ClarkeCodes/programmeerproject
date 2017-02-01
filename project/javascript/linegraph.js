@@ -50,12 +50,8 @@ function makeLinegraph() {
 
     // Define the line
     var valueline = d3.svg.line()
-        .x(function(d) {
-            return x(d.year);
-        })
-        .y(function(d) {
-            return y(d.depression);
-        });
+        .x(function(d) { return x(d.year); })
+        .y(function(d) { return y(d.depression); });
 
     // get data from csv file
     d3.csv("project/data/prevalence_depression_1995-2015.csv", function(error, data) {
@@ -87,7 +83,6 @@ function makeLinegraph() {
 
         // scale the range of the data
         x.domain(d3.extent(data, function(d) { return d.year; }));
-        // x.domain(data.map(function(d) { return d.year; }));
         var minimum = d3.min(data, function(d) { return d.depression; });
         y.domain([minimum, d3.max(data, function(d) { return d.depression; })]);
 

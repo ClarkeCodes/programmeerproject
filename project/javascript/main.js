@@ -16,15 +16,10 @@ queue()
     .defer(d3.csv, "project/data/depression_male_2015.csv")
     .await(main);
 
-
 // all colors to be used for the data (source: http://colorbrewer2.org/)
-// var all_colors = ['#ffffb2', '#fed976', '#feb24c', '#fd8d3c', '#fc4e2a', '#e31a1c', '#b10026'];
 var all_colors = ['#c6dbef','#9ecae1','#6baed6','#4292c6','#2171b5','#08519c','#08306b'];
-// var all_colors = ['#f1eef6','#d0d1e6','#a6bddb','#74a9cf','#3690c0','#0570b0','#034e7b'];
 var color_values = [3, 5, 7, 10, 15, 20, 20.1];
 var color_values2 = [3.5, 4, 4.5, 5, 5.5, 6, 6.5];
-
-
 
 var suicideLabels = ["< 3", "3 - 5", "5 - 7", "7 - 10", "10 - 15", "15 - 20", "> 20"];
 suicideLabels.reverse();
@@ -36,6 +31,7 @@ var dataset2;
 var worldmap;
 var suicide_data;
 var depression_data;
+
 // datasets in map format
 var data_s = {},
     data_d = {};
@@ -112,7 +108,6 @@ function main(error, data, data2, both, female, male) {
     // create map, legend and table
     worldmap = colorMap(dataset2);
     makeLegend();
-
 
     both.forEach(function(d) {
         d.age10_14 = +d.age10_14;
@@ -201,9 +196,6 @@ function main(error, data, data2, both, female, male) {
         delete both[i].age75_79;
         delete both[i].age80plus;
         delete both[i].all;
-        // d.age10_14 =+ d.age10_14;
-        // d.age15_19 =+ d.age15_19;
-        // }
     }
 
     i = 0;
@@ -235,8 +227,6 @@ function main(error, data, data2, both, female, male) {
 
     i = 0;
     for (i; i < male.length; i++) {
-        // for (j; j < ageNames.length; j++) {
-        //     ageName = ageNames[j];
         male[i].age10_19 = (male[i].age10_14 + male[i].age15_19) / 2;
         delete male[i].age10_14;
         delete male[i].age15_19;
@@ -261,7 +251,6 @@ function main(error, data, data2, both, female, male) {
         delete male[i].age80plus;
         delete male[i].all;
     }
-    // console.log(both);
 
     dataBoth = both;
     dataFemale = female;
@@ -274,9 +263,6 @@ function main(error, data, data2, both, female, male) {
 
 // change graph to selected value (depression/suicide)
 window.toggle = function(d) {
-    // var value = document.getElementById('test_form')['options'].value;
-    // var value = document.querySelector('input[name="options"]:checked').value;
-    // console.log(value);
     if (d.value == "suicide") {
         updateMap("suicide");
     } else if (d.value == "depression") {
@@ -289,7 +275,6 @@ window.lineSelect = function(d) {
     var button = document.getElementById('btn' + d.value);
     highlightLines(button, d.value);
 };
-
 
 // function that enables smooth scrolling when clicking on links
 // source: http://stackoverflow.com/questions/7717527/smooth-scrolling-when-clicking-an-anchor-link
