@@ -73,8 +73,6 @@ function main(error, data, data2, female, male) {
         var iso = codes[d.country];
         dataset[iso] = {
             suicide: d.suicide,
-            male: d.male,
-            female: d.female,
             fillColor: colorScale(d.suicide)
         };
     });
@@ -108,11 +106,9 @@ function main(error, data, data2, female, male) {
     worldmap = colorMap(dataset2);
     makeLegend();
 
-    // barData(both);
     barData(female);
     barData(male);
 
-    // dataBoth = both;
     dataFemale = female;
     dataMale = male;
 
@@ -206,6 +202,7 @@ function formatBarData(dataset) {
         delete dataset[i].age80plus;
         delete dataset[i].all;
     }
+    return dataset;
 }
 
 // http://ghdx.healthdata.org/gbd-results-tool?params=querytool-permalink/6a6d68f2958f34482c33ecd1f831e9e5
