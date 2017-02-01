@@ -21,6 +21,12 @@ var color = function(gender) {
     }
 };
 
+var all_ages = ["10 - 19", "20 - 29", "30 - 39", "40 - 49",
+    "50 - 59", "60 - 69", "70+"];
+var formatTick = function(d, i) {
+    return all_ages[i];
+};
+
 // set up margins, width and height for the barchart
 var margin = {
         top: 50,
@@ -50,14 +56,12 @@ var y = d3.scale.linear()
 // set up axes
 var xAxis = d3.svg.axis()
     .scale(x0)
-    .orient("bottom");
+    .orient("bottom")
+    .tickFormat(formatTick);
 
 var yAxis = d3.svg.axis()
     .scale(y)
     .orient("left");
-
-var all_ages = ["10 - 19", "20 - 29", "30 - 39", "40 - 49",
-    "50 - 59", "60 - 69", "70+"];
 
 var index;
 var ageNames;
@@ -67,14 +71,12 @@ var dataset;
 var tip = d3.tip()
     .attr("class", "d3-tip")
     .html(function(d) {
-        console.log(d.rate);
-        console.log(d.rate[0]);
+        console.log(d);
         return d3.format(",")(d.rate.toFixed(1));
     });
 
 function makeBarchart(countryName) {
     dataset = formatData(countryName);
-
     var genders = dataset[0].depression.map(function(d) {
         return d.gender;
     });
@@ -84,9 +86,7 @@ function makeBarchart(countryName) {
     x1.domain(genders)
         .rangeRoundBands([0, x0.rangeBand()]);
     y.domain([0, d3.max(dataset, function(age) {
-        return d3.max(age.depression, function(d) {
-            return d.rate + 500;
-        });
+        return d3.max(age.depression, function(d) { return d.rate + 500; });
     })]);
 
     // create x-axis
@@ -118,9 +118,7 @@ function makeBarchart(countryName) {
         .data(dataset)
         .enter().append("g")
         .attr("class", "bar")
-        .attr("transform", function(d) {
-            return "translate(" + x0(d.age) + ",0)";
-        });
+        .attr("transform", function(d) { return "translate(" + x0(d.age) + ",0)"; });
 
     bar.selectAll("rect")
         .data(function(d) { return d.depression; })
@@ -132,11 +130,11 @@ function makeBarchart(countryName) {
         .attr("height", function(d) { return height - y(0); })
         .on("mouseover", function(d) {
             var thisHeight = y(d.rate);
-            tip.show(d, y(d.rate));
+            tip.show(d, y(0));
             d3.select(this).style("fill", d3.rgb(color(d.gender)).darker(2));
         })
         .on("mouseout", function(d) {
-            tip.hide(d, y(d.rate));
+            tip.hide(d, y(0));
             d3.select(this).style("fill", color(d.gender));
         });
 
@@ -159,35 +157,18 @@ function makeBarchart(countryName) {
     makeBarLegend();
 
     updateBarchart = function(countryName) {
-        dataset = formatData(countryName);
 
+        dataset = formatData(countryName);
         var genders = dataset[0].depression.map(function(d) { return d.gender; });
-        y.domain([0, d3.max(dataset, function(age) {return d3.max(age.depression, function(d) { return d.rate + 500; }); })]);
+
+        y.domain([0, d3.max(dataset, function(age) {return d3.max(age.depression, function(d) {
+            return (d.rate) + 500; }); })]);
 
         var bar = barSvg.selectAll(".bar")
             .data(dataset);
 
-        bar.enter().append("rect")
-            .attr("class", "bar")
-            .attr("width", x1.rangeBand())
-            .attr("x", function(d) { return x1(d.gender); })
-            .style("fill", function(d) { return color(d.gender); })
-            .attr("y", function(d) { return y(0); })
-            .attr("height", function(d) { return height - y(0); })
-            .on("mouseover", function(d) {
-                tip.show(d, y(d.rate));
-                d3.select(this)
-                    .style("fill", d3.rgb(color(d.gender)).darker(2));
-            })
-            .on("mouseout", function(d) {
-                tip.hide(d, y(d.rate));
-                d3.select(this)
-                    .style("fill", color(d.gender));
-            });
-
-        bar.exit().remove();
-
         bar.selectAll("rect")
+            .data(function(d) { return d.depression; })
             .transition()
             .delay(function(d) { return Math.random() * 1000; })
             .duration(1000)
@@ -207,7 +188,7 @@ function makeBarchart(countryName) {
             .attr("text-anchor", "middle")
             .attr("class", "barTitle")
             .style("font-size", "16px")
-            .text("Demographics of Depression in " + countryName);
+            .text(function(d) { return "Demographics of Depression in " + countryName; });
     };
 }
 
@@ -236,6 +217,7 @@ function makeBarLegend() {
 function formatData (countryName) {
     var dataset = [];
     index = findIndexOf(dataBoth, countryName);
+    console.log(dataBoth);
     ageNames = d3.keys(dataBoth[index]).filter(function(key) {
         return key !== "country";
     });

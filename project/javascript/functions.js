@@ -55,7 +55,7 @@ function findIndexOf(data, value) {
     $(function () {
         $(window).scroll(function () {
 
-                 // set distance user needs to scroll before we start fadeIn
+            // set distance user needs to scroll before we start fadeIn
             if ($(this).scrollTop() > 100) {
                 $('.navbar').fadeIn();
             } else {

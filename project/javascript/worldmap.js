@@ -43,8 +43,11 @@ function colorMap(dataset) {
                         .html(function() {
                             // get countr id
                             if (dataset[country_id]) {
+                                var index = findIndexOf(suicide_data, geo.properties.name);
+                                // console.log(suicide_data[index]);
                                 return "<strong><span>" + geo.properties.name + "</span></strong>" +
-                                        "<br><strong>Depression: </strong><span>" + dataset[country_id].depression.toFixed(2) + "% </span>";
+                                        "<br><strong>Depression: </strong><span>" + dataset[country_id].depression.toFixed(2) + "% </span>" +
+                                        "<br><strong>Suicide: </strong><span>" + suicide_data[index].suicide.toFixed(2) + " per 100,000</span>";
                             }
                             else {
                                 return "<strong><span>" + geo.properties.name + "</span></strong>" +
@@ -80,8 +83,7 @@ function colorMap(dataset) {
                     if (dataset[country_code]) {
                         var selector = '.line.' + country_code;
                         highlightLine(selector);
-
-                        $('html, body').animate({
+                        $root.animate({
                             scrollTop: $("#linegraph_title").offset().top - 50
                         }, 1000);
                         updateBarchart(geo.properties.name);

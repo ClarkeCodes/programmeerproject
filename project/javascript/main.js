@@ -141,11 +141,22 @@ window.lineSelect = function(d) {
 // source: http://stackoverflow.com/questions/7717527/smooth-scrolling-when-clicking-an-anchor-link
 var $root = $('html, body');
 $('a').click(function() {
-    $root.animate({
-        scrollTop: $( $.attr(this, 'href') ).offset().top - 140
-    }, 800);
+    console.log(this);
+    console.log($.attr(this, 'href'));
+    if ($.attr(this, 'href') == "#section2") {
+        $root.animate({
+            scrollTop: $("#linegraph_title").offset().top - 50
+        }, 1000);
+    }
+    else {
+        $root.animate({
+            scrollTop: $( $.attr(this, 'href') ).offset().top - 140
+        }, 800);
+    }
     return false;
 });
+
+
 
 function barData (dataset) {
     dataset.forEach(function(d) {

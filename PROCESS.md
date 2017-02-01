@@ -89,7 +89,7 @@ After I created more sketches and decided what visualizations I was going to do 
 
 ## day 4
 
-I spent a large part of today formatting my dataset to create a line graph of depression from 1995-2015 around the world. I had trouble with this graph, because the line went from 1995 to 2005 and back to 2000, instead of doing this chronolically. I managed to find the problem and fix it, and finished the inital linegraph. I added buttons for the different continents, which allow you to highlight lines representing countries of a region in the linegraph. So far this works for the region of Europe and Central Asia, the rest of it I still have to fix.
+I spent a large part of today formatting my dataset to create a line graph of depression from 1995-2015 around the world. I had trouble with this graph, because the line went from 1995 to 2005 and back to 2000, instead of doing this chronologically. I managed to find the problem and fix it, and finished the initial linegraph. I added buttons for the different continents, which allow you to highlight lines representing countries of a region in the linegraph. So far this works for the region of Europe and Central Asia, the rest of it I still have to fix.
 
 Tomorrow I want to finish this part of the line graph and link it to my world map. I also want to start on my last visualizations.
 
@@ -148,4 +148,4 @@ All continents on the line graph now work with the continent buttons. I also spe
 
 ## day 2
 
-I finally fixed the bug in the line graph, where the lines would stay black after a new line was clicked. I also added some changes to the layout and my code, and started on the report. 
+I finally fixed the bug in the line graph, where the lines would stay black after a new line was clicked. I also added some changes to the layout and my code, and started on the report.
