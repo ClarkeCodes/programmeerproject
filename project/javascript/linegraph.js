@@ -121,14 +121,13 @@ function makeLinegraph() {
 
         svg.selectAll(".line")
             .on("mouseover", function(d) {
-                var country = d3.select(this)[0][0].classList[1];
-                // console.log(country);
+                var country = d3.select(this)[0][0].classList[1]; 
                 // var selector = '.datamaps-subunit.' + country;
-                // console.log(selector);
                 // d3.selectAll(selector)
                 //     .style("fill", "black");
 
                 var thisHeight = y(d.values[4].depression);
+
                 // add text to be displayed when moving cursor over graph
                 focus.select("text.countryName")
                     .attr("transform", "translate(" + (width - 5) + "," + (thisHeight + 5) + ")")
@@ -142,7 +141,6 @@ function makeLinegraph() {
 
             })
             .on("mouseout", function() {
-                // var country = d3.select(this)[0][0].classList[1];
                 d3.selectAll('.focus')
                     .style("visibility", "hidden");
 
@@ -181,7 +179,6 @@ function makeLinegraph() {
         svg.append("g")
             .attr("class", "y axis")
             .call(yAxis);
-
 
         highlightLines = function(button, continent) {
             var continent_path = "path#" + continent + ".line";

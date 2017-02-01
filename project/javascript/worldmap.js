@@ -74,13 +74,12 @@ function colorMap(dataset) {
                                 return dataset[country_code].fillColor;
                             }
                         });
-                    // revertLine();
                 })
                 .on('click', function(geo) {
                     var country_code = codes[geo.properties.name];
                     if (dataset[country_code]) {
                         var selector = '.line.' + country_code;
-                        highlightLine(selector);        
+                        highlightLine(selector);
 
                         $('html, body').animate({
                             scrollTop: $("#linegraph_title").offset().top - 50
