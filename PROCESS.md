@@ -149,3 +149,14 @@ All continents on the line graph now work with the continent buttons. I also spe
 ## day 2
 
 I finally fixed the bug in the line graph, where the lines would stay black after a new line was clicked. I also added some changes to the layout and my code, and started on the report.
+
+## day 3
+
+I worked on my report, which I mostly finished. I also sent a link of my website to some friends to ask them for feedback and make sure all functionality made sense. I had not included text with my visualizations yet, so I could find out by their responses if any of the visualizations needed instructions and what other points I should specify in the text.
+
+I found out that:
+- I should mention in my introduction to press F11 to ensure people use the website in fullscreen/presentation mode, which is what I designed it for.
+- It was not obvious right away that you could click the map to go to the next screen. Without instructions people would just scroll down, and would not have thought to click on a country.
+- One bug: the legend of the bar chart occasionally doesn't show text
+- The grey I used for the lines in my line graph was hard to see if nothing was selected. It is good for highlighting countries, but a suggestion was that I make the color just a shade darker.
+- I should emphasize in my text with the world map that the suicide rates are per 100,000 people, and the depression rates are in % of the population.

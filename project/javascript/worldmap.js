@@ -133,7 +133,7 @@ function makeLegend() {
         .attr("x", -380)
         .attr("y", 10)
         .attr('transform', 'rotate(-90)')
-        .text("Depressed population in %");
+        .text("Depression rate (%)");
 }
 
 var buttonSuicide = d3.selectAll('#btnSuicide')[0][0];
@@ -193,6 +193,6 @@ function updateLegend(dataset) {
             .attr("x", -380)
             .attr("y", 10)
             .attr('transform', 'rotate(-90)')
-            .text("Depressed population in %");
+            .text("Depression rate (%)");
     }
 }

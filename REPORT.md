@@ -10,7 +10,6 @@ Start with a short description of your application (like in the README.md, but v
 
 In my project I look at depression and suicide around the world. The goal is to create awareness of depression, and show more people in what countries people are depressed, what the demographics of the people who are depressed are, and how this has changed over the past ten years.
 
-
 ## 2. Technical Design
 ### 2.1 Overview
 My website has several components. When you open the website, you get to the introduction. This is the title, with a short introduction on the topic. To go to the data visualizations, you click the arrow to automatically scroll down, or you can just scroll down yourself. When you do, the background image stays fixed.
