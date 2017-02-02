@@ -97,34 +97,6 @@ p {
     align: right;
 }
 
-table {
-    width: 100%;
-}
-
-th, td {
-    width: 100px;
-}
-
-thead>tr {
-    position: relative;
-    display: block;
-}
-
-tbody {
-    display: block;
-    height: 450px;
-    overflow: auto;
-}
-
-
-#tableInput {
-    align: left;
-    border: 1px solid #ddd;
-    font-size: 16px;
-    width: 70%;
-    padding: 12px 20px 12px 40px;
-    margin-bottom: 12px;
-}
 
 #nl_text {
     padding-bottom: 25px;

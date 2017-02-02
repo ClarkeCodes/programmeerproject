@@ -1,50 +1,21 @@
-# Project
+# Depression and Suicide Around the World
 
-Eline Jacobse  
-11136235
+[![BCH compliance](https://bettercodehub.com/edge/badge/ElineJ/programmeerproject)](https://bettercodehub.com)
 
-## Introduction
+## Description
 
-Every [40 seconds](http://www.who.int/mental_health/suicide-prevention/en/) someone dies of suicide. Depression, the main cause of suicide, is a problem that will affect every out of five people during their lifetime.
+Every [40 seconds](http://www.who.int/mental_health/suicide-prevention/en/) someone dies of suicide. According to the World Health Organization (WHO), depression is something that will affect one out of five people during their lifetime.
 
-Worldwide rates of depression have increased over the past ten years. This is not only a problem for society, but for the economy as well. In the Netherlands depression costs an estimated 1,3 billion euros a year.
+Worldwide rates of depression have increased over the past ten years. My website looks at the depression and suicide rates around the world. It gives an overview of which countries have the highest rates of depression and suicide, what the trend of depression rates have been in each country and what the demographics
 
-For my project, I will look at the prevalence of depression in the Netherlands, and will investigate the cost of depression. I will also show how this is affected by cuts to mental health care throughout the past years.
-
-
-### Visualizations
-
-At the top of my website, I want to show a map of the world in which you can see depression rates (in percentages). This will show in which countries people suffer of depression the most. It will also show how The Netherlands compares to the rest of the world.
-
-Underneath this world map, as you scroll further, I will focus on the Netherlands with a map of the country that shows depression rates per region. From a dropdown-menu, you can choose to show the amount of suicides per region as well.
-
-If you click on a region of the map, it will zoom in and a bar chart on the right of the map will display how much money (proportional to the total expenses of that region) was spent on mental health care in a particular year. It will also display a bar that shows the national average spending on mental health care, so you can compare each region to that.
-
-Below this graph, the story continues. It another graph I will compare the costs of depression to other costs of health care in The Netherlands. This will show how relatively large the problem is on a national level.
-
-Finally, I will end the story with a conclusion with possible solutions to this problem. I will do this by comparing depression rates in the Netherlands with countries with lower depression rates, and (when you click on a country) showing what countries with lower rates are doing differently in terms of mental health care.
-
-
-### Sketches  
+### Screenshots
 
 ![Sketch](doc/sketch-world-map.jpg)![Sketch](doc/sketch netherlands.jpeg)![Sketch](doc/sketch-bar-chart.jpeg)
 
-### Data Sources
-Several sources I can use to find the data I need are: World Health Organization, CBS, Rijksoverheid, GGZ, LexisNexis, Nederlanse Zorgautoriteit, CIZ, Eurostat.
 
-### Technical problems or limitations  
 
-I have a lot of different aspects I want to show in my final project. Some of the interactive elements I want to use, are things I have never made before. This might cause a problem if I cannot get it to work well.
+### Sources
 
-Another point to watch out for, is that I don't try to present too much information on the page. The story itself needs to be clear and every visualization needs to add something useful to the story. It needs to be clear and easy to understand for visitors of the website.
 
-### Similar visualizations
 
-The [Washington Post](https://www.washingtonpost.com/news/worldviews/wp/2013/11/07/a-stunning-map-of-depression-rates-around-the-world/?utm_term=.2ad431790650) has created a world map with the prevalence of depression in each country.
-![World suicide map](doc/world_map_depression.jpeg)
-
-[Volksgezondheidenzorg.info](https://www.volksgezondheidenzorg.info/onderwerp/sterfte-naar-doodsoorzaak/regionaal-internationaal/niet-natuurlijk#node-sterfte-door-zelfdoding-ggd-regio) has made two visualizations that are similar to what I want to do. Below you see a map of the Netherlands showing the amount of suicides in each region. Next to it is a map of the risk of developing depression or an anxiety disorders in different counties.
-
-<img src="doc/sterfte-door-zelfdoding.png" width="420"><img src="doc/risico_angststoornissen_depressie.png" width="450">
-
-These visualizations are similar to the map I want to create for my website, but they are both stand alone maps. You cannot select different variables to be displayed in the same visualization. My map will make it easier to compare the different variables by allowing the user to select which data they want to display, and have this shown in the same map.
+### Copyright
