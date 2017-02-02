@@ -9,7 +9,7 @@ Worldwide rates of depression have increased over the past ten years. My website
 
 The website aims to create more awareness of depression and suicide, by allowing users to explore depression and suicide rates around the world through different visualizations.
 
-![Screenshot](doc/FINAL1.png)![Screenshot](doc/FINAL2.png)![Screenshot](doc/FINAL3.png)![Screenshot](doc/FINAL4.png)
+![Screenshot](doc/FINAL1.png)![Screenshot](doc/FINAL2.png)![Screenshot](doc/FINAL3.png)
 
 ## 2. Technical Design
 ### 2.1 Overview
