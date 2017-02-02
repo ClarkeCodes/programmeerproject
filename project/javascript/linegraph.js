@@ -104,57 +104,6 @@ function makeLinegraph() {
             .attr("d", function(d) { return valueline(d.values); });
 
         var lineColor;
-
-        svg.selectAll(".line")
-            .on("mouseover", function(d) {
-                var country = d3.select(this)[0][0].classList[1];
-                // var selector = '.datamaps-subunit.' + country;
-                // d3.selectAll(selector)
-                //     .style("fill", "black");
-
-                var thisHeight = y(d.values[4].depression);
-
-                // add text to be displayed when moving cursor over graph
-                focus.select("text.countryName")
-                    .attr("transform", "translate(" + (width - 5) + "," + (thisHeight + 5) + ")")
-                    .text(d.key);
-
-                d3.selectAll('.focus')
-                    .style("visibility", "visible");
-
-                d3.select(this)
-                    .classed("hovered", true);
-
-            })
-            .on("mouseout", function() {
-                d3.selectAll('.focus')
-                    .style("visibility", "hidden");
-
-                d3.select(this)
-                    .classed("hovered", false);
-
-            })
-            .on("click", function(d) {
-                var country = d3.select(this)[0][0].classList[1];
-                country = codes_reverse[country];
-                updateBarchart(country);
-
-                d3.selectAll('.selected')
-                    .style("visibility", "hidden");
-
-                var thisHeight = y(d.values[4].depression);
-                // add text to be displayed next to graph
-                selected.select("text.selected")
-                    .attr("transform", "translate(" + (width - 5) + "," + (thisHeight + 5) + ")")
-                    .text(d.key);
-                d3.selectAll('.selected')
-                    .style("visibility", "visible");
-
-                var selector = '.line.' + d3.select(this)[0][0].classList[1];
-                highlightLine(selector);
-
-            });
-
         // Add the X Axis
         svg.append("g")
             .attr("class", "x axis")
@@ -165,6 +114,57 @@ function makeLinegraph() {
         svg.append("g")
             .attr("class", "y axis")
             .call(yAxis);
+
+        // add the lines to the graph
+        svg.selectAll(".line")
+            .on("mouseover", function(d) {
+                d3.select(this)
+                    .classed("hovered", true);
+                mouseOverFunc(d);
+            })
+            .on("mouseout", function() {
+                d3.selectAll('.focus')
+                    .style("visibility", "hidden");
+                d3.select(this)
+                    .classed("hovered", false);
+            })
+            .on("click", function(d) {
+                var country = codes_reverse[d3.select(this)[0][0].classList[1]];
+                var selector = '.line.' + d3.select(this)[0][0].classList[1];
+                updateBarchart(country);
+                highlightLine(selector);
+                onClickFunc(d);
+            });
+
+        function mouseOverFunc(d) {
+            // var country = d3.select(this)[0][0].classList[1];
+            // var selector = '.datamaps-subunit.' + country;
+            // d3.selectAll(selector)
+            //     .style("fill", "black");
+
+            var thisHeight = y(d.values[4].depression);
+            // add text to be displayed when moving cursor over graph
+            focus.select("text.countryName")
+                .attr("transform", "translate(" + (width - 5) + "," + (thisHeight + 5) + ")")
+                .text(d.key);
+
+            d3.selectAll('.focus')
+                .style("visibility", "visible");
+        }
+
+        function onClickFunc(d) {
+            d3.selectAll('.selected')
+                .style("visibility", "hidden");
+
+            var thisHeight = y(d.values[4].depression);
+            // add text to be displayed next to graph
+            selected.select("text.selected")
+                .attr("transform", "translate(" + (width - 5) + "," + (thisHeight + 5) + ")")
+                .text(d.key);
+            d3.selectAll('.selected')
+                .style("visibility", "visible");
+
+        }
 
         highlightLines = function(button, continent) {
             var continent_path = "path#" + continent + ".line";
