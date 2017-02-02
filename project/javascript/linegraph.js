@@ -7,20 +7,10 @@
  *
  */
 
-
+// variables for update functions
 var highlightLines;
 var highlightLine;
 var revertLine;
-
-var continentColors = {
-    Europe: '#ED7C31',
-    EastAsia: '#00BBD6',
-    SouthAsia: '#6E9E75',
-    NorthAfrica: '#E25f82',
-    SubSaharan: '#895881',
-    LatinAmerica: '#82A5C0',
-    NorthAmerica: '#BE1932'
-};
 
 // Parse the date / time
 var parseDate = d3.time.format("%Y").parse;

@@ -342,7 +342,7 @@ div.tooltip {
 .glyphicon-menu-down {
     color: #9d9d9d;
     /*margin: 0 auto;*/
-    /*margin-top: 50px;*/
+    margin-top: 50px;
 }
 
 #barcontainer {
@@ -434,6 +434,52 @@ div.tooltip {
     background-color: #eee !important;
 }
 
-/*#section3{
-    width: 100%;
+.bottom-paragraph
+{
+    /*float: none;*/
+    /*display: table-cell;*/
+    position: relative;
+    padding-top: 140px;
+    vertical-align: bottom;
+}
+
+.title-left {
+    text-align: left;
+}
+
+/*.tooltip{
+    position:absolute;
+    z-index:1020;
+    display:block;
+    visibility:visible;
+    padding:5px;
+    font-size:11px;
+    opacity:0;
+    filter:alpha(opacity=0)
 }*/
+
+/*.tooltip.in{
+    opacity:.8;
+    filter:alpha(opacity=80)
+}*/
+
+/*.tooltip.bottom .tooltip-inner{
+    max-width:200px;
+    padding:3px 8px;
+    color:#fff;
+    text-align:center;
+    text-decoration:none;
+    background-color:red;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px
+}*/
+
+.tooltip.bottom .tooltip-arrow{
+    top:0;
+    left:50%;
+    margin-left:-5px;
+    /*border-left:5px solid transparent;*/
+    /*border-right:5px solid transparent;*/
+    /*border-bottom:5px solid #000*/
+}

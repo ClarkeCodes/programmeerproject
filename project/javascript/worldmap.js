@@ -10,7 +10,7 @@ var r_width = 20,
 
 function colorMap(dataset) {
     var mapcontainer = document.getElementById("mapcontainer");
-    var tooltip = d3.select('#mapcontainer').append('div')
+    var maptip = d3.select('#mapcontainer').append('div')
         .attr('class', 'hidden tooltip');
     var worldmap = new Datamap({
         element: document.getElementById("mapcontainer"),
@@ -35,54 +35,60 @@ function colorMap(dataset) {
         done: function(map) {
             d3.selectAll('.datamaps-subunit')
                 .on('mouseover', function(geo) {
-                    var country_id = codes[geo.properties.name];
                     var mouse = d3.mouse(this);
-                    tooltip.classed('hidden', false)
+                    maptip.classed('hidden', false)
                         .attr('style', 'left:' + (mouse[0] + 15) +
                             'px; top:' + (mouse[1] - 55) + 'px')
                         .html(function() {
-                            // get countr id
-                            if (dataset[country_id]) {
+                            // show tooltip with data if data is available
+                            if (dataset[geo.id]) {
                                 var index = findIndexOf(suicide_data, geo.properties.name);
-                                // console.log(suicide_data[index]);
+                                if (data_s[geo.id]) {
+                                    return "<strong><span>" + geo.properties.name + "</span></strong>" +
+                                            "<br><strong>Depression: </strong><span>" + dataset[geo.id].depression.toFixed(2) + "% </span>" +
+                                            "<br><strong>Suicide: </strong><span>" + suicide_data[index].suicide.toFixed(2) + " per 100,000</span>";
+                                }
+                                // show different tooltip if only the suicide data is not available
                                 return "<strong><span>" + geo.properties.name + "</span></strong>" +
-                                        "<br><strong>Depression: </strong><span>" + dataset[country_id].depression.toFixed(2) + "% </span>" +
-                                        "<br><strong>Suicide: </strong><span>" + suicide_data[index].suicide.toFixed(2) + " per 100,000</span>";
+                                        "<br><strong>Depression: </strong><span>" + dataset[geo.id].depression.toFixed(2) + "% </span>" +
+                                        "<br><strong>Suicide: </strong><span><i>No data available</i></span>";
+
                             }
+                            // show tooltip with country name and 'no data' if no data is available
                             else {
                                 return "<strong><span>" + geo.properties.name + "</span></strong>" +
                                 "<br></strong> <span> <i>No Data</i> </span>";
                             }
                         });
 
-                    // change fillcolor on mouseover
+                    // change fillcolor of country mouseover
                     d3.select(this)
                         .style("fill", function() {
-                            if (dataset[country_id]) {
-                                return d3.rgb(dataset[country_id].fillColor).darker(1);
+                            if (dataset[geo.id]) {
+                                return d3.rgb(dataset[geo.id].fillColor).darker(1);
                             }
                             return d3.rgb('#e2e2e2').darker(1);
                         });
                 })
                 .on('mouseout', function(geo) {
-                    // change fill back to previous color
-                    tooltip.classed('hidden', true);
-                    var country_code = codes[geo.properties.name];
+                    // hide tooltip and change fill back to previous color
+                    maptip.classed('hidden', true);
                     d3.select(this)
                         .style("fill", function() {
-                            // map return to grey if there is no data
-                            if (dataset[country_code] === undefined) {
+                            if (dataset[geo.id] === undefined) {
                                 return '#e2e2e2';
                             } else {
-                                return dataset[country_code].fillColor;
+                                return dataset[geo.id].fillColor;
                             }
                         });
                 })
                 .on('click', function(geo) {
-                    var country_code = codes[geo.properties.name];
-                    if (dataset[country_code]) {
-                        var selector = '.line.' + country_code;
+                    if (dataset[geo.id]) {
+                        var selector = '.line.' + geo.id;
+                        d3.selectAll('.selected')
+                            .style("visibility", "hidden");
                         highlightLine(selector);
+                        // scroll to line graph
                         $root.animate({
                             scrollTop: $("#linegraph_title").offset().top - 50
                         }, 1000);
@@ -104,7 +110,7 @@ function makeLegend() {
     legend = svg.selectAll("g.legend")
         .data(color_values)
         .enter().append("g")
-        .attr("class", "legend");
+        .attr("class", "mapLegend");
 
     color_values.reverse();
     // add containers for legend
@@ -158,7 +164,7 @@ function updateMap(dataset) {
 function updateLegend(dataset) {
     var svg = d3.select("#legendContainer");
     // remove current legend labels and title
-    d3.selectAll("g.legend text")
+    d3.selectAll("g.mapLegend text")
         .remove();
     d3.selectAll("#legendTitle")
         .remove();

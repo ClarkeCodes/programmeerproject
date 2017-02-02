@@ -150,8 +150,6 @@ $('a').click(function() {
     return false;
 });
 
-
-
 function barData (dataset) {
     dataset.forEach(function(d) {
         d.age10_14 = +d.age10_14;
@@ -204,7 +202,4 @@ function formatBarData(dataset) {
     return dataset;
 }
 
-// http://ghdx.healthdata.org/gbd-results-tool?params=querytool-permalink/6a6d68f2958f34482c33ecd1f831e9e5
-// http://ghdx.healthdata.org/gbd-results-tool?params=querytool-permalink/8cf6cac732db37277625c44b2da6b12d
-// http://ghdx.healthdata.org/gbd-results-tool?params=querytool-permalink/ad846927870303fd5d05624bf298cfc9
 // http://ghdx.healthdata.org/gbd-results-tool?params=querytool-permalink/260096cd8076654cce1354b8fddc7e12
