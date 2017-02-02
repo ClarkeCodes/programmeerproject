@@ -16,7 +16,7 @@ A link to the website is available [here](https://elinej.github.io/programmeerpr
 
 ### Screenshots
 
-![Screenshot](doc/FINAL1.png)![Screenshot](doc/FINAL2.png)![Screenshot](doc/FINAL3.png)![Screenshot](doc/FINAL4.png)
+![Screenshot](doc/FINAL1.png)![Screenshot](doc/FINAL2.png)![Screenshot](doc/FINAL3.png)
 
 ### Sources
 
