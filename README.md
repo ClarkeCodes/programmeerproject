@@ -8,6 +8,12 @@ Every 40 seconds someone dies of suicide. According to the World Health Organiza
 
 The goal of this project is to create more awareness of depression and suicide, by allowing users to explore data and information on the subject through different visualizations.
 
+### Usage  
+
+It is recommended to view the project on a laptop or desktop computer, with your browser in presentation mode. (`fn` + `F11`)
+
+A link to the website is available [here](https://elinej.github.io/programmeerproject/).
+
 ### Screenshots
 
 ![Screenshot](doc/FINAL1.png)![Screenshot](doc/FINAL2.png)![Screenshot](doc/FINAL3.png)![Screenshot](doc/FINAL4.png)
