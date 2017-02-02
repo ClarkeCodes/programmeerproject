@@ -341,7 +341,7 @@ div.tooltip {
 }
 .bottom-paragraph {
     position: relative;
-    padding-top: 140px;
+    padding-top: 110px;
     vertical-align: bottom;
 }
 .title-left {
@@ -351,3 +351,20 @@ div.tooltip {
 .container-fluid {
     overflow-x: hidden;
 }
+
+#textbox {
+    margin-top: 20px;
+}
+/*#btnSuicide {
+
+}
+
+#btnSuicide.selected {
+
+}
+#btnDepression {
+
+}
+#btnDepression.selected {
+
+}*/

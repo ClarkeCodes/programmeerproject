@@ -38,7 +38,7 @@ var country_codes = [
     ["bv", "BVT", "Bouvet Island"],
     ["br", "BRA", "Brazil"],
     ["io", "IOT", "British Indian Ocean Territory"],
-    ["bn", "BRN", "Brunei Darussalam"],
+    ["bn", "BRN", "Brunei"],
     ["bg", "BGR", "Bulgaria"],
     ["bf", "BFA", "Burkina Faso"],
     ["bi", "BDI", "Burundi"],

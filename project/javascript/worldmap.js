@@ -51,11 +51,10 @@ function colorMap(dataset) {
                         .html(function() {
                             // show tooltip with data if data is available
                             if (dataset[geo.id]) {
-                                var index = findIndexOf(suicide_data, geo.properties.name);
-                                if (data_s[geo.id]) {
+                                if (suicide_data[geo.id]) {
                                     return "<strong><span>" + geo.properties.name + "</span></strong>" +
                                             "<br><strong>Depression: </strong><span>" + dataset[geo.id].depression.toFixed(2) + "% </span>" +
-                                            "<br><strong>Suicide: </strong><span>" + suicide_data[index].suicide.toFixed(2) + " per 100,000</span>";
+                                            "<br><strong>Suicide: </strong><span>" + suicide_data[geo.id].suicide.toFixed(2) + " per 100,000</span>";
                                 }
                                 // show different tooltip if only the suicide data is not available
                                 return "<strong><span>" + geo.properties.name + "</span></strong>" +
@@ -69,7 +68,6 @@ function colorMap(dataset) {
                                 "<br></strong> <span> <i>No Data</i> </span>";
                             }
                         });
-
                     // change fillcolor of country mouseover
                     d3.select(this)
                         .style("fill", function() {
@@ -126,9 +124,7 @@ function makeLegend() {
     // add containers for legend
     legend.append("rect")
         .attr("x", 20)
-        .attr("y", function(d, i) {
-            return legendHeight - (i * r_height) - 2 * r_height;
-        })
+        .attr("y", function(d, i) { return legendHeight - (i * r_height) - 2 * r_height; })
         .attr("width", r_width)
         .attr("height", r_height)
         .style("fill", function(d, i) { return colorScale(color_values[i]); })

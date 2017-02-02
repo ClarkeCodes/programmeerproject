@@ -10,7 +10,6 @@
 // variables for update functions
 var highlightLines;
 var highlightLine;
-var revertLine;
 
 // Parse the date / time
 var parseDate = d3.time.format("%Y").parse;
@@ -120,25 +119,25 @@ function makeLinegraph() {
                     .classed("hovered", false);
             })
             .on("click", function(d) {
-                var country = codes_reverse[d3.select(this)[0][0].classList[1]];
+                var country = d3.select(this)[0][0].classList[1];
+                var country_name = codes_reverse[country];
+                if (country_name === undefined) {
+                    console.log("DIT STOMME LAND " + country);
+                }
                 var selector = '.line.' + d3.select(this)[0][0].classList[1];
-                updateBarchart(country);
+                updateBarchart(country_name);
                 highlightLine(selector);
                 onClickFunc(d);
             });
 
         function mouseOverFunc(d) {
-            // var country = d3.select(this)[0][0].classList[1];
-            // var selector = '.datamaps-subunit.' + country;
-            // d3.selectAll(selector)
-            //     .style("fill", "black");
-
+            // get the height of right data point of line
             var thisHeight = y(d.values[4].depression);
-            // add text to be displayed when moving cursor over graph
+
+            // display country name at this height
             focus.select("text.countryName")
                 .attr("transform", "translate(" + (width - 5) + "," + (thisHeight + 5) + ")")
                 .text(d.key);
-
             d3.selectAll('.focus')
                 .style("visibility", "visible");
         }
@@ -147,8 +146,10 @@ function makeLinegraph() {
             d3.selectAll('.selected')
                 .style("visibility", "hidden");
 
+            // get the height of right data point of line
             var thisHeight = y(d.values[4].depression);
-            // add text to be displayed next to graph
+
+            // display country name at this height
             selected.select("text.selected")
                 .attr("transform", "translate(" + (width - 5) + "," + (thisHeight + 5) + ")")
                 .text(d.key);
@@ -157,7 +158,7 @@ function makeLinegraph() {
 
         }
 
-        highlightLines = function(button, continent) {
+        highlightLines = function(continent) {
             var continent_path = "path#" + continent + ".line";
             var selector = '#btn' + continent;
 
@@ -179,11 +180,6 @@ function makeLinegraph() {
             var line = d3.select(selector)
                 .classed("clicked", true);
 
-        };
-        revertLine = function() {
-            svg.selectAll('.line')
-                .style("stroke-width", "1px")
-                .style("stroke", '#eee');
         };
     });
 }

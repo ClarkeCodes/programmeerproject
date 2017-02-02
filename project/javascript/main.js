@@ -22,14 +22,9 @@ var color_values2 = [3.5, 4, 4.5, 5, 5.5, 6, 6.5];
 var suicideLabels = ["> 20", "15 - 20", "10 - 15", "7 - 10", "5 - 7", "3 - 5", "< 3"];
 var depressionLabels = ["6.5 >", "5.5 - 6", "5 - 5.5", "4.5 - 5", "4 - 4.5", "3.5 - 4", "< 3.5"];
 
-
-var dataset;
-var dataset2;
 var worldmap;
 var suicide_data;
 var depression_data;
-
-// datasets in map format
 var data_s = {},
     data_d = {};
 var dataFemale;
@@ -56,19 +51,14 @@ for (var i = 0; i < country_codes.length; i++) {
 
 function main(error, data, data2, female, male) {
     if (error) throw error;
-    dataset = {};
-    dataset2 = {};
-
-    depression_data = data2;
-    suicide_data = data;
+    suicide_data = {};
+    depression_data = {};
 
     // create dataset in map format
     data.forEach(function(d) {
-        d.female = +d.female;
-        d.male = +d.male;
         d.suicide = +d.suicide;
         var iso = codes[d.country];
-        dataset[iso] = {
+        suicide_data[iso] = {
             suicide: d.suicide,
             fillColor: colorScale(d.suicide)
         };
@@ -78,34 +68,23 @@ function main(error, data, data2, female, male) {
         d.depression = +d.depression * 100;
         d.year = +d.year;
         var iso = codes[d.country];
-        dataset2[iso] = {
+        depression_data[iso] = {
             depression: d.depression,
             fillColor: colorScale2(d.depression)
         };
-    });
-
-    // datasets for the colorscale
-    suicide_data.forEach(function(d) {
-        var iso = codes[d.country];
-        data_s[iso] = {
-            fillColor: colorScale(d.suicide)
-        };
-    });
-
-    depression_data.forEach(function(d) {
-        var iso = codes[d.country];
         data_d[iso] = {
             fillColor: colorScale2(d.depression)
         };
     });
 
+    createChoropleth();
+
     // create map, legend and table
-    worldmap = colorMap(dataset2);
+    worldmap = colorMap(depression_data);
     makeLegend();
 
     barData(female);
     barData(male);
-
     dataFemale = female;
     dataMale = male;
 
@@ -125,16 +104,14 @@ window.toggle = function(d) {
 
 // change graph to selected value (depression/suicide)
 window.lineSelect = function(d) {
-    var button = document.getElementById('btn' + d.value);
-    highlightLines(button, d.value);
+    highlightLines(d.value);
 };
 
 // function that enables smooth scrolling when clicking on links
 // source: http://stackoverflow.com/questions/7717527/smooth-scrolling-when-clicking-an-anchor-link
 var $root = $('html, body');
 $('a').click(function() {
-    console.log(this);
-    console.log($.attr(this, 'href'));
+    // add less space to the top when scrolling to section 2
     if ($.attr(this, 'href') == "#section2") {
         $root.animate({
             scrollTop: $("#linegraph_title").offset().top - 50
@@ -147,6 +124,26 @@ $('a').click(function() {
     }
     return false;
 });
+
+
+
+function createChoropleth() {
+    for (var i = 0; i < country_codes.length; i++) {
+        // add fillColor for all countries with no data on suicide
+        if (suicide_data[country_codes[i][1]] === undefined) {
+            data_s[country_codes[i][1]] = {
+                fillColor: '#B3B6B7'
+            };
+        }
+        // add fillColor with suicide data
+        else {
+            data_s[country_codes[i][1]] = {
+                fillColor: colorScale(suicide_data[country_codes[i][1]].suicide)
+            };
+        }
+
+    }
+}
 
 function barData (dataset) {
     dataset.forEach(function(d) {
