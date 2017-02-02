@@ -16,9 +16,8 @@
       -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
-.glyphicon-menu-down {
+.glyphicon-menu-down#iconLight {
     color: #fff;
-
 }
 
 #page-intro {
@@ -320,8 +319,8 @@ div.tooltip {
 }
 
 #section1 {
-    margin-top: 150px;
-    margin-bottom: 150px;
+    margin-top: 100px;
+    margin-bottom: 100px;
     width: 100%;
     /*background-color: #eee;*/
 }
@@ -336,8 +335,14 @@ div.tooltip {
 
 .glyphicon-menu-up {
     color: #9d9d9d;
-    margin: 0 auto;
+    /*margin: 0 auto;*/
     margin-top: 50px;
+}
+
+.glyphicon-menu-down {
+    color: #9d9d9d;
+    /*margin: 0 auto;*/
+    /*margin-top: 50px;*/
 }
 
 #barcontainer {

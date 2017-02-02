@@ -15,7 +15,6 @@ The website aims to create more awareness of depression and suicide, by allowing
 
 
 
-
 ### Sources
 
 - [jQuery](https://jquery.com/)

@@ -5,10 +5,9 @@ Eline Jacobse
 
 ## 1. Description
 
-*Subject, intended audience, goal, etc.
-Start with a short description of your application (like in the README.md, but very short, including a single screen shot).*
+Worldwide rates of depression have increased over the past ten years. My website looks at the depression and suicide rates around the world. It gives an overview of which countries have the highest rates of depression and suicide, what the trend of depression rates have been in each country and what the demographics of these depression rates.
 
-In my project I look at depression and suicide around the world. The goal is to create awareness of depression, and show more people in what countries people are depressed, what the demographics of the people who are depressed are, and how this has changed over the past ten years.
+The website aims to create more awareness of depression and suicide, by allowing users to explore depression and rates around the world through different visualizations. and show more people in what countries people are depressed, what the demographics of the people who are depressed are, and how this has changed over the past ten years.
 
 ## 2. Technical Design
 ### 2.1 Overview
@@ -41,9 +40,10 @@ In `functions.js` I've created helper functions that may be used by several of t
 ## 3. Choices and Challenges
 *Clearly describe challenges that your have met during development. Document all important changes that your have made with regard to your design document (from the PROCESS.md). Here, we can see how much you have learned in the past month.*  
 
-My final product is very different than what I had originally planned to do. The initial idea, as you can read in [`DESIGN.md`](), was to look at depression and suicide first in the world and then zoom in to The Netherlands. A map would show which areas in The Netherlands had higher depression and suicide rates, and an interactive table would allow users to search different areas to compare the rates of suicide and depression.
+My final product is very different than what I had originally planned to do. The initial idea, as you can read in [`DESIGN.md`](DESIGN.md), was to look at depression and suicide first in the world and then zoom in to The Netherlands. A map would show which areas in The Netherlands had higher depression and suicide rates, and an interactive table would allow users to search different areas to compare the rates of suicide and depression.
 
 **TODO: Add sketch**
+![Early sketch](doc/sketch-3.jpg)
 
 In week two, I received an e-mail from *Monitor Volksgezondheidenzorg*, where I hoped to get this data from. They did have some data available, but it would cost me €150, and this would not be region-specific. Because of this, I had to let go of my idea of a map of The Netherlands.
 
@@ -71,6 +71,7 @@ To figure out how to make it work, I created new (simple) sketches for my final 
 
 ### 3.4 Colors  
 
+![Update website](doc/week2_21.png)
 In the first versions of my project I had colored the map with red colors. During the Friday presentations, I'd gotten the feedback from someone that they would use blue instead, since that's the color they would associate with depression. After looking into different options, I ended up going with the color scale I have now.
 
 One problem with these colors, was that I had a white background and the lightest color blue was hard to see on the screen. I had already decided to use different background-colors (white and very light-grey) in the different sections, so to solve this problem I decided to make this section grey instead of white. This made the blue stand out more.
@@ -84,7 +85,7 @@ Grouped bar chart.
 ##### 3.5.2 Line graph
 One of the technical challenges was to make the different elements work together, without one overriding the other. My line graph would not work well at first. If I clicked on a line, it would stay highlighted even after clicking another one. Or it would only show the country name, and not work on hover. Because this line graph works both with hover, click, the different buttons and the world map, it had many factors to consider.
 
-As I was adding more function to it, this was becoming harder to do. So I eventually had to rewrite the functions I had, to make them work more efficiently.
+As I was adding more functions to it, this was becoming harder to do. So I eventually had to rewrite the functions I had, to make them work more efficiently.
 
 ##### 3.5.3 World Map
 Getting the tooltip to work with `D3 Datamaps` was also a challenge. Since I wanted every visualization to interact with the others, I needed to override the built-in hover function. Then I needed to manually add a tooltip to the datamap in an onhover function, which didn't work at first. I did fix this, but because it occasionally lags on a slower computer because of the function event.X
@@ -99,15 +100,17 @@ For my third visualization, I had thought of a pie chart showing how much money 
 
 Even with that, it was hard for me not to keep adding more small details to the page. Especially after seeing other projects every Friday, I would be inspired to add new features or functionality to my website. One feature I had already made, was a menu bar with different headers showing where you were on the page. This would only show up after you'd scrolled past the initial page. Clicking on the different titles would take you to that section of the page.
 
+![Website](doc/website_week4_13.png)
+
 Since I was very happy to have gotten this to work, it was hard to decide to delete this. I asked classmates for feedback, and decided that it was not very functional and only distracted from the actual visualizations. If I had more sections on the website, it might have been a useful feature for navigation. Since my page is not that long, it was not necessary to have it.
 
 The same goes for an interactive table that I made in my first week. It had suicide data and allowed you to search for a particular country. I had meant for that to be linked to my map of The Netherlands, and have data for different regions in the country. Since that plan fell through, I had to delete the table.
+
+![Update website](doc/week2_22.png)
 
 With all of these points, the challenge was to not get lost in ideas and cool features, but to focus on improving what I already had and telling the story well.
 
 ## 4. Decisions
 *Defend your decisions by writing an argument of a most a single paragraph. Why was it good to do it different than you thought before? Are there trade-offs for your current solution? In an ideal world, given much more time, would you choose another solution?*
 
-Looking back on my process, I think changing the focus of my website from depression in The Netherlands to depression and suicide worldwide was the right decision. My website and the different visualizations are cohesive and tell a story. If I would have added more visualizations to the page, I would definitely have run into problems with my time and the overall flow would not have worked out as well. If I had been given more time, however, I would
-
-The story and the visualizations work well together and are more cohesive than my original idea would have been.
+Looking back on my process, I think changing the focus of my website from depression in The Netherlands to depression and suicide worldwide was the right decision. My website and the different visualizations are cohesive and tell a story. If I had more time, however, I would have liked to add more functionality

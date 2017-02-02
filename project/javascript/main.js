@@ -34,7 +34,6 @@ var depression_data;
 // datasets in map format
 var data_s = {},
     data_d = {};
-var dataBoth;
 var dataFemale;
 var dataMale;
 
