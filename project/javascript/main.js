@@ -90,7 +90,6 @@ function main(error, data, data2, female, male) {
 
     makeBarchart("Netherlands");
     makeLinegraph();
-
 }
 
 // change graph to selected value (depression/suicide)
@@ -111,6 +110,9 @@ window.lineSelect = function(d) {
 // source: http://stackoverflow.com/questions/7717527/smooth-scrolling-when-clicking-an-anchor-link
 var $root = $('html, body');
 $('a').click(function() {
+    if ($.attr(this, 'href') == "#") {
+        return false;
+    }
     // add less space to the top when scrolling to section 2
     if ($.attr(this, 'href') == "#section2") {
         $root.animate({
@@ -125,8 +127,7 @@ $('a').click(function() {
     return false;
 });
 
-
-
+// creates dataset in format for 'updateChoropleth'
 function createChoropleth() {
     for (var i = 0; i < country_codes.length; i++) {
         // add fillColor for all countries with no data on suicide
@@ -141,7 +142,6 @@ function createChoropleth() {
                 fillColor: colorScale(suicide_data[country_codes[i][1]].suicide)
             };
         }
-
     }
 }
 
@@ -167,6 +167,8 @@ function barData (dataset) {
     formatBarData(dataset);
 }
 
+// formats the data for the grouped bar chart, by creating new age ranges
+// i.e. 10-19 insteaf of 10 - 14 and 15 - 19
 function formatBarData(dataset) {
     var i = 0;
     for (i; i < dataset.length; i++) {
@@ -196,5 +198,3 @@ function formatBarData(dataset) {
     }
     return dataset;
 }
-
-// http://ghdx.healthdata.org/gbd-results-tool?params=querytool-permalink/260096cd8076654cce1354b8fddc7e12

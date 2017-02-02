@@ -160,3 +160,7 @@ I found out that:
 - One bug: the legend of the bar chart occasionally doesn't show text
 - The grey I used for the lines in my line graph was hard to see if nothing was selected. It is good for highlighting countries, but a suggestion was that I make the color just a shade darker.
 - I should emphasize in my text with the world map that the suicide rates are per 100,000 people, and the depression rates are in % of the population.
+
+# day 4 :tada:
+
+I updated all the points of feedback from yesterday, finished my report and everything else! I also added a favicon of a globe to my page as an added detail.

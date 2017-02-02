@@ -36,7 +36,6 @@
                     According to the World Health Organization, depression will affect 1 out of 5 people during their lifetime. Explore the data below and find out what countries
                     have the highest rates of depression and suicide, how depression rates have changed over the past ten years, and which groups are most at risk.
                 </p>
-                <!-- <p>Click to explore</p> -->
                 <a href="#section1">
                     <span class="glyphicon glyphicon-menu-down" id="iconLight"></span>
                 </a>
@@ -64,13 +63,20 @@
                 </div>
                 <div class="col-md-1"></div>
                 <div class="col-md-2">
-                    <h5 id="maptitle">Depression and Suicide Around the World</h5>
+                    <h5 class="title-left">Depression and Suicide Around the World</h5>
                     <p>
-                        <!-- <a href="#" data-toggle="popover" title="Popover Header" data-placement="bottom" data-content="Some content inside the popover">rate of depression</a> -->
-                        Countries with the highest rates of depression don't necessarily have the high suicide rates. If you
+                        Countries with the highest rates of depression don't necessarily have the highest suicide rates. If you
                         hover over the map you can see the rate of depression in % of the population, as well as the rate of
                         suicide per 100,000 people in a country. Clicking on the map will take you to the next screen, where you can explore
-                        trends and demographics of depression.
+                        trends and demographics of depression. <a href="#" rel="popover" data-popover-content="#infoPopover" data-placement="left">*</a>
+                        <div id="infoPopover" class="hide">
+                        	<h6>A Note on the Data</h6>
+                            <p>Data on suicides and depression may be deficient. People who live in countries
+                                with easier access to mental health services, are naturally going to be diagnosed at a
+                                higher rate. Taboos against mental health disorders may also lower diagnosis rates. The data made available by the World Health Organization (WHO)
+                                therefore might be not be entirely accurate especially for lower-income countries.<br><br>
+                            <small>(click to dismiss)</small></p>
+                        </div>
                     </p>
                 </div>
                 <div class="col-md-1"></div>
@@ -109,10 +115,11 @@
                         <div class="col-md-12 col-md-9 bg-info" id="textbox">
                             <h5>Trends and Demographics of Depression</h5>
                             <p class="text-justify">
-                                Globally, about 4.5% of the world population is depressed. This rate is a lot higher in certain countries.
-                                Find out how depression rates in different regions of the world compare, by selecting buttons on the left.
-                                If you want to know more about the demographics of depression in a country, you can click the line of a country in the
-                                line graph.
+                                Globally, about 4.5% of the world population is depressed. This rate can
+                                vary greatly by country. Find out how depression rates in different regions
+                                of the world compare by selecting buttons on the left. If you want to know
+                                more about the demographics in a specific country, you can click on that
+                                country's line in the line graph.
                             </p>
                         </div>
                         <div class="col-md-12 col-md-3"></div>
@@ -128,7 +135,7 @@
             <div class="row" id="netherlands_map">
                 <div class="col-md-12 text-center">
                     <h3 class="display-4">References</h3></div>
-                <div class="row" id="nl_text">
+                <div class="row">
                     <div class="col-sm-1"></div>
                     <div class="col-sm-3">
                         <h5 class="title-left">Resources</h5>

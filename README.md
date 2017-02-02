@@ -4,16 +4,13 @@
 
 ## Description
 
-Every [40 seconds](http://www.who.int/mental_health/suicide-prevention/en/) someone dies of suicide. According to the World Health Organization (WHO), depression is something that will affect one out of five people during their lifetime.
+Every 40 seconds someone dies of suicide. According to the World Health Organization, depression will affect 1 out of 5 people during their lifetime. On my website, you can find out what countries have the highest rates of depression and suicide, how depression rates have changed over the past ten years, and which groups are most at risk.
 
-Worldwide rates of depression have increased over the past ten years. My website looks at the depression and suicide rates around the world. It gives an overview of which countries have the highest rates of depression and suicide, what the trend of depression rates have been in each country and what the demographics of these depression rates.
-
-The website aims to create more awareness of depression and suicide, by allowing users to explore depression and rates around the world through different visualizations.
+The goal of this project is to create more awareness of depression and suicide, by allowing users to explore data and information on the subject through different visualizations.
 
 ### Screenshots
 
-
-
+![Screenshot](doc/FINAL1.png)![Screenshot](doc/FINAL2.png)![Screenshot](doc/FINAL3.png)![Screenshot](doc/FINAL4.png)
 
 ### Sources
 

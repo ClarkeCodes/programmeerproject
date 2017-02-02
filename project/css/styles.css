@@ -7,6 +7,14 @@
  *
  */
 
+#page-intro {
+    height: 800px;
+    color: #fff;
+    background: no-repeat fixed;
+    background-size: cover;
+    width: 100%;
+}
+
 #main {
     margin: 0 auto;
     max-width: 600px;
@@ -17,16 +25,11 @@
     box-sizing: border-box;
 }
 
-.glyphicon-menu-down#iconLight {
-    color: #fff;
-}
-
-#page-intro {
-    height: 800px;
-    color: #fff;
-    background: no-repeat fixed;
-    background-size: cover;
-    width: 100%;
+/* Bottom paragraph of intro screen */
+.bottom-paragraph {
+    position: relative;
+    padding-top: 110px;
+    vertical-align: bottom;
 }
 
 .container {
@@ -101,7 +104,7 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 2px;
 }
 
-#netherlands_map, #bar_chart {
+#bar_chart {
     background-color: #eee;
 }
 
@@ -144,8 +147,10 @@ body {
     min-height: 100%;
     overflow: auto;
     background-color: #eee;
+    overflow-x: hidden;
 }
 
+/* Map buttons */
 #btnSuicide {
     background-color: #eee;
 }
@@ -154,6 +159,7 @@ body {
     background-color: #fff;
 }
 
+/* path of graph axes */
 path {
     stroke: #eee;
     stroke-width: 1;
@@ -166,6 +172,77 @@ path {
     stroke-width: 1;
     opacity: 0.8;
     shape-rendering: crispEdges;
+}
+
+/* Styles for tooltip in map */
+div.tooltip {
+    color: #222;
+    background-color: #fff;
+    padding: .5em;
+    text-shadow: #f5f5f5 0 1px 0;
+    border-radius: 2px;
+    opacity: 0.9;
+    position: absolute;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Styles for the different sections */
+#section1 {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 100%;
+}
+
+#section2 {
+    background-color: #fff;
+    width: 100%;
+    background-size: cover;
+}
+
+/* Arrow icon styles */
+.glyphicon-menu-up {
+    color: #9d9d9d;
+    float: none;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.glyphicon-menu-down {
+    color: #9d9d9d;
+    margin-top: 50px;
+}
+
+.glyphicon-menu-down#iconLight {
+    color: #fff;
+}
+
+/* centered glyphicon-menu-up in #section2 */
+.centered {
+    float:none;
+    position: relative;
+    left: 85px;
+}
+
+/* Div styles for linegraph + barchart */
+.linegraphWrapper {
+    position: relative;
+    padding-top: 50px;
+    width: 104%;
+    padding-left: -30px;
+    padding-right: -30px;
+    border: 10px solid #fff;
+    background-color: #fff;
+}
+
+#lineWrapper {
+    margin-top: 50px;
+}
+
+#barcontainer {
+    margin-top: 50px;
 }
 
 #linecontainer {
@@ -182,97 +259,16 @@ path {
     align: center;
 }
 
+.lineLabel {
+    opacity: 0.5;
+}
+
+/* Title of line graph */
 h4#linegraph_title {
     position: relative;
 }
 
-#region_buttons {
-    position: relative;
-    align: left;
-}
-
-p.text_up {
-    position: relative;
-    top: -40px;
-}
-
-.datamaps-subunits {
-    z-index: 2;
-}
-
-.linegraphWrapper {
-    position: relative;
-    padding-top: 50px;
-    width: 104%;
-    padding-left: -30px;
-    padding-right: -30px;
-    border: 10px solid #fff;
-    background-color: #fff;
-}
-
-div.tooltip {
-    color: #222;
-    background-color: #fff;
-    padding: .5em;
-    text-shadow: #f5f5f5 0 1px 0;
-    border-radius: 2px;
-    opacity: 0.9;
-    position: absolute;
-}
-.hidden {
-    display: none;
-}
-.affix {
-    top: 0;
-    width: 100%;
-    -webkit-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
-}
-.affix-top {
-    position: static;
-    top: -35px;
-}
-.navbar {
-    z-index: 9999;
-}
-
-#maptitle {
-    text-align: left;
-}
-#section1 {
-    margin-top: 100px;
-    margin-bottom: 100px;
-    width: 100%;
-}
-#section2 {
-    background-color: #fff;
-    width: 100%;
-    background-size: cover;
-}
-.glyphicon-menu-up {
-    /*display: block;*/
-    color: #9d9d9d;
-    float: none;
-    margin: 0 auto;
-    margin-top: 50px;
-}
-
-.centered {
-    float:none;
-    position: relative;
-    left: 85px;
-}
-.glyphicon-menu-down {
-    color: #9d9d9d;
-    margin-top: 50px;
-}
-#barcontainer {
-    margin-top: 50px;
-}
-#lineWrapper {
-    margin-top: 50px;
-}
-
+/* Styles for the lines of the line graph */
 .line.clicked {
     stroke: #000;
     stroke-width: 2px;
@@ -308,63 +304,57 @@ div.tooltip {
 .line.NorthAmerica {
     stroke: #BE1932;
 }
+
+/* All the regions buttons with the line graph */
+#region_buttons {
+    position: relative;
+    align: left;
+}
+
 #btnEurope.clicked {
     color: #FFF;
     background-color: #ED7C31;
 }
+
 #btnEastAsia.clicked {
     color: #FFF;
     background-color: #00BBD6;
 }
+
 #btnSouthAsia.clicked {
     color: #FFF;
     background-color: #6E9E75;
 }
+
 #btnNorthAfrica.clicked {
     color: #FFF;
     background-color: #E25f82;
 }
+
 #btnSubSaharan.clicked {
     color: #FFF;
     background-color: #895881;
 }
+
 #btnLatinAmerica.clicked {
     color: #FFF;
     background-color: #82A5C0;
 }
+
 #btnNorthAmerica.clicked {
     color: #FFF;
     background-color: #BE1932;
 }
+
+/* Info window with bar chart */
 .bg-info {
     background-color: #eee !important;
-}
-.bottom-paragraph {
-    position: relative;
-    padding-top: 110px;
-    vertical-align: bottom;
-}
-.title-left {
-    text-align: left;
-}
-
-.container-fluid {
-    overflow-x: hidden;
 }
 
 #textbox {
     margin-top: 20px;
 }
-/*#btnSuicide {
 
+.title-left {
+    text-align: left;
 }
-
-#btnSuicide.selected {
-
-}
-#btnDepression {
-
-}
-#btnDepression.selected {
-
-}*/

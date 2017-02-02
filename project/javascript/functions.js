@@ -27,10 +27,18 @@ function findIndexOf(data, value) {
     return false;
 }
 
-$(document).ready(function(){
-    $('[data-toggle="popover"]').popover();
-});
-
-$(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip();
+// function for the footnote popover
+// source: https://maxalley.wordpress.com/2014/08/19/bootstrap-3-popover-with-html-content/
+$(function(){
+    $('[rel="popover"]').popover({
+        container: 'body',
+        html: true,
+        trigger:'focus',
+        content: function () {
+            var clone = $($(this).data('popover-content')).clone(true).removeClass('hide');
+            return clone;
+        }
+    }).click(function(e) {
+        e.preventDefault();
+    });
 });

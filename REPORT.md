@@ -9,7 +9,7 @@ Worldwide rates of depression have increased over the past ten years. My website
 
 The website aims to create more awareness of depression and suicide, by allowing users to explore depression and suicide rates around the world through different visualizations.
 
-![Screenshot](Website)
+![Screenshot](doc/FINAL1.png)![Screenshot](doc/FINAL2.png)![Screenshot](doc/FINAL3.png)![Screenshot](doc/FINAL4.png)
 
 ## 2. Technical Design
 ### 2.1 Overview
@@ -24,8 +24,6 @@ In the line graph, you can hover over the different lines to see what country it
 Above the line graph, there are buttons for different regions in the world. If you select a button, all lines of the countries of that region will be highlighted in the line graph and the button will change color. This way, you can compare the different regions with each other. If you have selected a country in the line graph, you can easily navigate up with the up-arrow above the line graph, to see the selected country on the world map.
 
 ### 2.2 Implementation
-*Clearly describe the technical design: how is the functionality implemented in your code? This should be like your DESIGN.md but updated to reflect the final application. First, give a high level overview, which helps us navigate and understand the total of your code (which components are there?). Second, go into detail, and describe the modules/classes and how they relate.*
-
 My code is divided into several files containing functions for each visualization. In `main.js` I load the data for the world map using `d3.queue`, format this data and call the different functions that color the world map, make the line graph and the bar chart.
 
 Initially, the world map is colored with the data of depression rates. When a user clicks on the button to select 'suicide', a function will be called to update the map with the new color values. I'm using the built-in function `updateChoropleth()` for this, by providing the function with the correctly formatted dataset (containing only `fillColors`).
@@ -38,20 +36,14 @@ In `styles.css` I've declared different colors for the classes of the lines. Hov
 
 For the bar chart, I've used `d3-tip` to show the different values on hover. When the barchart gets updated, in the function `updateBarchart()`, I change the domain of the y-axis to the new data, link this data to the rects of the bars, and add a transition to animate this change. It will also update the title of the bar graph to the name of the country that's been selected.
 
-
-`functions.js` contains several helper functions that may be used by more than one of the visualizations.
-
 Initially, the bar chart will show data from The Netherlands, and will be updated to other countries when they are selected. Hovering over the barchart will show a tooltip using `d3-tip`.
 
-
-
-`scripts`?
+`functions.js` contains several helper functions that may be used by more than one of the visualizations.
 
 
 ## 3. Choices and Challenges
 My final product is very different from what I had originally planned to do. The initial idea, as you can read in [`DESIGN.md`](DESIGN.md), was to look at depression and suicide on a global scale and then zoom in on The Netherlands. A map would show which areas in The Netherlands had higher depression and suicide rates, and an interactive table would allow users to search different areas to compare the rates of suicide and depression.
 
-**TODO: Add sketch**
 ![Early sketch](doc/sketch-3.jpg)![Sketch](doc/sketch-bar-chart.jpeg)
 
 I had requested the data I needed for this from *Monitor Volksgezondheidenzorg*, but at the start of week two they e-mailed me that I would not be able to get this. They did have some data available, but it would cost me €150, and it would also not be region-specific, like I wanted.
@@ -99,6 +91,8 @@ Getting the tooltip to work with `D3 Datamaps` was also a challenge. I needed to
 
 My idea was to show suicide rates when the map was colored for suicide values, and depression rates in the tooltip when depression was shown. However, because of the way the built-in function of DataMaps `updateChoropleth()` works, I colored the map with a dataset that didn't contain values, but fillColors instead. Once I had already implemented most of my website, I had no time to figure out a way around this so I could show different data in the tooltip. I chose to display both suicide and depression rates in the tooltip instead.
 
+Another problem I ran into with `updateChoropleth()`, was that countries that didn't have data about suicide, didn't get a fillColor of grey (showing there is no data). Instead, it stayed the same color it was when the map was colored with depression data. I only found out about this once I got my tooltip to work. I solved this my writing a function that add a fillColor of grey to a country if there is no data.
+
 ### 3.6 Deciding what to leave out
 Possibly one of the hardest challenges of this project was deciding what functions and ideas to leave out. I had data and ideas for two more visualizations, but this was unrealistic considering the time constraints.
 
@@ -117,4 +111,4 @@ One other idea I had was to scrape a dataset of suicide hotlines by country, and
 For all of this, the challenge was to keep focusing on improving the elements that I already had, and not to get hung up on ideas for new features.
 
 ## 4. Decisions
-Looking back on my process, I think changing the focus of my website from depression in The Netherlands to depression and suicide worldwide was the right decision. My website is a lot more cohesive and really tells a story. If I did have more time, though, I would already have a list of improvements ready. I would want the country name to be displayed next to the line graph when you click on the world map, I would link the line graph to the world map by highlighting a country if you click on a line. There are many other small improvements, but I think it's a process that can probably go on endlessly. In the end, I'm definitely satisfied with my final project.
+Looking back on my process, I think changing the focus of my website from depression in The Netherlands to depression and suicide worldwide was the right decision. My website is a lot more cohesive and really tells a story. If I did have more time, though, I already have a list of improvements ready. Two main things are that I would want the country name to be displayed next to the line graph when you click on the world map, and that I would wrap the country names that you see when hovering over the line graph. Now they sometimes get cut off. I think finding improvements can be an endless process, since there are always ways to make things better. However, overall I am very satisfied with my final product, since it definitely achieves the goal I had in mind.

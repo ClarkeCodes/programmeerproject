@@ -103,7 +103,14 @@ function makeLinegraph() {
         // Add the Y Axis
         svg.append("g")
             .attr("class", "y axis")
-            .call(yAxis);
+            .call(yAxis)
+            .append("text")
+            .attr("transform", "rotate(-90)")
+            .attr("class", "lineLabel")
+            .attr("y", 6)
+            .attr("dy", ".71em")
+            .style("text-anchor", "end")
+            .text("Depression rate (%)");
 
         // add the lines to the graph
         svg.selectAll(".line")
@@ -121,9 +128,6 @@ function makeLinegraph() {
             .on("click", function(d) {
                 var country = d3.select(this)[0][0].classList[1];
                 var country_name = codes_reverse[country];
-                if (country_name === undefined) {
-                    console.log("DIT STOMME LAND " + country);
-                }
                 var selector = '.line.' + d3.select(this)[0][0].classList[1];
                 updateBarchart(country_name);
                 highlightLine(selector);
@@ -155,7 +159,6 @@ function makeLinegraph() {
                 .text(d.key);
             d3.selectAll('.selected')
                 .style("visibility", "visible");
-
         }
 
         highlightLines = function(continent) {
@@ -168,7 +171,7 @@ function makeLinegraph() {
                     return !d3.select(this).classed(continent);
                 });
 
-            // change buton color
+            // change button color
             d3.selectAll(selector)
                 .classed('clicked', function (d, i) {
                     return !d3.select(this).classed('clicked');
@@ -179,7 +182,6 @@ function makeLinegraph() {
                 .classed("clicked", false);
             var line = d3.select(selector)
                 .classed("clicked", true);
-
         };
     });
 }

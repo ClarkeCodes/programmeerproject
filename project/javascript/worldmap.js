@@ -56,11 +56,12 @@ function colorMap(dataset) {
                                             "<br><strong>Depression: </strong><span>" + dataset[geo.id].depression.toFixed(2) + "% </span>" +
                                             "<br><strong>Suicide: </strong><span>" + suicide_data[geo.id].suicide.toFixed(2) + " per 100,000</span>";
                                 }
+                                else {
                                 // show different tooltip if only the suicide data is not available
                                 return "<strong><span>" + geo.properties.name + "</span></strong>" +
                                         "<br><strong>Depression: </strong><span>" + dataset[geo.id].depression.toFixed(2) + "% </span>" +
                                         "<br><strong>Suicide: </strong><span><i>No data available</i></span>";
-
+                                }
                             }
                             // show tooltip with country name and 'no data' if no data is available
                             else {

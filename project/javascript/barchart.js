@@ -11,8 +11,7 @@
  var ageNames;
  var dataset;
  var updateBarchart;
-// reduces the dataset to only items that match the 'test':
-// var angolaObj = dataset.filter(function (d) { return d.key == "Angola" });
+
 // function to color the bar of the grouped bar chart
 var color = function(gender) {
     if (gender == "Female") {
@@ -22,6 +21,7 @@ var color = function(gender) {
     }
 };
 
+// create ticks for the x-axis
 var all_ages = ["10 - 19", "20 - 29", "30 - 39", "40 - 49",
     "50 - 59", "60 - 69", "70+"];
 var formatTick = function(d, i) {
@@ -108,12 +108,14 @@ function makeBarchart(countryName) {
     // call tooltip
     barSvg.call(tip);
 
+    // select each bar group
     var bar = barSvg.selectAll(".bar")
         .data(dataset)
         .enter().append("g")
         .attr("class", "bar")
         .attr("transform", function(d) { return "translate(" + x0(d.age) + ",0)"; });
 
+    // create the bars of the bar chars
     bar.selectAll("rect")
         .data(function(d) { return d.depression; })
         .enter().append("rect")
@@ -157,9 +159,11 @@ function makeBarchart(countryName) {
         y.domain([0, d3.max(dataset, function(age) {return d3.max(age.depression, function(d) {
             return (d.rate) + 500; }); })]);
 
+        // add new data to bars
         var bar = barSvg.selectAll(".bar")
             .data(dataset);
 
+        // update the rects
         bar.selectAll("rect")
             .data(function(d) { return d.depression; })
             .transition()
@@ -211,7 +215,7 @@ function makeBarLegend() {
 function formatData (countryName) {
     var dataset = [];
 
-    // gets the index of
+    // gets the index of the dataset
     index = findIndexOf(dataFemale, countryName);
     ageNames = d3.keys(dataFemale[index]).filter(function(key) {
         return key !== "country";

@@ -1,8 +1,8 @@
-# Report
+# Daily Standups  
+
+Selfies of each day can be found in doc/standups.
 
 ## Week 1 Dag 1 - woensdag 11 januari
-
-![Selfie dag 2](doc/report/selfie_1.jpeg)
 
 **Aanwezig:** Isa Leijdekkers, ShanLi Nio, Lotte Slim, Eline Jacobse en Jan Maarten de Vries
 
@@ -11,8 +11,6 @@ Vandaag hebben we onze eerste ideeën aan elkaar voorgelegd aan de hand van de g
 
 
 ## Week 1 Dag 2 - donderdag 12 januari
-
-![Selfie dag 2](doc/report/selfie_2.jpeg)
 
 **Aanwezig:** Isa Leijdekkers, ShanLi Nio, Lotte Slim en Eline Jacobse.
 **Afwezig:** Jan Maarten de Vries
@@ -23,15 +21,11 @@ Na elke update hebben we elkaar technische tips gegeven over verschillende onder
 
 ## Week 2 Dag 1 - maandag 16 januari
 
-![Selfie dag 1](doc/report/selfie_3.jpeg)
-
 **Aanwezig:** Isa Leijdekkers, ShanLi Nio, Lotte Slim, Eline Jacobse en Jan Maarten de Vries
 
 Vandaag heeft iedereen een plan gemaakt wat hij/zij deze week af wil hebben, welke veranderingen er zijn bedacht en welke problemen zich al hebben voorgedaan tijdens de implementatie. Verder hebben we elkaar tips gegeven over hoe sommige van deze problemen opgelost kunnen worden. Ook hebben we met elkaar besproken hoe de indeling van de uiteindelijke repository eruit moet komen te zien.
 
 ## Week 2 Dag 2 - dinsdag 17 januari
-
-![Selfie dag 4](doc/report/selfie_4.jpeg)
 
 **Aanwezig:** Isa Leijdekkers, ShanLi Nio, Lotte Slim, Eline Jacobse
 **Afwezig** Jan Maarten de Vries
@@ -41,8 +35,6 @@ Isa heeft een bar chart gemaakt, alleen de tekst wordt nog niet helemaal mooi we
 
 ## Week 2 Dag 3 - woensdag 18 januari
 
-![Selfie dag 5](doc/report/selfie_5.jpeg)
-
 **Aanwezig:** Isa Leijdekkers, ShanLi Nio, Lotte Slim, Eline Jacobse  
 **Afwezig** Jan Maarten de Vries
 
@@ -50,15 +42,11 @@ Vandaag hebben we een [Style Guide](STYLE.md) gemaakt.
 
 ## Week 2 Dag 4 - donderdag 19 januari
 
-![Selfie dag 5](doc/report/selfie_6.jpeg)
-
 **Aanwezig:** Isa Leijdekkers, ShanLi Nio, Lotte Slim, Eline Jacobse, Jan Maarten de Vries
 
 We hebben de [Style Guide](STYLE.md) gecheckt.
 
 ## Week 3 Dag 1 - maandag 23 januari
-
-![Selfie dag 7](doc/report/selfie_7.jpeg)
 
 **Aanwezig:** ShanLi Nio, Lotte Slim, Jan Maarten de Vries, Eline Jacobse
 **Afwezig** Isa Leijdekkers
@@ -67,16 +55,12 @@ We hebben onze plannen voor deze week besproken. Lotte wil vandaag de interactiv
 
 ## Week 3 Dag 2 - dinsdag 24 januari
 
-![Selfie dag 7](doc/report/selfie_8.jpeg)
-
 **Aanwezig:** ShanLi Nio, Lotte Slim, Jan Maarten de Vries, Eline Jacobse, Isa Leijdekkers
 
 Vandaag hebben we besproken hoe ver we zijn gekomen met de plannen die we gisteren hebben besproken. We hebben ideeën uitgewisseld over hoe je sommige figuren het beste aan elkaar kan linken door middel van interactiviteit en hoe je ervoor kan zorgen dat de visuele link tussen al de figuren duidelijk is, bijvoorbeeld dmv al de figuren zo in te delen dat ze naast elkaar kunnen staan, een bar met navigatie-knoppen of een automatic scrolldown. Verder heeft Isa haar derde visualisatie (bubble chart) laten zien, maar weet ze nog niet precies hoe ze alles wil indelen, zodat haar pagina meer een geheel wordt. De rest van de groep werkt vandaag verder aan de dingen waar ze gisteren aan begonnen zijn.
 
 
 ## Week 3 Dag 3 - woensdag 25 januari
-
-![Selfie dag 9](doc/report/selfie_9.jpeg)
 
 **Aanwezig:** Lotte Slim, Eline Jacobse, Isa Leijdekkers
 
@@ -86,15 +70,11 @@ We hebben elkaar geholpen met de structuur van onze repository. De vraag hierbij
 
 ## Week 3 Dag 4 - donderdag 26 januari
 
-![Selfie dag 10](doc/report/selfie_10.jpeg)
-
 **Aanwezig:** Lotte Slim, Eline Jacobse, Isa Leijdekkers, ShanLi Nio, Jan Maarten de Vries
 
 Vandaag hebben we onze projecten tot nu toe aan elkaar laten zien en we hebben verteld wat we nog moeten doen. Eline is bezig met haar laatste visualisatie, een bar chart. Deze moet nog samen met het linken van de visualisaties afgemaakt worden. Lotte heeft bijna alle interactiviteit af. Alleen het springen naar het juiste land in de tabel werkt nog niet. Shan Li werkt nog aan de tooltip van haar eerste visualisatie. De map en barchart zijn zo goed als klaar, er zitten alleen nog hele kleine bugs in. De pie chart van Jan Maarten klopt nog niet helemaal, dus daar gaat hij nog aan werken. Ook wil hij nog informatie toevoegen over wanneer de albums zijn gemaakt. Isa moet de bubble chart nog afmaken en de zoekfunctie optimaliseren. Ook moeten de visualisaties nog gelinkt worden.
 
 ## Week 4 Dag 1 - maandag 30 januari
-
-![Selfie dag 11](doc/report/selfie_11.jpeg)
 
 **Aanwezig:** Lotte Slim, Eline Jacobse, Isa Leijdekkers, ShanLi Nio, Jan Maarten de Vries
 
@@ -109,6 +89,16 @@ Jan Maarten: data aanpassen, en een rare bug fixen. Lijkt ons ook wel realistisc
 **Aanwezig:** Lotte Slim, Eline Jacobse, Isa Leijdekkers, ShanLi Nio**
 **Afwezig:** Jan Maarten de Vries
 
-![Selfie dag 12](doc/report/selfie_12.jpeg)
 
 Lotte heeft alle fouten uit haar data gehaald en gewerkt aan de verschillende buttons. Vandaag gaat ze de assen van de grafieken fixen en de bronnen overal bij zetten. ShanLi heeft de bug uit haar kaart gehaald on hover, ze heeft gewerkt aan de layout (de informatiebox). Eline heeft aan de layout van haar website gewerkt en een aantal bugs verbeterd. Isa heeft tekst op haar website gezet en een legenda toegevoegd aan haar bubble chart.
+
+## Week 4 Dag 3 - woensdag 1 februari
+
+**Aanwezig:** Lotte Slim, Eline Jacobse, Isa Leijdekkers, ShanLi Nio en Jan Maarten de Vries**
+
+
+Iedereen is klaar met zijn of haar pagina. We hebben onze code aan elkaar laten zien, om elkaar te helpen met het verbeteren van de style hiervan. We hebben de code één voor één besproken met de gemaakte styleguide ernaast. Iedereen gaat vandaag verder met het mooi maken van de files en het schrijven van het verslag.
+
+## Week 4 dag 4 - donderdag 2 februari
+
+Allemaal aanwezig.
