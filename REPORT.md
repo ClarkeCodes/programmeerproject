@@ -36,6 +36,8 @@ Initially, the bar chart will show data from The Netherlands, and will be update
 
 In `functions.js` I've created helper functions that may be used by several of the visualizations.
 
+`scripts`
+
 
 ## 3. Choices and Challenges
 *Clearly describe challenges that your have met during development. Document all important changes that your have made with regard to your design document (from the PROCESS.md). Here, we can see how much you have learned in the past month.*  

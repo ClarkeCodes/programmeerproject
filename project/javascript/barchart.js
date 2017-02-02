@@ -7,11 +7,12 @@
  *
  */
 
-
+ var index;
+ var ageNames;
+ var dataset;
+ var updateBarchart;
 // reduces the dataset to only items that match the 'test':
 // var angolaObj = dataset.filter(function (d) { return d.key == "Angola" });
-// finds the index of country
-var updateBarchart;
 // function to color the bar of the grouped bar chart
 var color = function(gender) {
     if (gender == "Female") {
@@ -63,23 +64,16 @@ var yAxis = d3.svg.axis()
     .scale(y)
     .orient("left");
 
-var index;
-var ageNames;
-var dataset;
-
 // set up tooltip for numbers
 var tip = d3.tip()
     .attr("class", "d3-tip")
     .html(function(d) {
-        // console.log(d);
         return d3.format(",")(d.rate.toFixed(1));
     });
 
 function makeBarchart(countryName) {
     dataset = formatData(countryName);
-    var genders = dataset[0].depression.map(function(d) {
-        return d.gender;
-    });
+    var genders = dataset[0].depression.map(function(d) { return d.gender; });
 
     // domains for grouped bar chart
     x0.domain(ageNames);
@@ -138,6 +132,7 @@ function makeBarchart(countryName) {
             d3.select(this).style("fill", color(d.gender));
         });
 
+    // add animation to bars being drawn
     bar.selectAll("rect")
         .transition()
         .delay(function(d) { return Math.random() * 1000; })
@@ -156,11 +151,9 @@ function makeBarchart(countryName) {
 
     makeBarLegend();
 
+    // function to update barchart with a given country name
     updateBarchart = function(countryName) {
-
         dataset = formatData(countryName);
-        var genders = dataset[0].depression.map(function(d) { return d.gender; });
-
         y.domain([0, d3.max(dataset, function(age) {return d3.max(age.depression, function(d) {
             return (d.rate) + 500; }); })]);
 
@@ -218,7 +211,7 @@ function makeBarLegend() {
 function formatData (countryName) {
     var dataset = [];
 
-    // gets the index of 
+    // gets the index of
     index = findIndexOf(dataFemale, countryName);
     ageNames = d3.keys(dataFemale[index]).filter(function(key) {
         return key !== "country";

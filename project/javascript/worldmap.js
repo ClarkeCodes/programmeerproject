@@ -1,3 +1,12 @@
+/**
+ * worldmap.js
+ *
+ * Eline Jacobse
+ * Programmeerproject
+ * Student: 11136235
+ *
+ */
+
 var legend;
 
 // set up attributes for legend
@@ -84,6 +93,7 @@ function colorMap(dataset) {
                 })
                 .on('click', function(geo) {
                     if (dataset[geo.id]) {
+                        // highlight line of this country
                         var selector = '.line.' + geo.id;
                         d3.selectAll('.selected')
                             .style("visibility", "hidden");
@@ -121,9 +131,7 @@ function makeLegend() {
         })
         .attr("width", r_width)
         .attr("height", r_height)
-        .style("fill", function(d, i) {
-            return colorScale(color_values[i]);
-        })
+        .style("fill", function(d, i) { return colorScale(color_values[i]); })
         .style("opacity", 0.8);
 
     // add labels to legend

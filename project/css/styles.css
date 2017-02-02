@@ -13,46 +13,38 @@
     padding: 50px;
     text-align: left;
     -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-          box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
+
 .glyphicon-menu-down#iconLight {
     color: #fff;
 }
 
 #page-intro {
-  height: 800px;
-	color: #fff;
-
+    height: 800px;
+    color: #fff;
     background: no-repeat fixed;
-  /*background-image: url("/project/img/intro-bg.jpg");*/
-  background-size: cover;
-  width: 100%;
+    background-size: cover;
+    width: 100%;
 }
 
 .container {
-   z-index:2;
-   width: 100%
-   /*max-width: 1300px;*/
+    z-index: 2;
+    width: 100%
 }
 
 .padding-0 {
     padding: 0;
 }
 
-/*@media
-.container {
-    padding-left: 0px;
-    padding-right: 0px;
-}*/
-
 .header {
-  margin-top:12%;
-  color:#fff;
+    margin-top: 12%;
+    color: #fff;
 }
 
 .header h1 {
-   color:#fff;
+    color: #fff;
 }
 
 #paragraph-1 {
@@ -60,62 +52,32 @@
     max-width: 600px;
     padding: 50px;
     -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
     top: -50px;
 }
 
 h3, h4, h5 {
-    text-align:center;
-    margin:auto;
+    text-align: center;
+    margin: auto;
 }
-
 
 #mapcontainer {
     align: center;
-    /*margin: auto;*/
     position: relative;
     margin-bottom: 0;
-    /*top: -50px;*/
-}
-
-p {
-    /*display: block;*/
-    /*max-width: 600px;*/
-    /*margin: 0 auto;*/
-    /*text-align: center;*/
-    /*padding: 50px;*/
-    /*-webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;*/
-}
-
-#nl_container {
-    width: 100%;
-    height: 550px;
-    align: right;
-}
-
-
-#nl_text {
-    padding-bottom: 25px;
 }
 
 .row-sm-margin {
     margin-top: 0px;
-    /*margin-bottom: 0px;*/
     position: relative;
     top: -140px;
 }
 
-.display_4 {
-    /*margin-top: 100px;*/
-}
-
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Open Sans', 'Helvetica', 'Arial', 'sans-serif';
-  font-weight: 200;
-  letter-spacing: 1px;
+    font-family: 'Open Sans', 'Helvetica', 'Arial', 'sans-serif';
+    font-weight: 200;
+    letter-spacing: 1px;
 }
 
 #mapbuttons {
@@ -124,13 +86,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .heading-font {
-  font-family: 'Open Sans', 'Helvetica', 'Arial', 'sans-serif';
-  font-weight: 200;
-  letter-spacing: 1px;
+    font-family: 'Open Sans', 'Helvetica', 'Arial', 'sans-serif';
+    font-weight: 200;
+    letter-spacing: 1px;
 }
+
 .body-font {
-  font-family: 'Open Sans', 'Helvetica', 'Arial', 'sans-serif';
+    font-family: 'Open Sans', 'Helvetica', 'Arial', 'sans-serif';
 }
+
 .alt-font {
     font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
     text-transform: uppercase;
@@ -147,8 +111,8 @@ footer {
 }
 
 body {
-   overflow-x: hidden;
-   background-color: #eee;
+    overflow-x: hidden;
+    background-color: #eee;
 }
 
 .bottom-row {
@@ -157,9 +121,6 @@ body {
 }
 
 .btn-group-sm {
-    /*white-space: nowrap;*/
-    /*display: inline-block;*/
-    /*text-align:center;*/
     display: flex;
 }
 
@@ -171,7 +132,6 @@ body {
     color: #333;
     background-color: #fff;
     border-color: #ccc;
-
 }
 
 .btn-default {
@@ -182,24 +142,17 @@ body {
 
 .container-fluid {
     min-height: 100%;
-    overflow:auto;
+    overflow: auto;
     background-color: #eee;
 }
 
 #btnSuicide {
     background-color: #eee;
-    /*left: -20px;*/
-    /*white-space: nowrap;*/
 }
 
 #btnDepression {
     background-color: #fff;
-    /*white-space: nowrap;*/
 }
-
-/*#switcher:focus {
-    background-color: #fff;
-}*/
 
 path {
     stroke: #eee;
@@ -207,43 +160,34 @@ path {
     fill: none;
 }
 
-.axis path,
-.axis line {
+.axis path, .axis line {
     fill: none;
     stroke: grey;
     stroke-width: 1;
     opacity: 0.8;
     shape-rendering: crispEdges;
 }
-/*#textcontainer {
-    float: right;
-}*/
 
 #linecontainer {
     align: left;
     margin: auto;
     position: relative;
     margin-bottom: 0;
-    /*top: -80px;*/
-    width: 850px;
-    /*position: absolute;;*/
+    width: 100%;
+
 }
+
 .linegraph {
     margin: 0 auto;
     align: center;
-    /*background-color: #fff;*/
-    /*position: absolute;;*/
 }
 
 h4#linegraph_title {
     position: relative;
-    /*top: -100px;*/
 }
 
 #region_buttons {
     position: relative;
-    /*top: -100px;*/
-    /*margin: auto;*/
     align: left;
 }
 
@@ -259,102 +203,74 @@ p.text_up {
 .linegraphWrapper {
     position: relative;
     padding-top: 50px;
-    width: 100%;
-    /*top: -50px;*/
+    width: 104%;
+    padding-left: -30px;
+    padding-right: -30px;
+    border: 10px solid #fff;
+    background-color: #fff;
 }
-
-/*.bar {
-  fill: steelblue;
-}
-
-.bar:hover {
-  fill: brown;
-}*/
 
 div.tooltip {
-        color: #222;
-        background-color: #fff;
-        padding: .5em;
-        text-shadow: #f5f5f5 0 1px 0;
-        border-radius: 2px;
-        opacity: 0.9;
-        position: absolute;
+    color: #222;
+    background-color: #fff;
+    padding: .5em;
+    text-shadow: #f5f5f5 0 1px 0;
+    border-radius: 2px;
+    opacity: 0.9;
+    position: absolute;
 }
-
 .hidden {
-        display: none;
+    display: none;
 }
-
 .affix {
     top: 0;
     width: 100%;
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
 }
-
 .affix-top {
     position: static;
     top: -35px;
 }
-
 .navbar {
     z-index: 9999;
 }
 
-/*header {*/
-    /*background: #f5b335;*/
-    /*height: 40px;
-    position: fixed;
-    top: 0;
-    transition: top 0.2s ease-in-out;
-    width: 100%;
-}*/
-
-/*.nav-up {
-    top: -40px;
-}*/
-
 #maptitle {
     text-align: left;
 }
-
 #section1 {
     margin-top: 100px;
     margin-bottom: 100px;
     width: 100%;
-    /*background-color: #eee;*/
 }
-
 #section2 {
     background-color: #fff;
-    /*margin: 10px;*/
     width: 100%;
     background-size: cover;
-    /*margin-top: 150px;*/
 }
-
 .glyphicon-menu-up {
+    /*display: block;*/
     color: #9d9d9d;
-    /*margin: 0 auto;*/
+    float: none;
+    margin: 0 auto;
     margin-top: 50px;
 }
 
+.centered {
+    float:none;
+    position: relative;
+    left: 85px;
+}
 .glyphicon-menu-down {
     color: #9d9d9d;
-    /*margin: 0 auto;*/
     margin-top: 50px;
 }
-
 #barcontainer {
     margin-top: 50px;
 }
-
 #lineWrapper {
     margin-top: 50px;
-}
-
-#barRow {
-    /*margin-top: 50px;*/
 }
 
 .line.clicked {
@@ -362,19 +278,16 @@ div.tooltip {
     stroke-width: 2px;
     z-index: 9999;
 }
-
 .line.hovered {
     stroke: #000;
     stroke-width: 2px;
     z-index: 9998;
 }
-
 .line {
-    stroke: #eee;
+    stroke: #e4e4e4;
     z-index: 10;
 }
-
-.line.Europe{
+.line.Europe {
     stroke: #ED7C31;
 }
 .line.EastAsia {
@@ -395,7 +308,6 @@ div.tooltip {
 .line.NorthAmerica {
     stroke: #BE1932;
 }
-
 #btnEurope.clicked {
     color: #FFF;
     background-color: #ED7C31;
@@ -411,75 +323,31 @@ div.tooltip {
 #btnNorthAfrica.clicked {
     color: #FFF;
     background-color: #E25f82;
-
 }
 #btnSubSaharan.clicked {
     color: #FFF;
     background-color: #895881;
-
 }
 #btnLatinAmerica.clicked {
     color: #FFF;
     background-color: #82A5C0;
-
 }
 #btnNorthAmerica.clicked {
     color: #FFF;
     background-color: #BE1932;
-
 }
-
 .bg-info {
-    /*color: #eee;*/
     background-color: #eee !important;
 }
-
-.bottom-paragraph
-{
-    /*float: none;*/
-    /*display: table-cell;*/
+.bottom-paragraph {
     position: relative;
     padding-top: 140px;
     vertical-align: bottom;
 }
-
 .title-left {
     text-align: left;
 }
 
-/*.tooltip{
-    position:absolute;
-    z-index:1020;
-    display:block;
-    visibility:visible;
-    padding:5px;
-    font-size:11px;
-    opacity:0;
-    filter:alpha(opacity=0)
-}*/
-
-/*.tooltip.in{
-    opacity:.8;
-    filter:alpha(opacity=80)
-}*/
-
-/*.tooltip.bottom .tooltip-inner{
-    max-width:200px;
-    padding:3px 8px;
-    color:#fff;
-    text-align:center;
-    text-decoration:none;
-    background-color:red;
-    -webkit-border-radius:4px;
-    -moz-border-radius:4px;
-    border-radius:4px
-}*/
-
-.tooltip.bottom .tooltip-arrow{
-    top:0;
-    left:50%;
-    margin-left:-5px;
-    /*border-left:5px solid transparent;*/
-    /*border-right:5px solid transparent;*/
-    /*border-bottom:5px solid #000*/
+.container-fluid {
+    overflow-x: hidden;
 }

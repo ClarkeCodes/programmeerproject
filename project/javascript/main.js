@@ -19,11 +19,9 @@ queue()
 var all_colors = ['#c6dbef','#9ecae1','#6baed6','#4292c6','#2171b5','#08519c','#08306b'];
 var color_values = [3, 5, 7, 10, 15, 20, 20.1];
 var color_values2 = [3.5, 4, 4.5, 5, 5.5, 6, 6.5];
+var suicideLabels = ["> 20", "15 - 20", "10 - 15", "7 - 10", "5 - 7", "3 - 5", "< 3"];
+var depressionLabels = ["6.5 >", "5.5 - 6", "5 - 5.5", "4.5 - 5", "4 - 4.5", "3.5 - 4", "< 3.5"];
 
-var suicideLabels = ["< 3", "3 - 5", "5 - 7", "7 - 10", "10 - 15", "15 - 20", "> 20"];
-suicideLabels.reverse();
-var depressionLabels = ["< 3.5", "3.5 - 4", "4 - 4.5", "4.5 - 5", "5 - 5.5", "5.5 - 6", "6.5 >"];
-depressionLabels.reverse();
 
 var dataset;
 var dataset2;

@@ -17,12 +17,7 @@ var parseDate = d3.time.format("%Y").parse;
 
 function makeLinegraph() {
     // set up margins, width and height for svg
-    var margin = {
-            top: 40,
-            right: 100,
-            bottom: 80,
-            left: 50
-        },
+    var margin = { top: 40, right: 100, bottom: 80, left: 50 },
         width = 600 - margin.left - margin.right,
         height = 650 - margin.top - margin.bottom;
 
@@ -97,13 +92,9 @@ function makeLinegraph() {
 
         countries.append("path")
             .attr("id", function(d) { return d.values["0"].continent; })
-            .attr("class", function(d) {
-                var lineClass = "line " + codes[d.key];
-                return lineClass;
-            })
+            .attr("class", function(d) { return "line " + codes[d.key]; })
             .attr("d", function(d) { return valueline(d.values); });
 
-        var lineColor;
         // Add the X Axis
         svg.append("g")
             .attr("class", "x axis")
